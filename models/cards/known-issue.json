@@ -1,0 +1,212 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.2",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Known Issue",
+            "size": "Large",
+            "weight": "Bolder"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Tracking"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "AzureDev Ops Bug#",
+            "id": "tracking"
+        },
+        {
+            "type": "Input.Toggle",
+            "title": "Highlight",
+            "value": "false",
+            "id": "highlight "
+        },
+        {
+            "type": "TextBlock",
+            "text": "Feature"
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "choices": [
+                {
+                    "title": "Advisory",
+                    "value": "Advisory"
+                },
+                {
+                    "title": "Alerts, Health Monitoring and Hardware",
+                    "value": "Alerts, Health Monitoring and Hardware"
+                },
+                {
+                    "title": "App Services",
+                    "value": "App Services"
+                },
+                {
+                    "title": "Backup and Disaster Recovery",
+                    "value": "Backup and Disaster Recovery"
+                },
+                {
+                    "title": "Billing or Usage Tracking",
+                    "value": "Billing or Usage Tracking"
+                },
+                {
+                    "title": "Cloud Operator Issues",
+                    "value": "Cloud Operator Issues"
+                },
+                {
+                    "title": "Deployment",
+                    "value": "Deployment"
+                },
+                {
+                    "title": "Registration of Azure Stack",
+                    "value": "Registration of Azure Stack"
+                },
+                {
+                    "title": "Development Kit ASDK",
+                    "value": "Development Kit ASDK"
+                },
+                {
+                    "title": "Marketplace Mgmt.",
+                    "value": "Marketplace Mgmt."
+                },
+                {
+                    "title": "Network",
+                    "value": "Network"
+                },
+                {
+                    "title": "Patch and Update",
+                    "value": "Patch and Update"
+                },
+                {
+                    "title": "Plans, Offers, Quota, or Subscriptions",
+                    "value": "Plans, Offers, Quota, or Subscriptions"
+                },
+                {
+                    "title": "Security, Certificate and Secret Management, Support, Monitoring",
+                    "value": "Security, Certificate and Secret Management, Support, Monitoring"
+                },
+                {
+                    "title": "SQL MySQL",
+                    "value": "SQL MySQL"
+                },
+                {
+                    "title": "Storage",
+                    "value": "Storage"
+                },
+                {
+                    "title": "Tools and SDK",
+                    "value": "Tools and SDK"
+                },
+                {
+                    "title": "Virtual Machines",
+                    "value": "Virtual Machines"
+                },
+                {
+                    "title": "PowerShell, Developer Tools, SDKs",
+                    "value": "PowerShell, Developer Tools, SDKs"
+                },
+                {
+                    "title": "Validation as a Service",
+                    "value": "Validation as a Service"
+                },
+                {
+                    "title": "Kubernetes",
+                    "value": "Kubernetes"
+                },
+                {
+                    "title": "Add on RPs",
+                    "value": "Add on RPs"
+                },
+                {
+                    "title": "Solutions for Azure Stack Hub",
+                    "value": "Solutions for Azure Stack Hub"
+                },
+                {
+                    "title": "Developer using Azure Stack Hub",
+                    "value": "Developer using Azure Stack Hub"
+                },
+                {
+                    "title": "Rugged Devices",
+                    "value": "Rugged Devices"
+                }
+            ],
+            "placeholder": "Choose your area.",
+            "id": "ms.sub-service"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Audience"
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "choices": [
+                {
+                    "title": "Operator",
+                    "value": "Operator"
+                },
+                {
+                    "title": "User",
+                    "value": "User"
+                }
+            ],
+            "placeholder": "Placeholder text",
+            "value": "Operator",
+            "id": "audience"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Applicable to"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Release No. (2005, 2010, etc.)",
+            "id": "applicable"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Title"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "How is the issue visible?",
+            "id": "title"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Description"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Describe how the issue is encountered and the effect of the issue.",
+            "isMultiline": true,
+            "id": "description"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Remediation"
+        },
+        {
+            "type": "Input.Text",
+            "isMultiline": true,
+            "placeholder": "Steps to take to resolve or work around the issue.",
+            "id": "remediation"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Occurance"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Common",
+            "id": "occurance"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Submit"
+        }
+    ]
+}

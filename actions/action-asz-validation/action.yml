@@ -1,0 +1,8 @@
+name: 'Module Validation'
+description: 'Checks modules for validation following the AzS Hub Doc Model.'
+outputs:
+  report:
+    description: 'The validation report.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

@@ -1,0 +1,28 @@
+{"author": {"type": "string"},
+"ms.service": {"type": "string", "allowed": ["azure-stack"]},
+"ms.topic": {"type": "string", "allowed": ["include"]}, 
+"ms.date": {"type": "string"},
+"ms.author": {"type": "string"},
+"ms.reviewer": {"type": "string"},
+"ms.lastreviewed": {"type": "string"},
+"ms.sub-service": {"type": "string", "allowed" : ["Advisory", "Alerts, Health Monitoring and Hardware", "App Services", "Backup and Disaster Recovery", "Billing or Usage Tracking", "Cloud Operator Issues", "Deployment", "Registration of Azure Stack", "Development Kit ASDK", "Marketplace Mgmt.", "Network", "Patch and Update", "Plans, Offers, Quota, or Subscriptions", "Security, Certificate and Secret Management, Support, Monitoring", "SQL and MySQL", "Storage", "Tools and SDK", "Virtual Machines", "PowerShell, Developer Tools, SDKs", "Validation as a Service", "Release Notes (What's New/Known Issues)", "Kubernetes", "Add on RPs", "Solutions for Azure Stack Hub", "Developer using Azure Stack Hub", "Rugged Devices"] },
+"azs.tracking": {"type": "string"},
+"azs.issue-id": {"type": "string"},
+"azs.status":  {"type": "string", "allowed": ["in-review", "active", "archive"]}, 
+"azs.topic-schema": {"type": "string", "allowed": ["known-issue"]}, 
+"azs.audience": {"type": "string", "allowed": ["Operator", "User"]}, 
+"azs.highlight": {"type": "string", "allowed": ["False", "True"]},
+"title": {"type": "string"},
+"Applicable to": {"type": "string", "allowed": ["all", "1906-1907", "1910", "1906", "1907", "1908", "2002", "2008"]},
+"Description": {"type": "string"},
+"Remediation": {"type": "string"},
+"Occurrence": {"type": "string"}
+}
+
+
+
+
+
+
+
+
