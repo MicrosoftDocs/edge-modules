@@ -2,11 +2,12 @@
 set -e
 
 cd /usr/local
-git clone https://github.com/mattbriggs/azs-modular-poc.git
-cd azs-modular-poc
-git checkout master
+git clone https://github.com/MicrosoftDocs/edge-modules.git
 
-python /usr/local/azs-modular-poc/scripts/val_ki_dockeraction.py
+cd edge-modules
+git checkout main C:\git\ms\edge-modules\actions\action-asz-validation\entrypoint.sh
+
+python /usr/local/edge-modules/scripts/val_ki_dockeraction.py
 
 state=`cat state.txt`
 
