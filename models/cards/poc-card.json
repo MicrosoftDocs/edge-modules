@@ -1,0 +1,67 @@
+{
+   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+   "type": "AdaptiveCard",
+   "version": "1.0",
+   "body": [
+     {
+       "type": "TextBlock",
+       "text": "Add a known issue to Azure Stack Hub (POC)"
+     },
+     {
+       "type": "Input.Text",
+       "id": "ms.reviewer",
+       "placeholder": "Type your alias",
+       "maxLength": 100
+     },
+     {
+      "type": "Feature",
+      "id": "ms.sub-service",
+      "placeholder": "Select the name of your area.",
+      "maxLength": 100
+    },
+    {
+      "type": "Input.Text",
+      "id": "applicable",
+      "placeholder": "Type your alias",
+      "maxLength": 100
+    },
+    {
+      "type": "TextBlock",
+      "text": "Multiline text input"
+    },
+    {
+      "type": "Input.Text",
+      "id": "cause",
+      "placeholder": "Add a description of the cause.",
+      "maxLength": 500,
+      "isMultiline": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Multiline text input"
+    },
+    {
+      "type": "Input.Text",
+      "id": "remediation",
+      "placeholder": "Type how you can fix this issue.",
+      "maxLength": 500,
+      "value": "This value was pre-filled"
+    }
+    {
+      "type": "Input.Text",
+      "id": "occurance",
+      "placeholder": "How often does this happen.",
+      "maxLength": 100
+    }
+   ],
+   "actions": [
+     {
+       "type": "Action.Submit",
+       "title": "OK"
+     }
+   ]
+ }
+
+
+
+
