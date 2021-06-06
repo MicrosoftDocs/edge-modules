@@ -3,6 +3,7 @@ set -e
 
 cd /usr/local
 git clone https://github.com/MicrosoftDocs/edge-modules.git
+
 cd edge-modules
 git checkout main C:\git\ms\edge-modules\actions\action-asz-validation\entrypoint.sh
 
