@@ -25,7 +25,7 @@ import mod_utilities as MU
 from prettytable import PrettyTable
 
 MODULES = r"/usr/local/edge-modules/azure-stack-hub"
-SCHEMAS = r"/usr/local//edge-modules/models/schemas"
+SCHEMAS = r"/usr/local/edge-modules/models/schemas"
 
 def repo_logic(indict):
     '''Insert the logic to process the return from the function.'''
@@ -60,7 +60,6 @@ def main():
     for p in include_paths:
         split_path = p.split("/")[-1].split("-")
         path_slug = "{}-{}".format(split_path[0],split_path[1])
-        slug_index = len(path_slug)
         if path_slug in schema_set:
             in_body = MU.get_textfromMD(p)
             valid_id = p.split("/")[-1][:-3]
