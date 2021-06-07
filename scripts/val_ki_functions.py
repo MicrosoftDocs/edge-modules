@@ -5,7 +5,7 @@
     input: module as text, schema file (json)
     output: dict (json) of parsed doc.
 
-    9.1.2020
+    6.6.2021
 
 '''
 
