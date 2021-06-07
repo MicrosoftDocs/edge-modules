@@ -13,7 +13,7 @@
 "azs.audience": {"type": "string", "allowed": ["Operator", "User"]}, 
 "azs.highlight": {"type": "string", "allowed": ["Yes", "No"]},
 "title": {"type": "string"},
-"Applicable to": {"type": "string", "allowed": ["all", "1906-1907", "1910", "1906", "1907", "1908", "2002", "2008", "2008 and later"]},
+"Applicable to": {"type": "string", "allowed": ["all", "1906-1907", "1910", "1906", "1907", "1908", "2002", "2008", "2008 and later."]},
 "Description": {"type": "string"},
 "Remediation": {"type": "string"},
 "Occurrence": {"type": "string"}
