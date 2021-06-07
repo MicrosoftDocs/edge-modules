@@ -11,7 +11,7 @@
 "azs.status":  {"type": "string", "allowed": ["in-review", "active", "archive"]}, 
 "azs.topic-schema": {"type": "string", "allowed": ["known-issue"]}, 
 "azs.audience": {"type": "string", "allowed": ["Operator", "User"]}, 
-"azs.highlight": {"type": "string", "allowed": ["False", "True"]},
+"azs.highlight": {"type": "string", "allowed": ["Yes", "No"]},
 "title": {"type": "string"},
 "Applicable to": {"type": "string", "allowed": ["all", "1906-1907", "1910", "1906", "1907", "1908", "2002", "2008", "2008 or later"]},
 "Description": {"type": "string"},
