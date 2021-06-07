@@ -57,7 +57,6 @@ def main():
     report = []
     report.append(["ID", "Valid", "Issue"])
     validatation_state = True
-    print(include_paths)
     for p in include_paths:
         split_path = p.split("/")[-1].split("-")
         path_slug = "{}-{}".format(split_path[0],split_path[1])
