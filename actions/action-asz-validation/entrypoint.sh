@@ -5,7 +5,7 @@ cd /usr/local
 git clone https://github.com/MicrosoftDocs/edge-modules.git
 
 cd edge-modules
-git checkout main C:\git\ms\edge-modules\actions\action-asz-validation\entrypoint.sh
+git checkout main /usr/local/edge-modules/actions/action-asz-validation/entrypoint.sh
 
 python /usr/local/edge-modules/scripts/val_ki_dockeraction.py
 
