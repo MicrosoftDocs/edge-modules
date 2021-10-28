@@ -27,7 +27,7 @@ The test script will use test data and place files in the testdata folder. A val
 
 ```
 pytest --verbose
-``
+```
 
 ## References
 
