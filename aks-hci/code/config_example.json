@@ -1,0 +1,4 @@
+    {   "datafile" : "<pathto>\\edge-modules\\aks-hci\\report\\aks-hci-faq.csv",
+        "testfile" : "<pathto>\\edge-modules\\aks-hci\\code\\testdata\\test-faq.csv",
+        "output" : "<pathto>\\edge-modules\\aks-hci\\code\\testdata\\",
+        "testout": "<pathto>\\edge-modules\\aks-hci\\code\\testdata\\"}
