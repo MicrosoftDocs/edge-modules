@@ -1,0 +1,41 @@
+    # # create RSS file
+    # file_out = ""
+    
+    # for column_name, item in active_items.iteritems():
+    #     print(column_name)
+    #     print(item)
+    
+    
+    
+    # :
+    #     file_out += "Document: {}\n".format(a[1])
+    #     file_out += '[Header]\n'
+    #     sections = a[1].groupby('section')
+    #     for s in sections:
+    #         file_out += "Section: {}\n".format(s)
+    #         for index, row in s[1].iterrows():
+    #             file_out += "Question: {}\n".format(row["question"])
+    #             file_out += "Answer: {}\n".format(row["answer"])
+    #     file_out += '[END]'
+    # print("Done.")
+
+    # print(file_out)
+
+    #MU.write_text(file_out, OUTYML+file_name)
+
+# script to test yml
+
+import build_faqs as FQ
+import yaml
+
+config = FQ.get_config()
+
+faq_dict = FQ.make_faq_dict(config["datafile"])
+FQ.generate_faqs(faq_dict, config["output"])
+with open(r"C:\git\ms\edge-modules\aks-hci\code\testdata\one.yml", "r") as read_file:
+    yaml_content = yaml.load(read_file, Loader=yaml.FullLoader)
+
+print(yaml_content["title"])
+print("Key: Value")
+for key, value in yaml_content.items():
+    print(f"{key}: {value}")
