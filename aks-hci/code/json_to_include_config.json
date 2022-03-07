@@ -1,0 +1,6 @@
+{
+    "tables": [{
+        "source": "C:\\git\\ms\\edge-modules\\aks-hci\\config\\allow-list-end-points.json",
+        "target": "C:\\git\\ms\\azure-stack-docs-pr\\azure-stack\\aks-hci\\includes\\data-allow-table.md"
+    }]
+}
