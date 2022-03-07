@@ -1,7 +1,8 @@
-# AKS on Azure Stack Hub - Known Issues Builder
+# AKS on Azure Stack Hub Docs Scripts
 
-This script creates known issue files.  
-(10/2021).
+These scripts are used to generate docs for AkS on HCI.
+
+2022.3.7
 
 ## set up the repo
 1. Add a `config.json` file based on the example: `config_example.json`. This file has the following attributes:
@@ -21,7 +22,7 @@ python build_faqs.py
 
 The script will output yaml files using the Google microformat to the target directory.
 
-## Test the script
+### Test the script
 
 The test script will use test data and place files in the testdata folder. A validation report will display.
 
@@ -29,13 +30,17 @@ The test script will use test data and place files in the testdata folder. A val
 pytest --verbose
 ``
 
-## References
+### References
 
 You can find information about the FAQ format which is being used for the known issues at:
 https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-faq-guide?branch=master
 
 You can find information about Microformats at:
 http://microformats.org/
+
+## Create JSON config files to tables
+
+This script will create tables from JSON arrays stored in the config folder.
 
 ## Provide feedback
 
