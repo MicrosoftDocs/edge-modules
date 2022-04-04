@@ -355,3 +355,5 @@ ENV/
 config.json
 discards.txt
 .pytest_cache/
+
+.DS_Store
