@@ -1,0 +1,21 @@
+"ID" : "FCD9F56E-042D-4C9D-87BB-D942A2AFAFBF"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-uninstall"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  Error occurs when running Uninstall-AksHci and AKS on Azure Stack HCI is not installed
+"Description" : |
+  If you run [Uninstall-AksHci](./reference/ps/./uninstall-akshci.md) when AKS on Azure Stack HCI is not installed, you'll receive the error message: _Cannot bind argument to parameter 'Path' because it is null_. 
+"Fix" : |
+  You can safely ignore the error message as there is no functional impact.

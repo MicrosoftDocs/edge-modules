@@ -1,0 +1,16 @@
+
+"ID": "66C452A5-D552-4645-B02A-E055F6DF7B85"
+"Area": "known-issues-networking"
+"Reviewer": "abha"
+"ms.topic": "faq"
+"Schema": "doc"
+"Metatitle": "Troubleshoot networking issues and errors in Azure Kubernetes Service on Azure Stack HCI"
+"Metadescription": "Get help to troubleshoot networking issues and errors in Azure Kubernetes Service on Azure Stack HCI."
+"title": "Fix known issues and errors when configuring a network"
+"Summary": |
+  Use this topic to help you troubleshoot and resolve networking-related issues in AKS on Azure Stack HCI.
+"Additionalcontent": |
+  ## Next steps
+  - [Troubleshooting overview](troubleshoot-overview.md)
+  - [Installation issues and errors](known-issues-installation.md)
+  - [Storage known issues](known-issues-storage.md)

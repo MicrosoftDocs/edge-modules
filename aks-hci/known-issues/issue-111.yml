@@ -1,0 +1,24 @@
+"ID" : "guid"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-workload-clusters"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  XXX
+"Description" : |
+  XXX
+"Fix" : |
+  XXX
+
+## 111 Hyper-V manager shows high CPU and/or memory demands for the management cluster (AKS host)
+When you check Hyper-V manager, high CPU and memory demands for the management cluster can be safely ignored. They're related to spikes in compute resource usage when provisioning workload clusters. Increasing the memory or CPU size for the management cluster hasn't shown a significant improvement and can be safely ignored.

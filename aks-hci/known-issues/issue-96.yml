@@ -1,0 +1,45 @@
+"ID" : "guid"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-windows-admin-center"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  XXX
+"Description" : |
+  XXX
+"Fix" : |
+  XXX
+
+  ## 96 Troubleshoot CredSSP issues
+
+When deploying AKS on Azure Stack HCI using Windows Admin Center, and the deployment hangs for an extended period, you might be having Credential Security Support Provider (CredSSP) or connectivity problems. Try the following steps to troubleshoot your deployment:
+ 
+1. On the machine running Windows Admin Center, run the following command in a PowerShell window: 
+
+   ```PowerShell
+      Enter-PSSession <servername>
+   ```
+2. If this command succeeds, you can connect to the server and there's no connectivity issue.
+    
+3. If you're having CredSSP problems, run this command to test the trust between the gateway machine and the target machine: 
+
+   ```PowerShell
+      Enter-PSSession –ComputerName <server> –Credential company\administrator –Authentication CredSSP
+   ``` 
+   You can also run the following command to test the trust in accessing the local gateway: 
+
+   ```PowerShell
+      Enter-PSSession -computer localhost -credential (Get-Credential)
+   ``` 
+
+For additional CredSSP troubleshooting tips, see [Troubleshoot CredSSP](../hci/manage/troubleshoot-credssp.md).

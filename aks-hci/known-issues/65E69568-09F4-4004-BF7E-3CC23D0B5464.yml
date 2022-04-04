@@ -1,0 +1,21 @@
+"ID" : "65E69568-09F4-4004-BF7E-3CC23D0B5464"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-installation"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  The AKS on Azure Stack HCI download package fails with the error: `msft.sme.aks couldn't load`
+"Description" : |
+  The error message also indicates that loading chunks failed.
+"Fix" : |
+  If you get this error, and the error message also indicates that loading chunks failed, you should use the latest version of Microsoft Edge or Google Chrome and try again.

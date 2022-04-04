@@ -1,0 +1,21 @@
+"ID" : "B4B6F6BF-ADA0-4FE3-A9E4-89E4C0FB8B7A"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-upgrade"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  After upgrading to PowerShell module 1.1.9, this error appears: `Applying platform configurations failed. Error: No adapter is connected to the switch:'swtch1' on node: 'node1'`
+"Description" : |
+  This error was resolved in PowerShell module version 1.1.11.
+"Fix" : |
+  Update the PowerShell module to version 1.1.11 on all nodes to resolve this issue.

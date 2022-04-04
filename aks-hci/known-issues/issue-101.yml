@@ -1,0 +1,31 @@
+"ID" : "guid"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-workload-clusters"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  XXX
+"Description" : |
+  XXX
+"Fix" : |
+  XXX
+
+## 101 If a cluster is shut down for more than four days, the cluster will be unreachable
+
+When you shut down a management or workload cluster for more than four days, the certificates expire and the cluster is unreachable. The certificates expire because they're rotated every 3-4 days for security reasons.
+
+To restart the cluster, you need to manually repair the certificates before you can perform any cluster operations. To repair the certificates, run the following [Repair-AksHciClusterCerts](./reference/ps/repair-akshciclustercerts.md) command:
+
+```powershell
+Repair-AksHciClusterCerts -Name <cluster-name> -fixKubeletCredentials
+```

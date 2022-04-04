@@ -1,0 +1,37 @@
+"ID" : "9F24BF04-9966-4BEE-A563-BA054E80E2D4"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-installation"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  #Set-AksHciConfig fails with WinRM errors, but shows WinRM is configured correctly
+"Description" : |
+  When running [Set-AksHciConfig](./reference/ps/./set-akshciconfig.md), you might encounter the following error:
+
+  ```powershell
+  WinRM service is already running on this machine.
+  WinRM is already set up for remote management on this computer.
+  Powershell remoting to TK5-3WP08R0733 was not successful.
+  At C:\Program Files\WindowsPowerShell\Modules\Moc\0.2.23\Moc.psm1:2957 char:17
+  + ...             throw "Powershell remoting to "+$env:computername+" was n ...
+  +                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      + CategoryInfo          : OperationStopped: (Powershell remo...not successful.:String) [], RuntimeException
+      + FullyQualifiedErrorId : Powershell remoting to TK5-3WP08R0733 was not successful.
+  ```
+"Fix" : |
+  This error usually occurs as a result of a change in the user's security token (due to a change in group membership), a password change, or an expired password. In most cases, the issue can be remediated by logging off from the computer and logging back in. If this still fails, you can file an issue at [GitHub AKS HCI issues](https://aka.ms/aks-hci/issues).
+
+
+
+
+

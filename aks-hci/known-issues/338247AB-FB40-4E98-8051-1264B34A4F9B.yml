@@ -1,0 +1,16 @@
+
+"ID": "338247AB-FB40-4E98-8051-1264B34A4F9B"
+"Area": "known-issues-workload-clusters"
+"Reviewer": "abha"
+"ms.topic": "faq"
+"Schema": "doc"
+"Metatitle": "Troubleshoot Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI "
+"Metadescription": "Get help to troubleshoot Kubernetes workload cluster issues and errors in Azure Kubernetes Service on Azure Stack HCI."
+"title": "Troubleshoot Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI "
+"Summary": |
+  Use this article to help you troubleshoot and resolve Kubernetes management and workload clusters issues in AKS on Azure Stack HCI.
+"Additionalcontent": |
+  ## Next steps
+  - [Troubleshooting overview](troubleshoot-overview.md)
+  - [Networking issues and errors](known-issues-networking.md)
+  - [storage known issues](known-issues-storage.md)

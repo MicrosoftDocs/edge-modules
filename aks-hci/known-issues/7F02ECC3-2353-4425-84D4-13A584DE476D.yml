@@ -1,0 +1,32 @@
+"ID" : "7F02ECC3-2353-4425-84D4-13A584DE476D"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-networking"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  Using Remote Desktop to connect to the management cluster produces a connection error
+"Description" : |
+  When using Remote Desktop (RDP) to connect to one of the nodes in an Azure Stack HCI cluster and then running [Get-AksHciCluster](./reference/ps/get-akshcicluster.md), an error appears and says the connection failed because the host failed to respond.
+
+  The reason for the connection failure is because some PowerShell commands that use `kubeconfig-mgmt` fail with an error similar to the following one:
+
+  ```
+  Unable to connect to the server: d ial tcp 172.168.10.0:6443, where 172.168.10.0 is the IP of the control plane.
+  ```
+
+  The _kube-vip_ pod can go down for two reasons:
+
+  * The memory pressure in the system can slow down `etcd`, which ends up affecting _kube-vip_.
+  * The _kube-apiserver_ is not available.
+"Fix" : |
+  To help resolve this issue, try rebooting the machine. However, the issue of the memory pressure slowing down may return.
