@@ -1,0 +1,22 @@
+/Volumes/Furst/mattbriggs/Git/azure-stack-docs-pr/azure-stack/aks-hci/known-issues-uninstall.md
+
+---
+title: Troubleshoot issues when uninstalling AKS on Azure Stack HCI. 
+description: Get help to troubleshoot issues and errors when uninstalling AKS on Azure Stack HCI.
+author: mattbriggs
+ms.topic: troubleshooting
+ms.date: 11/05/2021
+ms.author: mabrigg 
+ms.lastreviewed: 1/14/2022
+ms.reviewer: abha
+
+---
+
+# Fix known issues and errors when uninstalling AKS on Azure Stack HCI
+
+Use this topic to help you troubleshoot and resolve issues when uninstalling AKS on Azure Stack HCI.
+
+
+## Next steps
+- [Troubleshooting overview](troubleshoot-overview.md)
+- [Installation issues and errors](known-issues-installation.md)

@@ -1,0 +1,27 @@
+"ID" : "03C07C02-120F-4FD2-965F-BC3B7FB3D780"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "digwig"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-installation"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  XXX
+"Description" : |
+  XXX
+"Fix" : |
+  XXX
+
+## 22 Error: `An existing connection was forcibly closed by the remote host`
+
+`Install-AksHci` failed with this error because the IP pool ranges provided in the AKS on Azure Stack HCI configuration was off by one in the CIDR, and can cause CloudAgent to crash. For example, if you have subnet 10.0.0.0/21 with an address range 10.0.0.0 - 10.0.7.255, and then you use start address of 10.0.0.1 or an end address of 10.0.7.254, then this would cause CloudAgent to crash. 
+
+To work around this issue, run [New-AksHciNetworkSetting](./reference/ps/new-akshcinetworksetting.md) and use any other valid IP address range for your VIP pool and Kubernetes node pool. Make sure that the values you use are not off by one at the start or end the address range. 

@@ -1,0 +1,32 @@
+"ID" : "03C07C02-120F-4FD2-965F-BC3B7FB3D780"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "digwig"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-workload-clusters"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  XXX
+"Description" : |
+  XXX
+"Fix" : |
+  XXX
+
+## 102 If a management or workload cluster isn't used for more than 60 days, the certificates will expire
+
+If you don't use a management or workload cluster for longer than 60 days, the certificates expire, and you must renew them before you can upgrade AKS on Azure Stack HCI. When an AKS on Azure Stack HCI cluster isn't upgraded within 60 days, the KMS plug-in token and the certificates both expire within the 60 days. The cluster is still functional, however, since it's beyond 60 days, you need to call Microsoft support to upgrade. If the cluster is rebooted after this period, it will continue to remain in a non-functional state.
+
+To resolve this issue, run the following steps:
+
+1. Repair the management cluster certificate by [manually rotating the token and then restart the KMS plug-in and container](#the-api-server-isnt-responsive-after-several-days).
+2. Repair the `mocctl` certificates by running `Repair-MocLogin`.
+3. Repair the workload cluster certificates by [manually rotating the token and then restart the KMS plug-in and container](#the-api-server-isnt-responsive-after-several-days). 
+ 

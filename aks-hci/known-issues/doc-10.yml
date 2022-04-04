@@ -1,0 +1,22 @@
+/Volumes/Furst/mattbriggs/Git/azure-stack-docs-pr/azure-stack/aks-hci/known-issues-workload-clusters.md
+
+---
+title: Troubleshoot Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI 
+description: Get help to troubleshoot Kubernetes workload cluster issues and errors in Azure Kubernetes Service on Azure Stack HCI.
+author: mattbriggs
+ms.topic: troubleshooting
+ms.date: 03/07/2022
+ms.author: mabrigg 
+ms.lastreviewed: 03/07/2022
+ms.reviewer: abha
+
+---
+
+# Troubleshoot Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI 
+
+Use this article to help you troubleshoot and resolve Kubernetes management and workload clusters issues in AKS on Azure Stack HCI.
+
+## Next steps
+- [Troubleshooting overview](troubleshoot-overview.md)
+- [Networking issues and errors](known-issues-networking.md)
+- [storage known issues](known-issues-storage.md)

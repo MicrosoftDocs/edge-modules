@@ -1,0 +1,33 @@
+"ID" : "03C07C02-120F-4FD2-965F-BC3B7FB3D780"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "digwig"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-workload-clusters"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  XXX
+"Description" : |
+  XXX
+"Fix" : |
+  XXX
+
+## 116 Attempt to increase the number of worker nodes fails
+When using PowerShell to create a cluster with static IP and then attempt to increase the number of worker nodes in the workload cluster, the installation got stuck at `control plane count at 2, still waiting for desired state: 3`. After a period of time, another error message appears: `Error: timed out waiting for the condition`.
+
+When [Get-AksHciCluster](./reference/ps/get-akshcicluster.md) was run, it showed that the control plane nodes were created and provisioned and were in a _Ready_ state. However, when `kubectl get nodes` was run, it showed that the control plane nodes had been created but not provisioned and weren't in a _Ready_ state.
+
+If you get this error, verify that the IP addresses have been assigned to the created nodes using either Hyper-V Manager or PowerShell:
+
+```powershell
+(Get-VM |Get-VMNetworkAdapter).IPAddresses |fl
+```
+Then, verify the network settings to ensure there are enough IP addresses left in the pool to create more VMs.  

@@ -1,0 +1,25 @@
+"ID" : "03C07C02-120F-4FD2-965F-BC3B7FB3D780"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "digwig"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-upgrade"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  XXX
+"Description" : |
+  XXX
+"Fix" : |
+  XXX
+
+## 70 Attempt to upgrade from the GA release to version 1.0.1.10628 is stuck at `Update-KvaInternal`
+
+When attempting to upgrade AKS on Azure Stack HCI from the GA release to version 1.0.1.10628, if the `ClusterStatus` shows `OutOfPolicy`, you could be stuck at the _Update-KvaInternal_ stage of the upgrade installation. If you use the [repair-akshcicerts](./reference/ps/repair-akshcicerts.md) PowerShell cmdlet as a workaround, it also may not work. The AKS on Azure Stack HCI billing status must show as connected before upgrading. An AKS on Azure Stack HCI upgrade is forward only and doesn't support version rollback, so if you get stuck, you can’t upgrade.
