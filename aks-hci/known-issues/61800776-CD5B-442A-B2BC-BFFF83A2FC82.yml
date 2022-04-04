@@ -1,0 +1,15 @@
+
+"ID": "61800776-CD5B-442A-B2BC-BFFF83A2FC82"
+"Area": "known-issues-uninstall"
+"Reviewer": "abha"
+"ms.topic": "faq"
+"Schema": "doc"
+"Metatitle": "Troubleshoot issues when uninstalling AKS on Azure Stack HCI."
+"Metadescription": "Get help to troubleshoot issues and errors when uninstalling AKS on Azure Stack HCI."
+"title": "Fix known issues and errors when uninstalling AKS on Azure Stack HCI"
+"Summary": |
+  Use this topic to help you troubleshoot and resolve issues when uninstalling AKS on Azure Stack HCI.
+"Additionalcontent": |
+  ## Next steps
+  - [Troubleshooting overview](troubleshoot-overview.md)
+  - [Installation issues and errors](known-issues-installation.md)

@@ -1,0 +1,21 @@
+"ID" : "D8647C2D-2757-4E7F-8A46-0ED1C119D43B"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-arc"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  Error: `addons.msft.microsoft "demo-arc-onboarding" already exists`
+"Description" : |
+  This error usually means that you have already connected your AKS on Azure Stack HCI cluster to Arc enabled Kubernetes. 
+"Fix" : |
+  To confirm it's connected, go to the [Azure portal](https://portal.azure.com) and check under the subscription and resource group you provided when running [Set-AksHciRegistration](./reference/ps/set-akshciregistration.md) (if you've used default values) or [Enable-AksHciArcConnection](./reference/ps/enable-akshciarcconnection.md) (if you haven't used default values). You can also confirm if your AKS on Azure Stack HCI cluster is connected to Azure by running the [az connectedk8s show ](/cli/azure/connectedk8s#az-connectedk8s-show) Azure CLI command. If you do not see your workload cluster, run `Disable-AksHciArcConnection` and try again.

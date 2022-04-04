@@ -1,0 +1,25 @@
+"ID" : "2E732A1C-4B40-4B5D-80A2-DFADB10AE4A6"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-arc"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  Enable-AksHciArcConnection fails if Connect-AzAccount is used to log in to Azure
+"Description" : |
+  When you use [Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount?view=azps-6.4.0&preserve-view=true) to log in to Azure, you might end up setting a different subscription as your default context than the one that you gave as an input to [Set-AksHciRegistration](./reference/ps/set-akshciregistration.md). When you then run [Enable-AksHciArcConnection](./reference/ps/enable-akshciarcconnection.md), the command expects the subscription used in `Set-AksHciRegistration`. However, `Enable-AksHciArcConnection` gets the default subscription set using the `Connect-AzAccount`, and therefore, might cause an error. 
+"Fix" : |
+    To prevent this error, follow one of the options below:
+
+    - Option 1: Run `Set-AksHciRegistration` to log in to Azure with the same parameters (subscription and resource group) you used when you first ran the command to connect your AKS host to Azure for billing. You can then use `Enable-AksHciArcConnection -Name <ClusterName>` with default values, and your cluster will be connected to Arc under the AKS host billing subscription and resource group. 
+
+    - Option 2: Run `Enable-AksHciArcRegistration` with all parameters, `subscription`, `resource group`, `location`, `tenant`, and `secret`, to connect your cluster to Azure Arc under a different subscription and resource group than the AKS host. You should also run `Enable-AksHciArcRegistration` if you do not have enough permissions to connect your cluster to Azure Arc using your Azure Account (for example, if you are not the subscription owner).

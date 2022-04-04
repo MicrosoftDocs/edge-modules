@@ -1,0 +1,26 @@
+"ID" : "D24CEA6D-9395-4FC9-982A-7CB6E34497DB"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-networking"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  Network proxy server blocks HTTP requests
+"Description" : |
+  When applying the platform configuration, the network proxy server blocked HTTP requests originating from the user agent string **Google Chrome 65** because this string is an out-of-date user agent client. 
+"Fix" : |
+  The user agent will be updated to **Google Chrome 91** in the next release.
+
+
+
+
+

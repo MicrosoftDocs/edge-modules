@@ -1,0 +1,29 @@
+"ID" : "E8B67BA3-F5AC-450A-89CE-124FD466642B"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-arc"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  Error: `autorest/azure: Service returned an error. Status=404 Code="ResourceNotFound"...`
+"Description" : |
+  The error below means that Azure could not find the `connectedCluster` ARM resource associated with your cluster:
+
+  `autorest/azure: Service returned an error. Status=404 Code="ResourceNotFound" Message="The Resource 'Microsoft.Kubernetes/connectedClusters/my-workload-cluster' under resource group 'AKS-HCI2' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix"]`
+
+  You may encounter this error if: 
+
+  - You supplied an incorrect resource group or subscription while running the `Disable-AksHciArcConnection` cmdlet. 
+  - You manually deleted the resource on the Azure portal.
+  - ARM cannot find your Azure resource.
+"Fix" : |
+  To resolve this error, as indicated in the error message, see [resolve resource not found errors](/azure/azure-resource-manager/templates/error-not-found).

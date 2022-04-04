@@ -1,0 +1,21 @@
+"ID" : "DEE7E8FE-CE51-4469-872B-01D60FBC5672"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-uninstall"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  Running Remove-AksHciCluster results in the error: `A workload cluster with the name 'my-workload-cluster' was not found`
+"Description" : |
+  If may encounter this error when running [Remove-AksHciCluster](./reference/ps/remove-akshcicluster.md).
+"Fix" : |
+  Check to make sure you have used the correct information for removing the cluster.

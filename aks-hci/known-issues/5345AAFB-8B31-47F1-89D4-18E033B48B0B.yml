@@ -1,0 +1,21 @@
+"ID" : "5345AAFB-8B31-47F1-89D4-18E033B48B0B"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-installation"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  Error: `Install-MOC failed with the error - the process cannot access the file \<path> because it is being used by another process.`
+"Description" : |
+  The file cannot be access because it is being used by another process.
+"Fix" : |
+  You can resolve this issue by restarting your PowerShell session. Close the PowerShell window and try Install-MOC again.
