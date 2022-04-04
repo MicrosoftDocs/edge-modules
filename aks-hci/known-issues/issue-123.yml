@@ -1,0 +1,54 @@
+"ID" : "03C07C02-120F-4FD2-965F-BC3B7FB3D780"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "digwig"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  XXX
+"Description" : |
+  XXX
+"Fix" : |
+  XXX
+
+## 123 When running AksHci PowerShell cmdlets, an `Unable to Load DLL` error appears
+
+Antivirus software may be causing this error by blocking the execution of PowerShell binaries that are required to perform cluster operations. An example of a similar error is shown below:
+
+[ ![Deployment: Connecting to remote server localhost failed.](media/known-issues/get-akshcicluster-error.png) ](media/known-issues/get-akshcicluster-error.png#lightbox)
+
+To resolve this issue, verify the following processes and folders (which are required to perform AKS on Azure Stack HCI cluster operations) are excluded from the antivirus software:
+
+Processes:
+- kubectl.exe
+- kvactl.exe
+- mocctl.exe
+- nodectl.exe
+- wssdagent.exe
+- wssdcloudagent.exe
+- kubectl-adsso.exe
+- AksHciHealth.exe
+
+Folders:
+- C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\
+- C:\Program Files\WindowsPowerShell\Modules\TraceProvider\
+- C:\Program Files\WindowsPowerShell\Modules\AksHci\
+- C:\Program Files\WindowsPowerShell\Modules\Az.Accounts\
+- C:\Program Files\WindowsPowerShell\Modules\Az.Resources\
+- C:\Program Files\WindowsPowerShell\Modules\AzureAD\
+- C:\Program Files\WindowsPowerShell\Modules\DownloadSdk\
+- C:\Program Files\WindowsPowerShell\Modules\Kva\
+- C:\Program Files\WindowsPowerShell\Modules\Microsoft.SME.CredSspPolicy\
+- C:\Program Files\WindowsPowerShell\Modules\Moc\
+- C:\Program Files\WindowsPowerShell\Modules\PackageManagement\
+- C:\Program Files\AksHci\
+- C:\AksHci\

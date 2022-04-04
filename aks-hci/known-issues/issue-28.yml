@@ -1,0 +1,70 @@
+"ID" : "03C07C02-120F-4FD2-965F-BC3B7FB3D780"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "digwig"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-installation"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  XXX
+"Description" : |
+  XXX
+"Fix" : |
+  XXX
+
+## 28 Install-AksHci timed out with the error `Waiting for API server`
+
+After running [Install-AksHci](./reference/ps/install-akshci.md), the installation stopped and displayed the following error message:
+
+```Output
+\kubectl.exe --kubeconfig=C:\AksHci\0.9.7.3\kubeconfig-clustergroup-management 
+get akshciclusters -o json returned a non zero exit code 1 
+[Unable to connect to the server: dial tcp 192.168.0.150:6443: 
+connectex: A connection attempt failed because the connected party 
+did not properly respond after a period of time, or established connection 
+failed because connected host has failed to respond.]
+```
+
+There are multiple reasons why an installation might fail with the `waiting for API server` error. See the following sections for possible causes and solutions for this error.
+
+### Reason 1: Incorrect IP gateway configuration
+If you're using static IP and you received the following error message, confirm that the configuration for the IP address and gateway is correct. 
+```PowerShell
+Install-AksHci 
+C:\AksHci\kvactl.exe create --configfile C:\AksHci\yaml\appliance.yaml  --outfile C:\AksHci\kubeconfig-clustergroup-management returned a non zero exit code 1 [ ]
+```
+
+To check whether you have the right configuration for your IP address and gateway, run the following: 
+
+```powershell
+ipconfig /all
+```
+
+In the displayed configuration settings, confirm the configuration. You could also attempt to ping the IP gateway and DNS server. 
+
+If these methods don't work, use [New-AksHciNetworkSetting](./reference/ps/new-akshcinetworksetting.md) to change the configuration.
+
+### Reason 2: Incorrect DNS server
+If you're using static IP, confirm that the DNS server is correctly configured. To check the host's DNS server address, use the following command:
+
+```powershell
+Get-NetIPConfiguration.DNSServer | ?{ $_.AddressFamily -ne 23} ).ServerAddresses
+```
+
+Confirm that the DNS server address is the same as the address used when running `New-AksHciNetworkSetting` by running the following command:
+
+```powershell
+Get-MocConfig
+```
+
+If the DNS server has been incorrectly configured, reinstall AKS on Azure Stack HCI with the correct DNS server. For more information, see [Restart, remove, or reinstall Azure Kubernetes Service on Azure Stack HCI ](./restart-cluster.md).
+
+The issue was resolved after deleting the configuration and restarting the VM with a new configuration.

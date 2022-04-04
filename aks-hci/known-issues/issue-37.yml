@@ -1,0 +1,41 @@
+"ID" : "03C07C02-120F-4FD2-965F-BC3B7FB3D780"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "digwig"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-networking"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  XXX
+"Description" : |
+  XXX
+"Fix" : |
+  XXX
+
+## 37 Get-AksHCIClusterNetwork does not show the current allocation of IP addresses
+Running the [Get-AksHciClusterNetwork](./reference/ps/get-akshciclusternetwork.md) command provides a list of all virtual network configurations. However, the command does not show the current allocation of the IP addresses. To find out what IP addresses are currently in use in a virtual network, use the steps below:
+
+1. To get the group, run the following command:
+
+   ```powershell
+   Get-MocGroup -location MocLocation
+   ```
+2. To get the list of IP addresses that are currently in use, and the list of available or used virtual IP addresses, run the following command:
+
+   ```powershell
+   Get-MocNetworkInterface -Group <groupName> | ConvertTo-Json -depth 10
+   ```
+
+3. Use the following command to view the list of virtual IP addresses that are currently in use: 
+
+   ```powershell
+   Get-MocLoadBalancer -Group <groupName> | ConvertTo-Json -depth 10
+   ```

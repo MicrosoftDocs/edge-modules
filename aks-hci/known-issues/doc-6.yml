@@ -1,0 +1,24 @@
+/Volumes/Furst/mattbriggs/Git/azure-stack-docs-pr/azure-stack/aks-hci/known-issues-arc.md
+
+---
+title: Resolve errors when enabling and disabling Azure Arc on AKS on Azure Stack HCI workload clusters
+description: Find solutions to known issues and errors when enabling and disabling Azure Arc on AKS on Azure Stack HCI workload clusters
+author: mattbriggs
+ms.topic: troubleshooting
+ms.date: 12/13/2021
+ms.author: mabrigg 
+ms.lastreviewed: 1/14/2022
+ms.reviewer: abha
+
+---
+
+# Resolve errors when enabling or disabling Azure Arc on your AKS workload clusters
+
+This article describes errors you may encounter (and their workarounds) while connecting or disconnecting your AKS on Azure Stack HCI workload clusters to Azure Arc using the PowerShell cmdlets [Enable-AksHciArcConnection](./reference/ps/enable-akshciarcconnection.md) and [Disable-AksHciArcConnection](./reference/ps/disable-akshciarcconnection.md). For issues that are not covered in this article, see [troubleshooting Arc enabled Kubernetes](/azure/azure-arc/kubernetes/troubleshooting).
+
+You can also [open a support issue](./help-support.md) if none of the workarounds listed below apply to you.
+
+## Next steps
+
+- [Troubleshooting Arc enabled Kubernetes](/azure/azure-arc/kubernetes/troubleshooting)
+- [Known issues](./known-issues.md)

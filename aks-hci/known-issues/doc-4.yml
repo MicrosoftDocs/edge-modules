@@ -1,0 +1,22 @@
+/Volumes/Furst/mattbriggs/Git/azure-stack-docs-pr/azure-stack/aks-hci/known-issues-networking.md
+
+---
+title: Troubleshoot networking issues and errors in Azure Kubernetes Service on Azure Stack HCI 
+description: Get help to troubleshoot networking issues and errors in Azure Kubernetes Service on Azure Stack HCI.
+author: mattbriggs
+ms.topic: troubleshooting
+ms.date: 12/13/2021
+ms.author: mabrigg 
+ms.lastreviewed: 1/14/2022
+ms.reviewer: abha
+
+---
+
+# Fix known issues and errors when configuring a network
+
+Use this topic to help you troubleshoot and resolve networking-related issues in AKS on Azure Stack HCI.
+
+## Next steps
+- [Troubleshooting overview](troubleshoot-overview.md)
+- [Installation issues and errors](known-issues-installation.md)
+- [Storage known issues](known-issues-storage.md)
