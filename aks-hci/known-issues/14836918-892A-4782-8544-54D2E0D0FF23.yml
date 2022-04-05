@@ -1,0 +1,51 @@
+"ID" : "14836918-892A-4782-8544-54D2E0D0FF23"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-workload-clusters"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  The certificate renewal pod is in a crash loop state
+"Description" : |
+  After upgrading or scaling up the workload cluster, the certificate renewal pod is now in a crash loop state because the pod is expecting the certificate tattoo YAML file from the file location `/etc/Kubernetes/pki`.
+
+  This issue may be due to a configuration file that's present in the control plane VMs but not in the worker node VMs. 
+"Fix" : |
+  To resolve this issue, manually copy the certificate tattoo YAML file from the control plane node to all worker nodes.
+
+  1. Copy the YAML file from control plane VM on the workload cluster to the current directory of your host machine:
+    
+    ```
+    ssh clouduser@<comtrol-plane-vm-ip> -i (get-mocconfig).sshprivatekey
+    sudo cp /etc/kubernetes/pki/cert-tattoo-kubelet.yaml ~/
+    sudo chown clouduser cert-tattoo-kubelet.yaml
+    sudo chgrp clouduser cert-tattoo-kubelet.yaml
+    (Change file permissions here, so that `scp` will work)
+    scp -i (get-mocconfig).sshprivatekey clouduser@<comtrol-plane-vm-ip>:~/cert*.yaml .\
+    ```
+
+  1. Copy the YAML file from the host machine to the worker node VM. Before you copy the file, you must change the name of the machine in the YAML file to the node name to which you're copying (this is the node name for the workload cluster control plane).
+
+    ```
+    scp -i (get-mocconfig).sshprivatekey .\cert-tattoo-kubelet.yaml clouduser@<workernode-vm-ip>:~/cert-tattoo-kubelet.yaml
+    ```
+
+  3. If the owner and group information in the YAML file isn't already set to root, set the information to the root:
+
+    ```
+    ssh clouduser@<workernode-vm-ip> -i (get-mocconfig).sshprivatekey
+    sudo cp ~/cert-tattoo-kubelet.yaml /etc/kubernetes/pki/cert-tattoo-kubelet.yaml (copies the certificate file to the correct location)
+    sudo chown root cert-tattoo-kubelet.yaml
+    sudo chgrp root cert-tattoo-kubelet.yaml
+    ```
+
+  4. Repeat steps 2 and 3 for all worker nodes.
