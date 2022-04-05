@@ -1,0 +1,21 @@
+"ID" : "26CB82A1-715B-45E2-954C-5462C0FF76DF"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-workload-clusters"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  PowerShell deployment doesn't check for available memory before creating a new workload cluster
+"Description" : |
+  The **Aks-Hci** PowerShell commands don't validate the available memory on the host server before creating Kubernetes nodes. This issue can lead to memory exhaustion and virtual machines that don't start. 
+"Fix" : |
+  This failure is currently not handled gracefully, and the deployment will stop responding with no clear error message. If you have a deployment that stops responding, open Event Viewer and check for a Hyper-V-related error message indicating there's not enough memory to start the VM.

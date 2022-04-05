@@ -1,4 +1,4 @@
-"ID" : "guid"
+"ID" : "0DC30E06-EAE9-4D34-A304-F9C8A839BAD3"
 "Status": "Active"
 "Create Date" : "3/26/2022"
 "Review Date" : "3/26/2022"
@@ -14,11 +14,11 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  XXX
+  When using large clusters, the Get-AksHciLogs command may fail with an exception
 "Description" : |
-  XXX
+  With large clusters, the `Get-AksHciLogs` command may throw an exception, fail to enumerate nodes, or won't generate the c:\wssd\wssdlogs.zip output file.
 "Fix" : |
-  XXX
+  This is because the PowerShell command to zip a file, Compress-Archive, has an output file size limit of 2GB. 
 
-## 115 The Windows or Linux node count can’t be seen when Get-AksHciCluster is run
-If you provision an AKS cluster on Azure Stack HCI with zero Linux or Windows nodes, when you run [Get-AksHciCluster](./reference/ps/get-akshcicluster.md), you'll get an empty string or null value as your output.
+
+

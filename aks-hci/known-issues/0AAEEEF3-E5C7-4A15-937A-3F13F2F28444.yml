@@ -1,0 +1,21 @@
+"ID" : "0AAEEEF3-E5C7-4A15-937A-3F13F2F28444"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  Error: invalid_client. The provided client secret keys are expired
+"Description" : |
+  This error usually occurs when service principal (SPN) secret you used when running the PowerShell cmdlet running **Enable-AksHciArcConnection** expired. 
+"Fix" : |
+  Visit the Azure Portal to create a new secret for your service principal (SPN). You can also use [certificate credentials for added security](/azure/active-directory/develop/active-directory-certificate-credentials). For example of using the cmdlet, see [Enable-AksHciArcConnection](./reference/ps/enable-akshciarcconnection.md).
