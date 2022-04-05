@@ -1,0 +1,42 @@
+"ID" : "76B7F135-AB71-4DFE-9AC1-4B7D910ED230"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-upgrade"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  ## 74 When upgrading a deployment, some pods might be stuck at _waiting for static pods to have a ready condition_
+"Description" : |
+  Pods stuck at _waiting for static pods to have a ready condition_.
+"Fix" : |
+  To release the pods and resolve this issue, you should restart _kubelet_. To view the NotReady node with the static pods, run the following command: 
+
+  ```Console
+  kubectl get nodes -o wide
+  ```
+
+  To get more information on the faulty node, run the following command:
+
+  ```Console
+  kubectl describe node <IP of the node>
+  ```
+
+  Use SSH to log into the NotReady node by running the following command:
+  ```
+  ssh -i <path of the private key file> administrator@<IP of the node>
+  ```
+
+  Then, to restart _kubelet_, run the following command: 
+
+  ```powershell
+  /etc/.../kubelet restart
+  ```

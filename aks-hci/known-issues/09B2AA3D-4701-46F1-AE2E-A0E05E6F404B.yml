@@ -1,4 +1,4 @@
-"ID" : "guid"
+"ID" : "09B2AA3D-4701-46F1-AE2E-A0E05E6F404B"
 "Status": "Active"
 "Create Date" : "3/26/2022"
 "Review Date" : "3/26/2022"
@@ -14,12 +14,8 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  XXX
+  The Setup or Cluster Create wizard displays an error about a wrong configuration
 "Description" : |
-  XXX
+  You may receive an error in either wizard about a wrong configuration.
 "Fix" : |
-  XXX
-
-
-## 91 Error occurs when attempting to use Windows Admin Center
-For CredSSP to function successfully in the Cluster Create wizard, Windows Admin Center must be installed and used by the same account. If you install Windows Admin Center with one account and try to use it with another, you'll get errors.
+  Perform cluster cleanup operations. These operations might involve removing the `C:\Program Files\AksHci\mocctl.exe` file.

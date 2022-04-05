@@ -1,4 +1,4 @@
-"ID" : "guid"
+"ID" : "F7E263F4-B0D2-4FF2-A1B0-5407DB28712A"
 "Status": "Active"
 "Create Date" : "3/26/2022"
 "Review Date" : "3/26/2022"
@@ -14,13 +14,8 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  XXX
+  Error occurs when attempting to use Windows Admin Center
 "Description" : |
-  XXX
+  If you install Windows Admin Center with one account and try to use it with another, you'll get errors.
 "Fix" : |
-  XXX
-
-
-
-## 92 On Windows Admin Center, the message `error occurred while creating service principal` appears while installing an AKS host on Azure Stack HCI
-You will get this error if you have disabled pop-ups. Google Chrome blocks pop-ups by default, and therefore, the Azure sign-in pop-up is blocked and causes the service principal error.
+  For CredSSP to function successfully in the Cluster Create wizard, Windows Admin Center must be installed and used by the same account.

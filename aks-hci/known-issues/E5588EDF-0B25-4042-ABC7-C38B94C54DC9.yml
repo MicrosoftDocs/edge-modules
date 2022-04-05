@@ -1,0 +1,31 @@
+"ID" : "E5588EDF-0B25-4042-ABC7-C38B94C54DC9"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-windows-admin-center"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  During deployment the error `No match was found for the specified search criteria for the provider 'NuGet'` appears
+"Description" : |
+  This error appears when deploying through Windows Admin Center. The package provider requires the `PackageManagement` and `Provider` tags. You should check if the specified package has tags error when attempting a deployment through Windows Admin Center. 
+
+  This is an error occurs from PowerShell and states that there are internet connectivity issues. PowerShell is trying to install the pre-requisites package and is unable to install it. 
+"Fix" : |
+  Check to make sure the server or failover cluster has internet connectivity and then start a fresh installation.
+
+  In Stage 2.1: System Validation, there may be an error when you hit install: `No match was found for the specified search criteria for the provider 'NuGet'. The package provider requires 'PackageManagement' and 'Provider' tags. Please check if the specified package has the tags.`
+  For the PowerShell commands, please complete them on the node(s) that you are trying to deploy to. You will have to manually install the NuGet using the PowerShell command below: 
+  ```powershell-interactive
+  Install-PackageProvider -Name NuGet -Scope CurrentUser -Force
+
+  ```
+  After running that command, please close all open PowerShell windows and try again in Windows Admin Center.

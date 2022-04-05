@@ -1,4 +1,4 @@
-"ID" : "guid"
+"ID" : "07308189-9F56-46C0-AD2D-E7FB985D86DF"
 "Status": "Active"
 "Create Date" : "3/26/2022"
 "Review Date" : "3/26/2022"
@@ -14,11 +14,8 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  XXX
+  Recovering from a failed AKS on Azure Stack HCI deployment
 "Description" : |
-  XXX
+  You are experiencing deployment issues or want to reset your deployment.
 "Fix" : |
-  XXX
-
-## 86 Cannot deploy AKS to an environment that has separate storage and compute clusters
-Windows Admin Center will not deploy Azure Kubernetes Service to an environment with separate storage and compute clusters as it expects the compute and storage resources to be provided by the same cluster. In most cases, it will not find CSVs exposed by the compute cluster and will refuse to continue with deployment.
+  Close all Windows Admin Center instances connected to Azure Kubernetes Service on Azure Stack HCI before running [Uninstall-AksHci](./reference/ps/uninstall-akshci.md) from a PowerShell administrative window.  

@@ -1,4 +1,4 @@
-"ID" : "guid"
+"ID" : "F91E900B-457E-4897-B016-3DB2A606A1F6"
 "Status": "Active"
 "Create Date" : "3/26/2022"
 "Review Date" : "3/26/2022"
@@ -14,11 +14,11 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  XXX
+  The error `Cannot index into a null array` appears when creating an Arc enabled workload cluster
 "Description" : |
-  XXX
+  This error appears when moving from PowerShell to Windows Admin Center to create an Arc enabled workload cluster. 
 "Fix" : |
-  XXX
+  You can safely ignore this error as it is part of the validation step, and the cluster has already been created. 
 
-## 90 A timeout error appears when trying to connect an AKS workload cluster to Azure Arc through Windows Admin Center
-Sometimes, due to network issues, Windows Admin Center times out an Arc connection. Use the PowerShell command [Enable-AksHciArcConnection](./reference/ps/enable-akshciarcconnection.md) to connect the AKS workload cluster to Azure Arc while we actively work on improving the user experience.
+
+
