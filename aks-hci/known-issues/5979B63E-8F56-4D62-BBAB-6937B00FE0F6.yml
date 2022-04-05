@@ -1,4 +1,4 @@
-"ID" : "guid"
+"ID" : "5979B63E-8F56-4D62-BBAB-6937B00FE0F6"
 "Status": "Active"
 "Create Date" : "3/26/2022"
 "Review Date" : "3/26/2022"
@@ -14,12 +14,8 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  XXX
+  Running Remove-AksHciCluster results in the error: `A workload cluster with the name 'my-workload-cluster' was not found`
 "Description" : |
   XXX
 "Fix" : |
-  XXX
-
-## 129 Transport: Error while dialing dial unix /var/run/moc-kms-plugin/kmsPlugin.sock: connect: no such file or directory
-
-This error happens when the KMS plugin on your AKS-HCI target cluster has stopped running, because of an expired KMS plugin token. Run [Repair-AksHciCerts](./reference/ps/repair-akshcicerts.md) to fix this issue.
+  If you encounter this error when running [Remove-AksHciCluster](./reference/ps/remove-akshcicluster.md), you should check to make sure you have used the correct information for removing the cluster.

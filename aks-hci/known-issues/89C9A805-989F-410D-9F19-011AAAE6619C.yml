@@ -1,4 +1,4 @@
-"ID" : "guid"
+"ID" : "89C9A805-989F-410D-9F19-011AAAE6619C"
 "Status": "Active"
 "Create Date" : "3/26/2022"
 "Review Date" : "3/26/2022"
@@ -14,11 +14,8 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  XXX
+  New-AksHciCluster times out when creating an AKS cluster with 200 nodes 
 "Description" : |
-  XXX
+  The deployment of a large cluster may time out after two hours, however, this is a static time-out.
 "Fix" : |
-  XXX
-
-  ## 114 When using large clusters, the Get-AksHciLogs command may fail with an exception
-With large clusters, the `Get-AksHciLogs` command may throw an exception, fail to enumerate nodes, or won't generate the c:\wssd\wssdlogs.zip output file. This is because the PowerShell command to zip a file, Compress-Archive, has an output file size limit of 2GB. 
+  You can ignore this time out occurrence as the operation is running in the background. Use the `kubectl get nodes` command to access your cluster and monitor the progress.
