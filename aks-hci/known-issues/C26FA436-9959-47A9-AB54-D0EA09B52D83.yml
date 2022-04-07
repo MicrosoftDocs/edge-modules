@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Running Remove-AksHciCluster results in the error: `Error: unable to delete group clustergroup-spdb:...`
+  Running Remove-AksHciCluster results in the error: 'Error: unable to delete group clustergroup-spdb:...'.
 "Description" : |
   When running [Remove-AksHciCluster](./reference/ps/remove-akshcicluster.md), the following error occurs because there may be a deadlock:
 

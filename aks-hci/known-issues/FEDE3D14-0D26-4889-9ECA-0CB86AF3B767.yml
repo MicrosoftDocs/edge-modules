@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-   When using PowerShell to upgrade, an excess number of Kubernetes configuration secrets is created on a cluster
+  When using PowerShell to upgrade, an excess number of Kubernetes configuration secrets is created on a cluster.
 "Description" : |
    The June 1.0.1.10628 build of AKS on Azure Stack HCI creates an excess number of Kubernetes configuration secrets in the cluster. The upgrade path from the June 1.0.1.10628 release to the July 1.0.2.10723 release was improved to clean up the extra Kubernetes secrets. However, in some cases during upgrading, the secrets were still not cleaned up, and therefore, the upgrade process fails.
 "Fix" : |

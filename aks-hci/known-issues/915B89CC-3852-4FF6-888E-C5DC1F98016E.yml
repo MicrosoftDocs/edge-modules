@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When upgrading a Kubernetes cluster with an Open Policy Agent, the upgrade process hangs
+  When upgrading a Kubernetes cluster with an Open Policy Agent, the upgrade process hangs.
 "Description" : |
   When upgrading Kubernetes clusters with an Open Policy Agent (OPA), such as OPA GateKeeper, the process may hang and unable to complete. This issue can occur because the policy agent is configured to prevent pulling container images from private registries.
 "Fix" : |

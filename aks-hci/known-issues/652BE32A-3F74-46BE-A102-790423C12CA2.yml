@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  AKS on Azure Stack HCI goes out-of-policy if a workload cluster hasn't been created in 60 days
+  AKS on Azure Stack HCI goes out-of-policy if a workload cluster hasn't been created in 60 days.
 "Description" : |
   If you created a management cluster but haven't deployed a workload cluster in the first 60 days, you'll be blocked from creating one after that because it's out-of-policy. In this situation, when you run [Update-AksHci](./reference/ps/update-akshci.md), the update process is blocked with the error _Waiting for deployment 'AksHci Billing Operator' to be ready_. If you run [Sync-AksHciBilling](./reference/ps/sync-akshcibilling.md), it returns successful output, however, if you run [Get-AksHciBillingStatus](./reference/ps/get-akshcibillingstatus.md), the connection status is _OutofPolicy_.
 

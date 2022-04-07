@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Nodeagent leaking ports when unable to join cloudagent due to expired token when cluster not upgraded for more than 60 days
+  Nodeagent leaking ports when unable to join cloudagent due to expired token when cluster not upgraded for more than 60 days.
 "Description" : |
   When cluster not upgraded for more than 60 days. The node agent would fail to start due to token expiry on restart of node agent. This would cause the agents to be in starting phase. The continuous try to join the cloudagent may exhaust the ports in the host. The status for the below command would be **Starting**.
 

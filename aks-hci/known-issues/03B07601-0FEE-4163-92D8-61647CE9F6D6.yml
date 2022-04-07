@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When running AksHci PowerShell cmdlets, an `Unable to Load DLL` error appears
+  When running AksHci PowerShell cmdlets, an 'Unable to Load DLL' error appears.
 "Description" : |
   Antivirus software may be causing this error by blocking the execution of PowerShell binaries that are required to perform cluster operations. An example of a similar error is shown below:
 

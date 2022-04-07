@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: `A workload cluster with the name 'my-aks-cluster' was not found`
+  Error: 'A workload cluster with the name 'my-aks-cluster' was not found'.
 "Description" : |
   This error means that you have not created the workload cluster, or you have incorrectly spelled the name of the workload cluster. 
 "Fix" : |

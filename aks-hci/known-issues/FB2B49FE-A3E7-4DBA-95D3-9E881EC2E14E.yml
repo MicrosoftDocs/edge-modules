@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Restarting Azure Stack HCI nodes causes timing issue
+  Restarting Azure Stack HCI nodes causes timing issue.
 "Description" : |
   Restarting the Azure Stack HCI cluster nodes hosting the management cluster and workload clusters may cause the workload clusters to disappear from the WAC dashboard. 
 "Fix" : |

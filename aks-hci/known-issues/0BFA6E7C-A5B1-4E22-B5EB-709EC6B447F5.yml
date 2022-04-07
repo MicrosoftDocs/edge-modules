@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Running the Remove-ClusterNode command evicts the node from the failover cluster, but the node still exists
+  Running the Remove-ClusterNode command evicts the node from the failover cluster, but the node still exists.
 "Description" : |
   When running the [Remove-ClusterNode](/powershell/module/failoverclusters/remove-clusternode?view=windowsserver2019-ps&preserve-view=true) command, the node is evicted from the failover cluster, but if [Remove-AksHciNode](./reference/ps/remove-akshcinode.md) isn't run afterwards, the node will still exist in CloudAgent.
 

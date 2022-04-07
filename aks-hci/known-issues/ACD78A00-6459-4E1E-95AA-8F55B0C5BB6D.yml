@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Delete KVA certificate if expired after 60 days
+  Delete KVA certificate if expired after 60 days.
 "Description" : |
   KVA certificate expires after 60 day if no upgrade is performed.
 

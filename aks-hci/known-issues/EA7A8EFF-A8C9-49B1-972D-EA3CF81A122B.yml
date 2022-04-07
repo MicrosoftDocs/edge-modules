@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: `Cluster addons arc uninstall Error: namespaces "azure-arc" not found`
+  Error: 'Cluster addons arc uninstall Error: namespaces "azure-arc" not found'.
 "Description" : |
   This error usually means that you have already uninstalled Arc agents from your workload cluster, or you have manually deleted the `azure-arc` namespace using the `kubectl` command. 
 "Fix" : |

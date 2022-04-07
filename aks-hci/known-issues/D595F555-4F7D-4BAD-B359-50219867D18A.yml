@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  If a cluster is shut down for more than four days, the cluster will be unreachable
+  If a cluster is shut down for more than four days, the cluster will be unreachable.
 "Description" : |
   When you shut down a management or workload cluster for more than four days, the certificates expire and the cluster is unreachable. The certificates expire because they're rotated every 3-4 days for security reasons.
 "Fix" : |

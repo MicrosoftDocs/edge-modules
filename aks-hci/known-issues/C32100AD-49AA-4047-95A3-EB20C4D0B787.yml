@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When deploying AKS on Azure Stack HCI with a misconfigured network, deployment timed out at various points
+  When deploying AKS on Azure Stack HCI with a misconfigured network, deployment timed out at various points.
 "Description" : |
   When deploying AKS on Azure Stack HCI, the deployment may time out at different points of the process depending on where the misconfiguration occurred. You should review the error message to determine the cause and where it occurred.
 

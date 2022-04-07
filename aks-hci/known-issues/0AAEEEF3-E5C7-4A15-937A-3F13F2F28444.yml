@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: invalid_client. The provided client secret keys are expired
+  Error: invalid_client. The provided client secret keys are expired.
 "Description" : |
   This error usually occurs when service principal (SPN) secret you used when running the PowerShell cmdlet running **Enable-AksHciArcConnection** expired. 
 "Fix" : |

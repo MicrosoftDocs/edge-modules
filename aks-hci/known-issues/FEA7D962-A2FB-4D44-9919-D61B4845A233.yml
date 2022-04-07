@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Cannot deploy AKS to an environment that has separate storage and compute clusters
+  Cannot deploy AKS to an environment that has separate storage and compute clusters.
 "Description" : |
   Windows Admin Center will not deploy Azure Kubernetes Service to an environment with separate storage and compute clusters as it expects the compute and storage resources to be provided by the same cluster. In most cases, it will not find CSVs exposed by the compute cluster and will refuse to continue with deployment.
 "Fix" : |

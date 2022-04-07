@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error:  `Install-Moc failed with error - [The object already exists] An error occurred while creating resource 'IPv4 Address xxx.xx.xx.xx' for the clustered role 'xx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx'
+  Error:  Install-Moc failed with error - [The object already exists] An error occurred while creating resource 'IPv4 Address xxx.xx.xx.xx' for the clustered role 'xx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx'
 "Description" : |
   A previously installed feature remains in a failed state and has not been cleared. You may see the following error:
 

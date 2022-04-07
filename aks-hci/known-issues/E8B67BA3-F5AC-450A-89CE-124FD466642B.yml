@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: `autorest/azure: Service returned an error. Status=404 Code="ResourceNotFound"...`
+  Error: 'autorest/azure: Service returned an error. Status=404 Code="ResourceNotFound"...'.
 "Description" : |
   The error below means that Azure could not find the `connectedCluster` ARM resource associated with your cluster:
 

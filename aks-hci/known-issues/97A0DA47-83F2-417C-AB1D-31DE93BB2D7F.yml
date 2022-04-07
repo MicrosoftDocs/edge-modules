@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Update of host OS HCI to HCIv2 breaks AKS on Azure Stack HCI installation: OutOfCapacity 
+  Update of host OS HCI to HCIv2 breaks AKS on Azure Stack HCI installation: OutOfCapacity.
 "Description" : |
   Running an OS update on a host with an AKS on Azure Stack HCI deployment can cause the deployment to enter a bad state and fail day two operations. The MOC NodeAgent Services may fail to start on updated hosts. All MOC calls to the nodes will fail.
 

@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  The Windows or Linux node count can't be seen when Get-AksHciCluster is run
+  The Windows or Linux node count can't be seen when Get-AksHciCluster is run.
 "Description" : |
   If you provision an AKS cluster on Azure Stack HCI with zero Linux or Windows nodes, when you run [Get-AksHciCluster](./reference/ps/get-akshcicluster.md), you'll get an empty string or null value as your output.
 "Fix" : |

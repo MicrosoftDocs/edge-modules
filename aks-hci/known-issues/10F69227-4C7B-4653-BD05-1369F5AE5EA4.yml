@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Networking field names are inconsistent in the Windows Admin Center portal
+  Networking field names are inconsistent in the Windows Admin Center portal.
 "Description" : |
   There are inconsistencies in network field names showing up in the host cluster deployment flow, and the workload cluster deployment flow.
 "Fix" : |
