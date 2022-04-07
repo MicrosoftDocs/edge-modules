@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Transport: Error while dialing dial unix /var/run/moc-kms-plugin/kmsPlugin.sock: connect: no such file or directory
+  Transport: Error while dialing dial unix /var/run/moc-kms-plugin/kmsPlugin.sock: connect: no such file or directory.
 "Description" : |
   This error happens when the KMS plugin on your AKS-HCI target cluster has stopped running, because of an expired KMS plugin token. 
 "Fix" : |

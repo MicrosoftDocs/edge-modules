@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  A timeout error appears when trying to connect an AKS workload cluster to Azure Arc through Windows Admin Center
+  A timeout error appears when trying to connect an AKS workload cluster to Azure Arc through Windows Admin Center.
 "Description" : |
   Sometimes, due to network issues, Windows Admin Center times out an Arc connection. 
 "Fix" : |

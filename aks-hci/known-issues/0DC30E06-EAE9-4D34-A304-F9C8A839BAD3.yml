@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When using large clusters, the Get-AksHciLogs command may fail with an exception
+  When using large clusters, the Get-AksHciLogs command may fail with an exception.
 "Description" : |
   With large clusters, the `Get-AksHciLogs` command may throw an exception, fail to enumerate nodes, or won't generate the c:\wssd\wssdlogs.zip output file.
 "Fix" : |

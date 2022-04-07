@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Linux and Windows VMs weren't configured as highly available VMs when scaling a workload cluster
+  Linux and Windows VMs weren't configured as highly available VMs when scaling a workload cluster.
 "Description" : |
   When scaling out a workload cluster, the corresponding Linux and Windows VMs were added as worker nodes, but they weren't configured as highly available VMs. When running the [Get-ClusterGroup](/powershell/module/failoverclusters/get-clustergroup?view=windowsserver2019-ps&preserve-view=true) command, the newly created Linux VM wasn't configured as a Cluster Group.
 "Fix" : |

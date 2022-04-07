@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Windows Admin Center doesn't have an Arc offboarding experience
+  Windows Admin Center doesn't have an Arc offboarding experience.
 "Description" : |
   Windows Admin Center does not currently have a process to off board a cluster from Azure Arc.
 "Fix" : |

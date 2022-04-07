@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Enable-AksHciArcConnection fails if Connect-AzAccount is used to log in to Azure
+  Enable-AksHciArcConnection fails if Connect-AzAccount is used to log in to Azure.
 "Description" : |
   When you use [Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount?view=azps-6.4.0&preserve-view=true) to log in to Azure, you might end up setting a different subscription as your default context than the one that you gave as an input to [Set-AksHciRegistration](./reference/ps/set-akshciregistration.md). When you then run [Enable-AksHciArcConnection](./reference/ps/enable-akshciarcconnection.md), the command expects the subscription used in `Set-AksHciRegistration`. However, `Enable-AksHciArcConnection` gets the default subscription set using the `Connect-AzAccount`, and therefore, might cause an error. 
 "Fix" : |

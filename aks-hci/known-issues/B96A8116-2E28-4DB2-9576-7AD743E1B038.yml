@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When creating a new workload cluster, the error `Error: rpc error: code = DeadlineExceeded desc = context deadline exceeded` occurs
+  When creating a new workload cluster, the error 'Error: rpc error: code = DeadlineExceeded desc = context deadline exceeded` occurs.
 "Description" : |
   This is a known issue with the AKS on Azure Stack HCI July Update (version 1.0.2.10723). The error occurs because the CloudAgent service times out during distribution of virtual machines across multiple cluster shared volumes in the system. 
 "Fix" : |

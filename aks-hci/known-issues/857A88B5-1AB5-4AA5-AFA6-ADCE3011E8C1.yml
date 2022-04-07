@@ -14,9 +14,9 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-   Troubleshoot CredSSP issues
+  Troubleshoot CredSSP issues.
 "Description" : |
-   When deploying AKS on Azure Stack HCI using Windows Admin Center, and the deployment hangs for an extended period, you might be having Credential Security Support Provider (CredSSP) or connectivity problems. 
+  When deploying AKS on Azure Stack HCI using Windows Admin Center, and the deployment hangs for an extended period, you might be having Credential Security Support Provider (CredSSP) or connectivity problems. 
 "Fix" : |
   Try the following steps to troubleshoot your deployment:
    

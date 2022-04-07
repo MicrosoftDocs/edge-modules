@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  After a successful upgrade, older versions of PowerShell are not removed
+  After a successful upgrade, older versions of PowerShell are not removed.
 "Description" : |
   Older versions of PowerShell are not removed
 "Fix" : |

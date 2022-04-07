@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Moc agent log rotation is failing
+  Moc agent log rotation is failing.
 "Description" : |
   Moc agents are expected to keep only the last 100 agent logs. They are supposed to delete the older logs. However, the log rotation is not happening and logs keep getting accumulated consuming disk space.
 

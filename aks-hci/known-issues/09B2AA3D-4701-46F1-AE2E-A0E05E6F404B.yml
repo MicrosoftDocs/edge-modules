@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  The Setup or Cluster Create wizard displays an error about a wrong configuration
+  The Setup or Cluster Create wizard displays an error about a wrong configuration.
 "Description" : |
   You may receive an error in either wizard about a wrong configuration.
 "Fix" : |

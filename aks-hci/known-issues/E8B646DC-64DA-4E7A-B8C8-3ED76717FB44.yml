@@ -14,18 +14,18 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Unable to find repository 'PSGallery'
+  Unable to find repository 'PSGallery'.
 "Description" : |
   In stage 2.1: System Validation, you may encounter this error: `Unable to find repository 'PSGallery'.
 "Fix" : |
   Use Get-PSRepository to see all available repositories.` when you click install. For the PowerShell commands, please complete them on the node(s) that you are trying to deploy to. Please unregister and reregister the PSRepository in an administrative PowerShell window. Close all PowerShell windows afterward.
-  ```powershell-interactive
+  ```powershell
   Unregister-PSRepository -Name 'PSGallery'
   Register-PSRepository -Default
   ```
 
   Then, please uninstall and reinstall PowerShellGet in an administrative PowerShell window. Close all PowerShell windows afterwards.
-  ```powershell-interactive
+  ```powershell
   Uninstall-Module PowerShellGet
   Install-Module PowerShellGet -Force
   ```

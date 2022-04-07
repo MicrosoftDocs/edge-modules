@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Attempt to increase the number of worker nodes fails
+  Attempt to increase the number of worker nodes fails.
 "Description" : |
   When using PowerShell to create a cluster with static IP and then attempt to increase the number of worker nodes in the workload cluster, the installation got stuck at `control plane count at 2, still waiting for desired state: 3`. After a period of time, another error message appears: `Error: timed out waiting for the condition`.
 

@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When using kubectl to delete a node, the associated VM might not be deleted
+  When using kubectl to delete a node, the associated VM might not be deleted.
 "Description" : |
   You'll see this issue if you follow these steps:
 

@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Hyper-V manager shows high CPU and/or memory demands for the management cluster (AKS host)
+  Hyper-V manager shows high CPU and/or memory demands for the management cluster (AKS host).
 "Description" : |
   When you check Hyper-V manager, high CPU and memory demands for the management cluster can be safely ignored. They're related to spikes in compute resource usage when provisioning workload clusters. 
 "Fix" : |

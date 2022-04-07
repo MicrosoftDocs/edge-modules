@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-   The API server isn't responsive after several days
+   The API server isn't responsive after several days.
 "Description" : |
    When attempting to bring up an AKS on Azure Stack HCI deployment after a few days, `Kubectl` didn't execute any of its commands. The Key Management Service (KMS) plug-in log displayed the error message `rpc error:code = Unauthenticated desc = Valid Token Required_. After running [Repair-AksHciCerts](./reference/ps/repair-akshcicerts.md) to try to fix the issue, a different error appeared: _failed to repair cluster certificates`.
 
