@@ -8,12 +8,12 @@
 "Metadescription": "Find solutions to known issues and errors when installing Azure Kubernetes Service on Azure Stack HCI"
 "title": "Resolve issues and errors during an AKS on Azure Stack HCI installation"
 "Summary": |
-  This article describes known issues and errors you may encounter when running an installation of AKS on Azure Stack HCI. You can also review known issues with when [upgrading](known-issues-upgrade.md) and using [Windows Admin Center](known-issues-windows-admin-center.md).
+  This article describes known issues and errors you may encounter when running an installation of AKS on Azure Stack HCI. You can also review known issues with when [upgrading](/azure-stack/aks-hci/known-issues-upgrade) and using [Windows Admin Center](/azure-stack/aks-hci/known-issues-windows-admin-center).
 "Additionalcontent": |
   ## Next steps
   
   - [Troubleshooting overview](troubleshoot-overview.md)
-  - [Windows Admin Center known issues](known-issues-windows-admin-center.md)
+  - [Windows Admin Center known issues](/azure-stack/aks-hci/known-issues-windows-admin-center)
   - [Troubleshooting Kubernetes clusters](https://kubernetes.io/docs/tasks/debug-application-cluster/troubleshooting/)
   
   If you continue to run into problems when you're using Azure Kubernetes Service on Azure Stack HCI, you can file bugs through [GitHub](https://aka.ms/aks-hci-issues).

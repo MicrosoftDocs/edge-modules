@@ -16,7 +16,6 @@
 "Issue" : |
   When using kubectl to delete a node, the associated VM might not be deleted
 "Description" : |
-
   You'll see this issue if you follow these steps:
 
   1. Create a Kubernetes cluster.

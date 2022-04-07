@@ -24,7 +24,6 @@
 
   Expected behavior: the node agent would be in the starting phase, which will constantly try joining the cloud agent and exhausting the ports.
 "Fix" : |
-
   To resolve the issue, you'll need to first stop the wssdagent from running. Since the service is in starting phase, it may prevent you from stopping the service. You'll need to kill the process before attempting to stop the service.
 
   1. Confirm the wssdagent is in starting phase.
