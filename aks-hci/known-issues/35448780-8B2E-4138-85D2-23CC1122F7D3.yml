@@ -32,7 +32,7 @@
 
 "Fix" : |
   You will need to fix the proxy settings by changing the environmental variables on the machine.
-  On the machine, change hte variables with the following commands:
+  On the machine, change the variables with the following commands:
 
   ```bash
     [Environment]::SetEnvironmentVariable("https_proxy", <Value>, "Machine")

@@ -18,7 +18,7 @@
 "Description" : |
   With large clusters, the `Get-AksHciLogs` command may throw an exception, fail to enumerate nodes, or won't generate the c:\wssd\wssdlogs.zip output file.
 "Fix" : |
-  This is because the PowerShell command to zip a file, Compress-Archive, has an output file size limit of 2GB. 
+  This is because the PowerShell command to zip a file, Compress-Archive, has an output file size limit of 2 GB. 
 
 
 
