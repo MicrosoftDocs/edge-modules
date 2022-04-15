@@ -11,7 +11,7 @@
 "Source"  : "bugs"
 "Source ID"  : "38852792"
 "Source URL"  : "https://microsoft.visualstudio.com/OS/_workitems/edit/38852792"
-"Target URL"  : "https://docs.microsoft.com/azure-stack/aks-hci/known-issues-networking"
+"Target URL"  : "https://review.docs.microsoft.com/en-us/azure-stack/aks-hci/known-issues-networking?branch=pr-en-us-9827#the-wssdagent-service-is-stuck-while-starting-and-fails-to-connect-to-the-cloud-agent-"
 "Schema" : "known-issue"
 "Issue" : |
   The WSSDAgent service is stuck while starting and fails to connect to the cloud agent.
@@ -25,7 +25,7 @@
   - When you pass the `--noproxy` flag to curl.exe, this fixes the problem. Curl returns an error from from wssdcloudagent. This is expected since curl is not a GRPC client. Curl doesn't get stuck waiting when you send the `--noproxy` flag. So returning an error is considered a success here):
 
   ```bash
-  curl.exe --noproxy '*' https://<computerIP>:65000`
+  curl.exe --noproxy '*' https://<computerIP>:65000
   ```
 
   It is likely the proxy settings were changed to a faulty proxy on the host. The proxy settings for AKS on Azure Stack HCI are environment variables that are inherited from the parent process on the host. These settings only get propagated when a new service starts or an old one updates or reboots. It is possible faulty proxy settings were set on the host and they were propagated to the WSSDAgent after an update or reboot, which has caused the WSSDAgent to fail.
