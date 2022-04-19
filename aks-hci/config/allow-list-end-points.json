@@ -51,14 +51,6 @@
     "Port": "443",
     "Notes": "Required for AKS on Azure Stack HCI billing when running `Install-AksHci`."
 }, {
-    "URL": "api.github.com",
-    "Port": "443",
-    "Notes": "Required for installing AKS on Azure Stack HCI management cluster (AKS host)."
-}, {
-    "URL": "objects.githubusercontent.com",
-    "Port": "443",
-    "Notes": "Required for installing AKS on Azure Stack HCI management cluster (AKS host)."
-}, {
     "URL": "arck8onboarding.azurecr.io",
     "Port": "443",
     "Notes": "Required to pull container images when running `Install-AksHci`."
