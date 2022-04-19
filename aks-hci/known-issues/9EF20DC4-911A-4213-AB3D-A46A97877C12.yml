@@ -1,0 +1,55 @@
+"ID" : "9EF20DC4-911A-4213-AB3D-A46A97877C12"
+"Status": "Review"
+"Create Date" : "04/19/2022"
+"Review Date" : "04/19/2022"
+"Publish Date" : "04/19/2022"
+"Reviewer" : "aweston"
+"Author" : "mabrigg"
+"Service" : "aks-hci"
+"Area"  : "known-issues-upgrade"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "39072488"
+"Source URL"  : "https://microsoft.visualstudio.com/OS/_workitems/edit/39072488"
+"Target URL"  : "https://docs.microsoft.com/azure-stack/aks-hci/known-issues-upgrade"
+"Schema" : "known-issue"
+"Issue" : |
+  Upgrade of gets stuck with one or more nodes in an old Kubernetes version.
+"Description" : |
+  A sample output as a result of this issue:
+  ```bash
+  2022-03-31T14:00:46.3605901Z VERBOSE: [03/31/2022 07:00:46] [Kva]   Current status of cluster nodes:
+  2022-03-31T14:00:46.3611904Z 
+  2022-03-31T14:00:46.3639485Z Name            Version Upgraded
+  2022-03-31T14:00:46.3646962Z ----            ------- --------
+  2022-03-31T14:00:46.3652316Z moc-l1ai52fm852 v1.22.4    False
+  2022-03-31T14:00:46.3657174Z moc-l4slka5zau8 v1.22.6     True
+  2022-03-31T14:00:46.3662095Z moc-lkzvh2833m7 v1.22.6     True
+  2022-03-31T14:00:46.3666501Z moc-ltucywam9pe v1.22.6     True
+  ```
+
+  To see the machine which is stuck in a deleting state, run the following command:
+
+  ```bash  
+  kubectl get machines -o wide --kubeconfig (Get-KvaConfig).kubeconfig
+  ```
+
+  Note the machine with `PHASE` Deleting and `VERSION` matching the previous Kubernetes version.
+
+"Fix" : |
+  To address this problem, you will need the following pieces of information:
+  1. Kubernetes version to which your are upgrading your target cluster.
+  2. IP address of the node which is stuck.
+
+  To find this information, run the following cmdlet and command:
+
+  ```powershell
+  Get-AksHciCredential -name <target cluster name>
+  kubectl get nodes -o wide
+  ```
+
+  You can identify the node which needs to be fixed because it will have status such as `Ready,SchedulingDisabled`. Use the `INTERNAL-IP` of this node as the IP address value in the following command below. Use the `VERSION` value from the node with roles `control-plane,master` as the Kubernetes version value.
+
+  ``ssh -i (Get-MocConfig).sshPrivateKey -o StrictHostKeyChecking=no  clouduser@<IP address> sudo crictl pull --creds <your-credential> ecpacr.azurecr.io/kube-proxy:<Kubernetes version>``
+
+  After running this ssh command, the remaining nodes with the old Kubernetes version should be deleted and the upgrade will proceed.
