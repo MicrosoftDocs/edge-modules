@@ -11,7 +11,7 @@
 "Source"  : "bugs"
 "Source ID"  : "39128695"
 "Source URL"  : "https://microsoft.visualstudio.com/OS/_workitems/edit/39128695"
-"Target URL"  : "https://review.docs.microsoft.com/en-us/azure-stack/aks-hci/known-issues-upgrade?branch=pr-en-us-9866#when-upgrading-aks-on-azure-stack-hci-from-the-february-2022-update-to-april-2022-update--the-csi-deployments-disappears-and-causes-the-upgrade-to-stall-"
+"Target URL"  : "https://docs.microsoft.com/en-us/azure-stack/aks-hci/known-issues-upgrade?#when-upgrading-aks-on-azure-stack-hci-from-the-february-2022-update-to-april-2022-update--the-csi-deployments-disappears-and-causes-the-upgrade-to-stall-"
 "Schema" : "known-issue"
 "Issue" : |
   When upgrading AKS on Azure Stack HCI from the February 2022 Update to April 2022 Update, the CSI deployments disappears and causes the upgrade to stall.
