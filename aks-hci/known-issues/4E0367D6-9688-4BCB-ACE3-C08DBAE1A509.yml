@@ -4,7 +4,7 @@
 "Review Date" : "04/28/2022"
 "Publish Date" : "04/28/2022"
 "Reviewer" : "sumsmith"
-"Author" : "mabrigg"
+"Author" : "mattbriggs"
 "Service" : "aks-hci"
 "Area"  : "known-issues-networking"
 "Tags"  : "['proof', 'concept']"
@@ -18,7 +18,7 @@
 "Description" : |
   You may see this error when deploying a new AKS cluster or adding a node pool to an existing cluster.
 "Fix" : |
-  1. Check that the user who has run the command is the same user that insalled AKS on Azure Stack or Windows Server.
+  1. Check that the user who has run the command is the same user that installed AKS on Azure Stack or Windows Server.
   2. If the user is the same and you see the error again, you can:
   If this error is seen when trying to perform operations such as deploying a new AKS cluster or adding a node pool to an existing cluster, ensure the user running the command is the same user who installed AKS-HCI. If the user is the same and the error persists, follow the below steps to resolve the issue:
     - Delete old management appliance certificate by removing `$env:UserProfile.wssd\kvactl\cloudconfig`
