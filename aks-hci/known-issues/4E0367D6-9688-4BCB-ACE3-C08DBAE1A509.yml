@@ -23,4 +23,4 @@
   If this error is seen when trying to perform operations such as deploying a new AKS cluster or adding a node pool to an existing cluster, ensure the user running the command is the same user who installed AKS-HCI. If the user is the same and the error persists, follow the below steps to resolve the issue:
     - Delete old management appliance certificate by removing `$env:UserProfile.wssd\kvactl\cloudconfig`
     - Run `Repair-AksHciCerts`.
-    - Run `Get-AksHciCluster` to ensure it's fixed
+    - Run `Get-AksHciCluster` to check that it's fixed
