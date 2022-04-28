@@ -356,4 +356,6 @@ config.json
 discards.txt
 .pytest_cache/
 
+# local files (and archive)
 .DS_Store
+edgemodule_archive.zip
