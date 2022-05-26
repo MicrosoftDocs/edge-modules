@@ -4,11 +4,11 @@
 "Reviewer": "abha"
 "ms.topic": "faq"
 "Schema": "doc"
-"Metatitle": "Troubleshoot networking issues and errors in Azure Kubernetes Service on Azure Stack HCI"
-"Metadescription": "Get help to troubleshoot networking issues and errors in Azure Kubernetes Service on Azure Stack HCI."
+"Metatitle": "Troubleshoot networking issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Metadescription": "Get help to troubleshoot networking issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server."
 "title": "Fix known issues and errors when configuring a network"
 "Summary": |
-  Use this topic to help you troubleshoot and resolve networking-related issues in AKS on Azure Stack HCI.
+  Use this topic to help you troubleshoot and resolve networking-related issues with Azure Kubernetes Service on Azure Stack HCI and Windows Server.
 "Additionalcontent": |
   ## Next steps
   - [Troubleshooting overview](troubleshoot-overview.md)

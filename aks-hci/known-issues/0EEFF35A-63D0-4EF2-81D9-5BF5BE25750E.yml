@@ -4,11 +4,11 @@
 "Reviewer": "abha"
 "ms.topic": "faq"
 "Schema": "doc"
-"Metatitle": "Troubleshoot storage issues and errors in Azure Kubernetes Service on Azure Stack HCI "
-"Metadescription": "Get help to troubleshoot storage issues and errors in Azure Kubernetes Service on Azure Stack HCI."
+"Metatitle": "Troubleshoot storage issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Metadescription": "Get help to troubleshoot storage issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server."
 "title": "Fix known issues and errors when managing storage"
 "Summary": |
-  Use this topic to help you troubleshoot and resolve storage-related issues in AKS on Azure Stack HCI.
+  Use this topic to help you troubleshoot and resolve storage-related issues in Azure Kubernetes Service on Azure Stack HCI and Windows Server.
 "Additionalcontent": |
   ## Next steps
 
