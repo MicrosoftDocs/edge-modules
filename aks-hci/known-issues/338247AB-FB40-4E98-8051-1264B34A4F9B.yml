@@ -4,11 +4,11 @@
 "Reviewer": "abha"
 "ms.topic": "faq"
 "Schema": "doc"
-"Metatitle": "Troubleshoot Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI "
-"Metadescription": "Get help to troubleshoot Kubernetes workload cluster issues and errors in Azure Kubernetes Service on Azure Stack HCI."
-"title": "Troubleshoot Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI "
+"Metatitle": "Troubleshoot Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Metadescription": "Get help to troubleshoot Kubernetes workload cluster issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server."
+"title": "Troubleshoot Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI and Windows Server"
 "Summary": |
-  Use this article to help you troubleshoot and resolve Kubernetes management and workload clusters issues in AKS on Azure Stack HCI.
+  Use this article to help you troubleshoot and resolve Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI and Windows Server.
 "Additionalcontent": |
   ## Next steps
   - [Troubleshooting overview](troubleshoot-overview.md)
