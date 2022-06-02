@@ -17,7 +17,6 @@
   Upgrade of target cluster gets stuck with one or more nodes in an old Kubernetes version.
 "Description" : |
   After running Update-AksHciCluster the upgrade process stalls.
-
 "Fix" : |
   Run the following command to check if there is a machine with `PHASE` Deleting that is running the previous Kubernetes version that you are upgrading from.
 

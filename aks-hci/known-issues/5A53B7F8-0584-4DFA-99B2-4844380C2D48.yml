@@ -35,10 +35,8 @@
     get-vm
     ```
   The removed node is still listed.
-
-  This failure causes the system not to recognize that the node is missing, and therefore, a new node won't spin up. 
 "Fix" : |
-  
+  This failure causes the system not to recognize that the node is missing, and therefore, a new node won't spin up. 
 
 
 
