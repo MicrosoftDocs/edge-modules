@@ -6,7 +6,7 @@
 "Reviewer" : "jeguan"
 "Author" : "mabrigg"
 "Service" : "aks-hci"
-"Area"  : "testing"
+"Area"  : "known-issues-storage"
 "Tags"  : "['proof', 'concept']"
 "Source"  : "bugs"
 "Source ID"  : "39814562"
