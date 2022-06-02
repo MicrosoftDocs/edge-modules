@@ -26,7 +26,6 @@
   ```PowerShell
   System.Collections.Hashtable.generic_non_zero1 [Error: failed to create nic test-load-balancer-whceb-nic for machinetest-load-balancer-whceb: unable to create VM network interface: failed to create network interface test-load-balancer-whceb-nic in resource group clustergroup-test: rpc error: code = Unknown desc = Location 'MocLocation' doesn't expose any nodes to create VNIC 'test-load-balancer-whceb-nic' on: OutOfCapacity]
   ```
-
 "Fix" : |
   To resolve this issue, start the wssdagent Moc NodeAgent Service on the affected nodes. This will solve the issue, and bring the deployment back to a good state. Run the following command:
 
