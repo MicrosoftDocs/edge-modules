@@ -1,8 +1,8 @@
 "ID" : "B5B58AA2-78DA-4187-89B0-68686EF5A037"
-"Status": "Review"
+"Status": "Active"
 "Create Date" : "06/02/2022"
-"Review Date" : "06/02/2022"
-"Publish Date" : "06/02/2022"
+"Review Date" : "06/06/2022"
+"Publish Date" : "06/06/2022"
 "Reviewer" : "jeguan"
 "Author" : "mabrigg"
 "Service" : "aks-hci"
@@ -11,7 +11,7 @@
 "Source"  : "bugs"
 "Source ID"  : "39814562"
 "Source URL"  : "https://microsoft.visualstudio.com/OS/_workitems/edit/39814562"
-"Target URL"  : "https://docs.microsoft.com/page"
+"Target URL"  : "https://docs.microsoft.com/known-issues-storage"
 "Schema" : "known-issue"
 "Issue" : |
   Storage pod crashes and the logs say that the `createSubDir` parameter is invalid
