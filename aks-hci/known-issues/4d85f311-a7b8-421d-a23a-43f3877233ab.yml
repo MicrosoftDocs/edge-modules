@@ -6,7 +6,7 @@
 "Reviewer" : "sumsmith"
 "Author" : "sethm"
 "Service" : "aks-hci"
-"Area"  : "known-issues-certificates"
+"Area"  : "known-issues-networking"
 "Tags"  : "['proof', 'concept']"
 "Source"  : "bugs"
 "Source ID"  : "1"
