@@ -1,0 +1,25 @@
+"ID" : "4d85f311-a7b8-421d-a23a-43f3877233ab"
+"Status": "Active"
+"Create Date" : "6/26/2022"
+"Review Date" : "6/26/2022"
+"Publish Date" : "6/26/2022"
+"Reviewer" : "sumsmith"
+"Author" : "sethm"
+"Service" : "aks-hci"
+"Area"  : "known-issues-certificates"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  CAPH pod fails to renew certificate.
+"Description" : |
+  - Every time the caph pod is started, a login to cloudagent is attempted and the certificate is stored in the temporary storage volume, which will clean out on pod restarts.
+  - Therefore, every time a pod is restarted, the certificate is destroyed and a new login attempt is made.
+  - A login attempt starts a renewal routine, which renews the certificate when it nears expiry.
+  - The caph pod decides if a login is needed if the certificate is available or not. If the certificate is available, the login is not attempted, assuming the renewal routine is already there.
+  - However, on a container restart, the temporary directory is not cleaned, so the file is still persisted and the login attempt is not made, causing the renewal routine to not start. This leads to certificate expiration.
+"Fix" : |
+  Restart the CAPH pod.
