@@ -1,15 +1,15 @@
 
-"ID": "0A930D94-52C8-443B-9718-BE2EE6503355"
-"Area": "known-issues-windows-admin-center"
-"Reviewer": "abha"
-"ms.topic": "faq"
-"Schema": "doc"
-"Metatitle": "Known issues in Windows Admin Center for Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"Metadescription": "Known issues in Windows Admin Center for Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"title": "Fix issues in Windows Admin Center"
-"Summary": |
+"ID" : "0A930D94-52C8-443B-9718-BE2EE6503355"
+"Area" : "known-issues-windows-admin-center"
+"Reviewer" : "abha"
+"ms.topic" : "faq"
+"Schema" : "doc"
+"Metatitle" : "Known issues in Windows Admin Center for Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Metadescription" : "Known issues in Windows Admin Center for Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"title" : "Fix issues in Windows Admin Center"
+"Summary" : |
   This article describes known issues with Windows Admin Center in Azure Kubernetes Service on Azure Stack HCI and Windows Server. You can also review [upgrade](/azure-stack/aks-hci/known-issues) and [installation](/azure-stack/aks-hci/known-issues-installation) issues and errors.
-"Additionalcontent": |
+"Additionalcontent" : |
   ## Next steps
   - [Troubleshooting overview](troubleshoot-overview.md)
   - [Installation issues and errors](/azure-stack/aks-hci/known-issues-installation)

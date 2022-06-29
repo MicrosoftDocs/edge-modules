@@ -1,15 +1,15 @@
 
-"ID": "1AD28A0D-63EF-4FA3-B849-CAB5DD9120D7"
-"Area": "known-issues"
-"Reviewer": "EkeleAsonye"
-"ms.topic": "faq"
-"Schema": "doc"
-"Metatitle": "Common issues when using Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"Metadescription": "Common known issues when using Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"title": "Resolve general issues when using Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"Summary": |
+"ID" : "1AD28A0D-63EF-4FA3-B849-CAB5DD9120D7"
+"Area" : "known-issues"
+"Reviewer" : "EkeleAsonye"
+"ms.topic" : "faq"
+"Schema" : "doc"
+"Metatitle" : "Common issues when using Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Metadescription" : "Common known issues when using Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"title" : "Resolve general issues when using Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Summary" : |
   This article describes some common known issues with Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server. You can also review [known issues with Windows Admin Center](/azure-stack/aks-hci/known-issues-windows-admin-center) and [installation issues and errors](/azure-stack/aks-hci/known-issues-installation).
-"Additionalcontent": |
+"Additionalcontent" : |
   ## Next steps
 
   - [Troubleshooting overview](troubleshoot-overview.md)

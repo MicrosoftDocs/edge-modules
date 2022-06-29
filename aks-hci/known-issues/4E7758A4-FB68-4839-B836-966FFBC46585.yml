@@ -1,15 +1,15 @@
 
-"ID": "4E7758A4-FB68-4839-B836-966FFBC46585"
-"Area": "known-issues-security"
-"Reviewer": "abha"
-"ms.topic": "faq"
-"Schema": "doc"
-"Metatitle": "Troubleshoot security and identity issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"Metadescription": "Get help to troubleshoot security and identity issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server."
-"title": "Fix security and identity known issues and errors"
-"Summary": |
+"ID" : "4E7758A4-FB68-4839-B836-966FFBC46585"
+"Area" : "known-issues-security"
+"Reviewer" : "abha"
+"ms.topic" : "faq"
+"Schema" : "doc"
+"Metatitle" : "Troubleshoot security and identity issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Metadescription" : "Get help to troubleshoot security and identity issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server."
+"title" : "Fix security and identity known issues and errors"
+"Summary" : |
   Use this topic to help you troubleshoot and resolve security and identity-related issues in Azure Kubernetes Service on Azure Stack HCI and Windows Server.
-"Additionalcontent": |
+"Additionalcontent" : |
   ## Next steps
   - [Troubleshooting overview](troubleshoot-overview.md)
   - [Networking issues and errors](/azure-stack/aks-hci/known-issues-networking)

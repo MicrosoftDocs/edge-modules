@@ -1,15 +1,15 @@
 
-"ID": "0EEFF35A-63D0-4EF2-81D9-5BF5BE25750E"
-"Area": "known-issues-storage"
-"Reviewer": "abha"
-"ms.topic": "faq"
-"Schema": "doc"
-"Metatitle": "Troubleshoot storage issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"Metadescription": "Get help to troubleshoot storage issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server."
-"title": "Fix known issues and errors when managing storage"
-"Summary": |
+"ID" : "0EEFF35A-63D0-4EF2-81D9-5BF5BE25750E"
+"Area" : "known-issues-storage"
+"Reviewer" : "abha"
+"ms.topic" : "faq"
+"Schema" : "doc"
+"Metatitle" : "Troubleshoot storage issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Metadescription" : "Get help to troubleshoot storage issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server."
+"title" : "Fix known issues and errors when managing storage"
+"Summary" : |
   Use this topic to help you troubleshoot and resolve storage-related issues in Azure Kubernetes Service on Azure Stack HCI and Windows Server.
-"Additionalcontent": |
+"Additionalcontent" : |
   ## Next steps
 
   - [Troubleshooting overview](troubleshoot-overview.md)

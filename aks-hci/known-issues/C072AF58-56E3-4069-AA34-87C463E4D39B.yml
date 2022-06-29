@@ -1,5 +1,5 @@
 "ID" : "C072AF58-56E3-4069-AA34-87C463E4D39B"
-"Status": "Active"
+"Status" : "Active"
 "Create Date" : "3/26/2022"
 "Review Date" : "3/26/2022"
 "Publish Date" : "3/26/2022"
@@ -23,13 +23,13 @@
   ```powershell
   PS C:\Users\wolfpack> Get-AksHciCluster
   C:\Program Files\AksHci\kvactl.exe cluster list --kubeconfig="C:\ClusterStorage\Volume1\Msk8s\WorkingDir\1.0.8.10223\kubeconfig-mgmt" System.Collections.Hashtable.generic_non_zero 1 [Error: failed to connect to the cluster: action failed after 9
-  attempts: Get "https://10.193.237.5:6443/api?timeout=10s": net/http: request canceled while waiting for connection
+  attempts: Get "https://10.193.237.5:6443/api?timeout=10s" : net/http: request canceled while waiting for connection
   (Client.Timeout exceeded while awaiting headers)]
   At C:\Program Files\WindowsPowerShell\Modules\Kva\1.0.22\Common.psm1:2164 char:9
   +         throw $errMessage
   +         ~~~~~~~~~~~~~~~~~
       + CategoryInfo          : OperationStopped: (C:\Program File...iting headers)]:String) [], RuntimeException
-      + FullyQualifiedErrorId : C:\Program Files\AksHci\kvactl.exe cluster list --kubeconfig="C:\ClusterStorage\Volume1\Msk8s\WorkingDir\1.0.8.10223\kubeconfig-mgmt" System.Collections.Hashtable.generic_non_zero 1 [Error: failed to connect to the cluster: action failed after 9 attempts: Get "https://10.193.237.5:6443/api?timeout=10s": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)]
+      + FullyQualifiedErrorId : C:\Program Files\AksHci\kvactl.exe cluster list --kubeconfig="C:\ClusterStorage\Volume1\Msk8s\WorkingDir\1.0.8.10223\kubeconfig-mgmt" System.Collections.Hashtable.generic_non_zero 1 [Error: failed to connect to the cluster: action failed after 9 attempts: Get "https://10.193.237.5:6443/api?timeout=10s" : net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)]
   ``` 
 "Fix" : |
   To resolve this issue: restart the `kube-vip` container to bring the deployment back to a good state.

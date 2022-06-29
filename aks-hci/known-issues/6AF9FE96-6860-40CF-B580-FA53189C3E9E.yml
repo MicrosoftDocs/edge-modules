@@ -1,18 +1,18 @@
 
-"ID": "6AF9FE96-6860-40CF-B580-FA53189C3E9E"
-"Area": "known-issues-arc"
-"Reviewer": "abha"
-"ms.topic": "faq"
-"Schema": "doc"
-"Metatitle": "Resolve errors when enabling and disabling Azure Arc on Azure Kubernetes Service on Azure Stack HCI and Windows Server workload clusters"
-"Metadescription": "Find solutions to known issues and errors when enabling and disabling Azure Arc on Azure Kubernetes Service on Azure Stack HCI and Windows Server workload clusters"
-"title": "Resolve errors when enabling or disabling Azure Arc on your AKS workload clusters"
-"Summary": |
+"ID" : "6AF9FE96-6860-40CF-B580-FA53189C3E9E"
+"Area" : "known-issues-arc"
+"Reviewer" : "abha"
+"ms.topic" : "faq"
+"Schema" : "doc"
+"Metatitle" : "Resolve errors when enabling and disabling Azure Arc on Azure Kubernetes Service on Azure Stack HCI and Windows Server workload clusters"
+"Metadescription" : "Find solutions to known issues and errors when enabling and disabling Azure Arc on Azure Kubernetes Service on Azure Stack HCI and Windows Server workload clusters"
+"title" : "Resolve errors when enabling or disabling Azure Arc on your AKS workload clusters"
+"Summary" : |
   This article describes errors you may encounter (and their workarounds) while connecting or disconnecting your Azure Kubernetes Service on Azure Stack HCI and Windows Server workload clusters to Azure Arc using the PowerShell cmdlets [Enable-AksHciArcConnection](./reference/ps/enable-akshciarcconnection.md) and [Disable-AksHciArcConnection](./reference/ps/disable-akshciarcconnection.md). For issues that are not covered in this article, see [troubleshooting Arc enabled Kubernetes](/azure/azure-arc/kubernetes/troubleshooting).
   
   You can also [open a support issue](./help-support.md) if none of the workarounds listed below apply to you.
   
-"Additionalcontent": |
+"Additionalcontent" : |
   ## Next steps
 
   - [Troubleshooting Arc enabled Kubernetes](/azure/azure-arc/kubernetes/troubleshooting)

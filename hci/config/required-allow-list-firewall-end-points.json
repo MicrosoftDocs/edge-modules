@@ -1,57 +1,57 @@
 [{
-        "URL": "https://login.microsoftonline.com",
-        "Port": "443",
-        "Notes": “(Azure Public) For Active Directory Authority and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.“
+        "URL" : "https://login.microsoftonline.com",
+        "Port" : "443",
+        "Notes" : “(Azure Public) For Active Directory Authority and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.“
     },
     {
-        "URL": "https://login.chinacloudapi.cn/",
-        "Port": "443",
-        "Notes": “(Azure China) For Active Directory Authority and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.“
+        "URL" : "https://login.chinacloudapi.cn/",
+        "Port" : "443",
+        "Notes" : “(Azure China) For Active Directory Authority and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.“
     },
     {
-        "URL": "https://login.microsoftonline.us",
-        "Port": "443",
-        "Notes": “(Azure Gov) For Active Directory Authority and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.“
+        "URL" : "https://login.microsoftonline.us",
+        "Port" : "443",
+        "Notes" : “(Azure Gov) For Active Directory Authority and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.“
     },
     {
-        "URL": "https://graph.windows.net/",
-        "Port": "443",
-        "Notes": “(Azure Public, Azure Gov) For Graph and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.”
+        "URL" : "https://graph.windows.net/",
+        "Port" : "443",
+        "Notes" : “(Azure Public, Azure Gov) For Graph and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.”
     },
     {
-        "URL": "https://graph.chinacloudapi.cn/",
-        "Port": "443",
-        "Notes": “(Azure China) For Graph and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.”
+        "URL" : "https://graph.chinacloudapi.cn/",
+        "Port" : "443",
+        "Notes" : “(Azure China) For Graph and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.”
     },
     {
-        "URL": "https://management.azure.com/",
-        "Port": "443",
-        "Notes": “(Azure Public) For Resource Manager and used during initial bootstrapping of the cluster to Azure for registration purposes and to unregister the cluster. Service Tag: AzureResourceManager.”
+        "URL" : "https://management.azure.com/",
+        "Port" : "443",
+        "Notes" : “(Azure Public) For Resource Manager and used during initial bootstrapping of the cluster to Azure for registration purposes and to unregister the cluster. Service Tag: AzureResourceManager.”
     },
     {
-        "URL": "https://management.chinacloudapi.cn/",
-        "Port": "443",
-        "Notes": “(Azure China) For Resource Manager and used during initial bootstrapping of the cluster to Azure for registration purposes and to unregister the cluster. Service Tag: AzureResourceManager.”
+        "URL" : "https://management.chinacloudapi.cn/",
+        "Port" : "443",
+        "Notes" : “(Azure China) For Resource Manager and used during initial bootstrapping of the cluster to Azure for registration purposes and to unregister the cluster. Service Tag: AzureResourceManager.”
     },
     {
         
-        "URL": "https://management.usgovcloudapi.net/",
-        "Port": "443",
-        "Notes": “(Azure Gov) For Resource Manager and used during initial bootstrapping of the cluster to Azure for registration purposes and to unregister the cluster. Service Tag: AzureResourceManager.”
+        "URL" : "https://management.usgovcloudapi.net/",
+        "Port" : "443",
+        "Notes" : “(Azure Gov) For Resource Manager and used during initial bootstrapping of the cluster to Azure for registration purposes and to unregister the cluster. Service Tag: AzureResourceManager.”
     },
     {
-        "URL": "https://azurestackhci.azurefd.net",
-        "Port": "443",
-        "Notes": “(Azure Public) For Dataplane which pushes up diagnostics data, is used in the Portal pipeline, and pushes billing data.”
+        "URL" : "https://azurestackhci.azurefd.net",
+        "Port" : "443",
+        "Notes" : “(Azure Public) For Dataplane which pushes up diagnostics data, is used in the Portal pipeline, and pushes billing data.”
     },
     {
-        "URL": "https://dp.stackhci.azure.cn",
-        "Port": "443",
-        "Notes": “(Azure China) For Dataplane which pushes up diagnostics data, is used in the Portal pipeline, and pushes billing data.”
+        "URL" : "https://dp.stackhci.azure.cn",
+        "Port" : "443",
+        "Notes" : “(Azure China) For Dataplane which pushes up diagnostics data, is used in the Portal pipeline, and pushes billing data.”
     },
     {
-        "URL": "https://dp.azurestackchi.azure.us",
-        "Port": "443",
-        "Notes": “(Azure Gov) For Dataplane which pushes up diagnostics data, is used in the Portal pipeline, and pushes billing data.”
+        "URL" : "https://dp.azurestackchi.azure.us",
+        "Port" : "443",
+        "Notes" : “(Azure Gov) For Dataplane which pushes up diagnostics data, is used in the Portal pipeline, and pushes billing data.”
      }
 ]

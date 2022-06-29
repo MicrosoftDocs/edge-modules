@@ -1,5 +1,5 @@
 "ID" : "C32100AD-49AA-4047-95A3-EB20C4D0B787"
-"Status": "Active"
+"Status" : "Active"
 "Create Date" : "3/26/2022"
 "Review Date" : "3/26/2022"
 "Publish Date" : "3/26/2022"
@@ -25,7 +25,7 @@
   Initializing environmentVERBOSE: [AksHci] Importing ConfigurationVERBOSE: 
   [AksHci] Importing Configuration Completedpowershell : 
   GetRelease - error returned by API call: 
-  Post "https://msk8s.api.cdp.microsoft.com/api/v1.1/contents/default/namespaces/default/names/mocstack-stable/versions/0.9.7.0/files?action=generateDownloadInfo&ForegroundPriority=True": 
+  Post "https://msk8s.api.cdp.microsoft.com/api/v1.1/contents/default/namespaces/default/names/mocstack-stable/versions/0.9.7.0/files?action=generateDownloadInfo&ForegroundPriority=True" : 
   dial tcp 52.184.220.11:443: connectex: 
   A connection attempt failed because the connected party did not properly
   respond after a period of time, or established connection failed because

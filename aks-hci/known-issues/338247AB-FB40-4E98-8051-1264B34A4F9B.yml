@@ -1,15 +1,15 @@
 
-"ID": "338247AB-FB40-4E98-8051-1264B34A4F9B"
-"Area": "known-issues-workload-clusters"
-"Reviewer": "abha"
-"ms.topic": "faq"
-"Schema": "doc"
-"Metatitle": "Troubleshoot Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"Metadescription": "Get help to troubleshoot Kubernetes workload cluster issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server."
-"title": "Troubleshoot Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"Summary": |
+"ID" : "338247AB-FB40-4E98-8051-1264B34A4F9B"
+"Area" : "known-issues-workload-clusters"
+"Reviewer" : "abha"
+"ms.topic" : "faq"
+"Schema" : "doc"
+"Metatitle" : "Troubleshoot Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Metadescription" : "Get help to troubleshoot Kubernetes workload cluster issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server."
+"title" : "Troubleshoot Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Summary" : |
   Use this article to help you troubleshoot and resolve Kubernetes management and workload clusters issues in Azure Kubernetes Service on Azure Stack HCI and Windows Server.
-"Additionalcontent": |
+"Additionalcontent" : |
   ## Next steps
   - [Troubleshooting overview](troubleshoot-overview.md)
   - [Networking issues and errors](/azure-stack/aks-hci/known-issues-networking)

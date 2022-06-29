@@ -1,15 +1,15 @@
 
-"ID": "1A1229B3-5EA8-4C62-9CFE-F267BA825FB7"
-"Area": "known-issues-upgrade"
-"Reviewer": "abha"
-"ms.topic": "faq"
-"Schema": "doc"
-"Metatitle": "Known issues when upgrading Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"Metadescription": "Known issues when upgrading  Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"title": "Resolve issues when upgradingAzure Kubernetes Service on Azure Stack HCI and Windows Server"
-"Summary": |
+"ID" : "1A1229B3-5EA8-4C62-9CFE-F267BA825FB7"
+"Area" : "known-issues-upgrade"
+"Reviewer" : "abha"
+"ms.topic" : "faq"
+"Schema" : "doc"
+"Metatitle" : "Known issues when upgrading Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Metadescription" : "Known issues when upgrading  Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"title" : "Resolve issues when upgradingAzure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Summary" : |
   This article describes known issues and errors you may encounter when upgrading Azure Kubernetes Service on Azure Stack HCI and Windows Server to the newest release. You can also review known issues with [Windows Admin Center](/azure-stack/aks-hci/known-issues-windows-admin-center) and when [installing AKS on Azure Stack HCI](/azure-stack/aks-hci/known-issues-installation).
-"Additionalcontent": |
+"Additionalcontent" : |
   ## Next steps
   - [Troubleshooting overview](troubleshoot-overview.md)
   - [Installation issues and errors](/azure-stack/aks-hci/known-issues-installation)

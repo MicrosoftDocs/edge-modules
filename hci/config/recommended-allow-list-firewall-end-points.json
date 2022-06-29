@@ -1,178 +1,178 @@
 [{
-        "URL": "https://login.microsoftonline.com",
-        "Port": "443",
-        "Notes": “(Azure Public) For Active Directory Authority and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.“
+        "URL" : "https://login.microsoftonline.com",
+        "Port" : "443",
+        "Notes" : “(Azure Public) For Active Directory Authority and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.“
     },
     {
-        "URL": "https://login.chinacloudapi.cn/",
-        "Port": "443",
-        "Notes": “(Azure China) For Active Directory Authority and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.“
+        "URL" : "https://login.chinacloudapi.cn/",
+        "Port" : "443",
+        "Notes" : “(Azure China) For Active Directory Authority and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.“
     },
     {
-        "URL": "https://login.microsoftonline.us",
-        "Port": "443",
-        "Notes": “(Azure Gov) For Active Directory Authority and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.“
+        "URL" : "https://login.microsoftonline.us",
+        "Port" : "443",
+        "Notes" : “(Azure Gov) For Active Directory Authority and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.“
     },
     {
-        "URL": "https://graph.windows.net/",
-        "Port": "443",
-        "Notes": “(Azure Public, Azure Gov) For Graph and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.”
+        "URL" : "https://graph.windows.net/",
+        "Port" : "443",
+        "Notes" : “(Azure Public, Azure Gov) For Graph and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.”
     },
     {
-        "URL": "https://graph.chinacloudapi.cn/",
-        "Port": "443",
-        "Notes": “(Azure China) For Graph and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.”
+        "URL" : "https://graph.chinacloudapi.cn/",
+        "Port" : "443",
+        "Notes" : “(Azure China) For Graph and used for authentication, token fetch, and validation. Service Tag: AzureActiveDirectory.”
     },
     {
-        "URL": "https://management.azure.com/",
-        "Port": "443",
-        "Notes": “(Azure Public) For Resource Manager and used during initial bootstrapping of the cluster to Azure for registration purposes and to unregister the cluster. Service Tag: AzureResourceManager.”
+        "URL" : "https://management.azure.com/",
+        "Port" : "443",
+        "Notes" : “(Azure Public) For Resource Manager and used during initial bootstrapping of the cluster to Azure for registration purposes and to unregister the cluster. Service Tag: AzureResourceManager.”
     },
     {
-        "URL": "https://management.chinacloudapi.cn/",
-        "Port": "443",
-        "Notes": “(Azure China) For Resource Manager and used during initial bootstrapping of the cluster to Azure for registration purposes and to unregister the cluster. Service Tag: AzureResourceManager.”
+        "URL" : "https://management.chinacloudapi.cn/",
+        "Port" : "443",
+        "Notes" : “(Azure China) For Resource Manager and used during initial bootstrapping of the cluster to Azure for registration purposes and to unregister the cluster. Service Tag: AzureResourceManager.”
     },
     {
         
-        "URL": "https://management.usgovcloudapi.net/",
-        "Port": "443",
-        "Notes": “(Azure Gov) For Resource Manager and used during initial bootstrapping of the cluster to Azure for registration purposes and to unregister the cluster. Service Tag: AzureResourceManager.”
+        "URL" : "https://management.usgovcloudapi.net/",
+        "Port" : "443",
+        "Notes" : “(Azure Gov) For Resource Manager and used during initial bootstrapping of the cluster to Azure for registration purposes and to unregister the cluster. Service Tag: AzureResourceManager.”
     },
     {
-        "URL": "https://azurestackhci.azurefd.net",
-        "Port": "443",
-        "Notes": “(Azure Public) For Dataplane which pushes up diagnostics data, is used in the Portal pipeline, and pushes billing data.”
+        "URL" : "https://azurestackhci.azurefd.net",
+        "Port" : "443",
+        "Notes" : “(Azure Public) For Dataplane which pushes up diagnostics data, is used in the Portal pipeline, and pushes billing data.”
     },
     {
-        "URL": "https://dp.stackhci.azure.cn",
-        "Port": "443",
-        "Notes": “(Azure China) For Dataplane which pushes up diagnostics data, is used in the Portal pipeline, and pushes billing data.”
+        "URL" : "https://dp.stackhci.azure.cn",
+        "Port" : "443",
+        "Notes" : “(Azure China) For Dataplane which pushes up diagnostics data, is used in the Portal pipeline, and pushes billing data.”
     },
     {
-        "URL": "https://dp.azurestackchi.azure.us",
-        "Port": "443",
-        "Notes": “(Azure Gov) For Dataplane which pushes up diagnostics data, is used in the Portal pipeline, and pushes billing data.”
+        "URL" : "https://dp.azurestackchi.azure.us",
+        "Port" : "443",
+        "Notes" : “(Azure Gov) For Dataplane which pushes up diagnostics data, is used in the Portal pipeline, and pushes billing data.”
     },
     {
-        "URL": "http://*.windowsupdate.microsoft.com",
-        "Port": "443",
-        "Notes": “For Microsoft Update, which allows the OS to receive updates.”
+        "URL" : "http://*.windowsupdate.microsoft.com",
+        "Port" : "443",
+        "Notes" : “For Microsoft Update, which allows the OS to receive updates.”
     },
     {
-        "URL": "https://*.windowsupdate.microsoft.com",
-        "Port": "443",
-        "Notes": “For Microsoft Update, which allows the OS to receive updates.”
+        "URL" : "https://*.windowsupdate.microsoft.com",
+        "Port" : "443",
+        "Notes" : “For Microsoft Update, which allows the OS to receive updates.”
     },
     {
-        "URL": "http://*.update.microsoft.com",
-        "Port": "443",
-        "Notes": “For Microsoft Update, which allows the OS to receive updates.”
+        "URL" : "http://*.update.microsoft.com",
+        "Port" : "443",
+        "Notes" : “For Microsoft Update, which allows the OS to receive updates.”
     },
     {
-        "URL": "https://*.update.microsoft.com",
-        "Port": "443",
-        "Notes": “For Microsoft Update, which allows the OS to receive updates.”
+        "URL" : "https://*.update.microsoft.com",
+        "Port" : "443",
+        "Notes" : “For Microsoft Update, which allows the OS to receive updates.”
     },
     {
-        "URL": "http://*.windowsupdate.com",
-        "Port": "443",
-        "Notes": “For Microsoft Update, which allows the OS to receive updates.”
+        "URL" : "http://*.windowsupdate.com",
+        "Port" : "443",
+        "Notes" : “For Microsoft Update, which allows the OS to receive updates.”
     },
     {
-        "URL": "http://download.windowsupdate.com",
-        "Port": "443",
-        "Notes": “For Microsoft Update, which allows the OS to receive updates.”
+        "URL" : "http://download.windowsupdate.com",
+        "Port" : "443",
+        "Notes" : “For Microsoft Update, which allows the OS to receive updates.”
     },
     {
-        "URL": "https://download.microsoft.com",
-        "Port": "443",
-        "Notes": “For Microsoft Update, which allows the OS to receive updates.”
+        "URL" : "https://download.microsoft.com",
+        "Port" : "443",
+        "Notes" : “For Microsoft Update, which allows the OS to receive updates.”
     },
     {
-        "URL": "http://*.download.windowsupdate.com",
-        "Port": "443",
-        "Notes": “For Microsoft Update, which allows the OS to receive updates.”
+        "URL" : "http://*.download.windowsupdate.com",
+        "Port" : "443",
+        "Notes" : “For Microsoft Update, which allows the OS to receive updates.”
     },
     {
-        "URL": "http://wustat.windows.com",
-        "Port": "443",
-        "Notes": “For Microsoft Update, which allows the OS to receive updates.”
+        "URL" : "http://wustat.windows.com",
+        "Port" : "443",
+        "Notes" : “For Microsoft Update, which allows the OS to receive updates.”
     },
     {
-        "URL": "http://ntservicepack.microsoft.com",
-        "Port": "443",
-        "Notes": “For Microsoft Update, which allows the OS to receive updates.”
+        "URL" : "http://ntservicepack.microsoft.com",
+        "Port" : "443",
+        "Notes" : “For Microsoft Update, which allows the OS to receive updates.”
     },
     {
-        "URL": "http://go.microsoft.com",
-        "Port": "443",
-        "Notes": “For Microsoft Update, which allows the OS to receive updates.”
+        "URL" : "http://go.microsoft.com",
+        "Port" : "443",
+        "Notes" : “For Microsoft Update, which allows the OS to receive updates.”
     },
     {
-        "URL": "http://dl.delivery.mp.microsoft.com",
-        "Port": "443",
-        "Notes": “For Microsoft Update, which allows the OS to receive updates.”
+        "URL" : "http://dl.delivery.mp.microsoft.com",
+        "Port" : "443",
+        "Notes" : “For Microsoft Update, which allows the OS to receive updates.”
     },
     {
-        "URL": "https://dl.delivery.mp.microsoft.com",
-        "Port": "443",
-        "Notes": “For Microsoft Update, which allows the OS to receive updates.”
+        "URL" : "https://dl.delivery.mp.microsoft.com",
+        "Port" : "443",
+        "Notes" : “For Microsoft Update, which allows the OS to receive updates.”
     },
     {
-        "URL": "*.blob.core.windows.net",
-        "Port": "443",
-        "Notes": “Alternatively, [myblobstorage].blob.core.windows.net for the blob storage account for the cluster witness. For Cluster Cloud Witness.”
+        "URL" : "*.blob.core.windows.net",
+        "Port" : "443",
+        "Notes" : “Alternatively, [myblobstorage].blob.core.windows.net for the blob storage account for the cluster witness. For Cluster Cloud Witness.”
     },
     {
-        "URL": "*.powershellgallery.com",
-        "Port": "443",
-        "Notes": “Alternatively, download the Az.StackHCI PowerShell module at https://www.powershellgallery.com/packages/Az.StackHCI. For HCI Registration.”
+        "URL" : "*.powershellgallery.com",
+        "Port" : "443",
+        "Notes" : “Alternatively, download the Az.StackHCI PowerShell module at https://www.powershellgallery.com/packages/Az.StackHCI. For HCI Registration.”
     },
     {
-        "URL": "*.servicebus.windows.net",
-        "Port": "443",
-        "Notes": “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
+        "URL" : "*.servicebus.windows.net",
+        "Port" : "443",
+        "Notes" : “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
     },
     {
-        "URL": "*.core.windows.net",
-        "Port": "443",
-        "Notes": “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
+        "URL" : "*.core.windows.net",
+        "Port" : "443",
+        "Notes" : “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
     },
     {
-        "URL": "login.microsoftonline.com",
-        "Port": "443",
-        "Notes": “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
+        "URL" : "login.microsoftonline.com",
+        "Port" : "443",
+        "Notes" : “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
 
     },
     {
-        "URL": "https://edgesupprdwestuufrontend.westus2.cloudapp.azure.com",
-        "Port": "443",
-        "Notes": “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
+        "URL" : "https://edgesupprdwestuufrontend.westus2.cloudapp.azure.com",
+        "Port" : "443",
+        "Notes" : “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
     },
     {
-        "URL": "https://edgesupprdwesteufrontend.westeurope.cloudapp.azure.com",
-        "Port": "443",
-        "Notes": “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
+        "URL" : "https://edgesupprdwesteufrontend.westeurope.cloudapp.azure.com",
+        "Port" : "443",
+        "Notes" : “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
     },
     {
-        "URL": "https://edgesupprdeastusfrontend.eastus.cloudapp.azure.com",
-        "Port": "443",
-        "Notes": “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
+        "URL" : "https://edgesupprdeastusfrontend.eastus.cloudapp.azure.com",
+        "Port" : "443",
+        "Notes" : “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
     },
     {
-        "URL": "https://edgesupprdwestcufrontend.westcentralus.cloudapp.azure.com",
-        "Port": "443",
-        "Notes": “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
+        "URL" : "https://edgesupprdwestcufrontend.westcentralus.cloudapp.azure.com",
+        "Port" : "443",
+        "Notes" : “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
     },
     {
-        "URL": "https://edgesupprdasiasefrontend.southeastasia.cloudapp.azure.com",
-        "Port": "443",
-        "Notes": “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
+        "URL" : "https://edgesupprdasiasefrontend.southeastasia.cloudapp.azure.com",
+        "Port" : "443",
+        "Notes" : “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
     },
     {
-        "URL": "https://edgesupprd.trafficmanager.net",
-        "Port": "443",
-        "Notes": “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
+        "URL" : "https://edgesupprd.trafficmanager.net",
+        "Port" : "443",
+        "Notes" : “For Remote Support, in order to allow remote access to Microsoft support for troubleshooting.”
     }
 ]

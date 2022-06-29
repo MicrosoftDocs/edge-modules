@@ -1,15 +1,15 @@
 
-"ID": "61800776-CD5B-442A-B2BC-BFFF83A2FC82"
-"Area": "known-issues-uninstall"
-"Reviewer": "abha"
-"ms.topic": "faq"
-"Schema": "doc"
-"Metatitle": "Troubleshoot issues when uninstalling Azure Kubernetes Service on Azure Stack HCI and Windows Server."
-"Metadescription": "Get help to troubleshoot issues and errors when uninstalling Azure Kubernetes Service on Azure Stack HCI and Windows Server."
-"title": "Fix known issues and errors when uninstalling Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"Summary": |
+"ID" : "61800776-CD5B-442A-B2BC-BFFF83A2FC82"
+"Area" : "known-issues-uninstall"
+"Reviewer" : "abha"
+"ms.topic" : "faq"
+"Schema" : "doc"
+"Metatitle" : "Troubleshoot issues when uninstalling Azure Kubernetes Service on Azure Stack HCI and Windows Server."
+"Metadescription" : "Get help to troubleshoot issues and errors when uninstalling Azure Kubernetes Service on Azure Stack HCI and Windows Server."
+"title" : "Fix known issues and errors when uninstalling Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Summary" : |
   Use this topic to help you troubleshoot and resolve issues when uninstalling Azure Kubernetes Service on Azure Stack HCI and Windows Server.
-"Additionalcontent": |
+"Additionalcontent" : |
   ## Next steps
   - [Troubleshooting overview](troubleshoot-overview.md)
   - [Installation issues and errors](/azure-stack/aks-hci/known-issues-installation)
