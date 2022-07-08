@@ -45,6 +45,10 @@
   ```
 
   In the displayed configuration settings, confirm the configuration. You could also attempt to ping the IP gateway and DNS server. 
+  
+    ```powershell
+  ping <DNS server>
+  ```
 
   If these methods don't work, use [New-AksHciNetworkSetting](./reference/ps/new-akshcinetworksetting.md) to change the configuration.
 
