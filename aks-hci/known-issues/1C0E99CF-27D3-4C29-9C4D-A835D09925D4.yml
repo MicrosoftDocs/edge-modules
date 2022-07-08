@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  I'm getting 'Install-AksHci Failed, Service returned an error. Status=403 Code="RequestDisallowedByPolicy"' error when installing AKS-HCI. What should I do?
+  Error: 'Install-AksHci Failed, Service returned an error. Status=403 Code="RequestDisallowedByPolicy"' error when installing AKS-HCI
 "Description" : |
   This error may be caused by the installation process attempting to violate an Azure Policy that's been set on the Azure subscription or resource group provided during the Azure Arc onboarding process. This error may occur for users who have defined Azure Policies at a subscription or resource group level, and then attempt to install AKS on Azure Stack HCI which violates an Azure Policy. 
 "Fix" : |
