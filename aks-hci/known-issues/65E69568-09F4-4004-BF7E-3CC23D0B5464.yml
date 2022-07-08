@@ -16,6 +16,6 @@
 "Issue" : |
   The AKS on Azure Stack HCI download package fails with the error: 'msft.sme.aks couldn't load'.
 "Description" : |
-  The error message also indicates that loading chunks failed.
+  The error stems from an error with download.
 "Fix" : |
-  If you get this error, and the error message also indicates that loading chunks failed, you should use the latest version of Microsoft Edge or Google Chrome and try again.
+  If you get this error, you should use the latest version of Microsoft Edge or Google Chrome and try again.
