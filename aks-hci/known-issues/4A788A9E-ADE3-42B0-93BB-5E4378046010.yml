@@ -16,6 +16,6 @@
 "Issue" : |
   Error: 'The process cannot access the file 'mocstack.cab' because it is being used by another process'.
 "Description" : |
-  `Instal``l-AksHci` failed with this error because another process is accessing `mocstack.cab`. 
+  `Install-AksHci` failed with this error because another process is accessing `mocstack.cab`. 
 "Fix" : |
   To resolve this issue, close all open PowerShell windows and then reopen a new PowerShell window.
