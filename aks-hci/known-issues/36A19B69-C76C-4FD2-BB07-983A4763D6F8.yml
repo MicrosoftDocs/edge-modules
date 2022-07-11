@@ -18,7 +18,7 @@
 "Description" : |
   After running [Install-AksHci](./reference/ps/install-akshci.md), the installation stopped and displayed the following error message:
 
-  ```Output
+  ```bash
   \kubectl.exe --kubeconfig=C:\AksHci\0.9.7.3\kubeconfig-clustergroup-management 
   get akshciclusters -o json returned a non zero exit code 1 
   [Unable to connect to the server: dial tcp 192.168.0.150:6443: 
