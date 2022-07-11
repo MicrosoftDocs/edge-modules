@@ -46,7 +46,7 @@
 
   In the displayed configuration settings, confirm the configuration. You could also attempt to ping the IP gateway and DNS server. 
   
-    ```powershell
+  ```powershell
   ping <DNS server>
   ```
 
