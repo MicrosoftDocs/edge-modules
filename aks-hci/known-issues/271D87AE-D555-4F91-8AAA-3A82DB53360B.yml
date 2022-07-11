@@ -14,8 +14,10 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Cloud agent may fail to start successfully when using path names with spaces in them.
+  Error: 'Failed to start the cloud agent generic cluster service in failover cluster. The cluster resource group os in the 'failed' state.'
 "Description" : |
+  Cloud agent may fail to successfully start when using path names with spaces in them.
+  
   When using [Set-AksHciConfig](./reference/ps/set-akshciconfig.md) to specify `-imageDir`, `-workingDir`, `-cloudConfigLocation`, or `-nodeConfigLocation` parameters with a path name that contains a space character, such as `D:\Cloud Share\AKS HCI`, the cloud agent cluster service will fail to start with the following (or similar) error message:
 
   ```
