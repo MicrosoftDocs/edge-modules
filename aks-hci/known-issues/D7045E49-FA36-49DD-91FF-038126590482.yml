@@ -18,4 +18,4 @@
 "Description" : |
   You may receive this error when running [Install-AksHci](./reference/ps/install-akshci.md).
 "Fix" : |
-  You can get more information by running `$error = Install-AksHci' and then $error[0].Exception.InnerException`. 
+  You can get more information by running `$error = Install-AksHci` and then `$error[0].Exception.InnerException`. 
