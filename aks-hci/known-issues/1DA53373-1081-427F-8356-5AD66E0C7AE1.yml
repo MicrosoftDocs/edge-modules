@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error:  Install-Moc failed with error - [The object already exists] An error occurred while creating resource 'IPv4 Address xxx.xx.xx.xx' for the clustered role 'xx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx'
+  Error:  Install-AksHci failed with error - [The object already exists] An error occurred while creating resource 'IPv4 Address xxx.xx.xx.xx' for the clustered role 'xx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx'
 "Description" : |
   A previously installed feature remains in a failed state and has not been cleared. You may see the following error:
 
@@ -49,7 +49,7 @@
   InnerException[A matching cluster network for the specified IP address could not be found]
   ```
 "Fix" : |
-  To resolve this issue, you will need to manually clean up the cluster role manually. You can remove the resource from the  fail-over  cluster manager by running the following PowerShell cmdlet:  `Remove-ClusterResource -name <resource name>`.
+  To resolve this issue, you will need to manually clean up the cluster role. You can remove the resource from the fail-over cluster manager by running the following PowerShell cmdlet: `Remove-ClusterResource -name <resource name>`.
 
 
 
