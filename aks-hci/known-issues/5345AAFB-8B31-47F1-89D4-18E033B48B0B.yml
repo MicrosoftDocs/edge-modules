@@ -18,4 +18,4 @@
 "Description" : |
   The file cannot be access because it is being used by another process.
 "Fix" : |
-  You can resolve this issue by restarting your PowerShell session. Close the PowerShell window and try Install-MOC again.
+  You can resolve this issue by restarting your PowerShell session. Close the PowerShell window and try Install-AksHci again.
