@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When you deploy AKS on Azure Stack HCI with a misconfigured network, deployment timed out at various points.
+  New-AksHciNetworkSetting Set-AksHciConfig results in error: "A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond"
 "Description" : |
   When you deploy AKS on Azure Stack HCI, the deployment may time out at different points of the process depending on where the misconfiguration occurred. You should review the error message to determine the cause and where it occurred.
 
