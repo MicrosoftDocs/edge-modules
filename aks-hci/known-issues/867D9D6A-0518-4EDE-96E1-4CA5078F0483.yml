@@ -32,4 +32,4 @@
   > [!NOTE]
   > Your cluster name will be different.
 "Fix" : |
-  `What is the fix?`
+  To resolve the issue, delete one of the clusters and create a new AKS on HCI cluster network setting that has a non-overlapping network with the other clusters.
