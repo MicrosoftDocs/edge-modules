@@ -51,10 +51,6 @@
     "Port": "443",
     "Notes": "Required for AKS on Azure Stack HCI billing when running `Install-AksHci`."
 }, {
-    "URL": "arck8onboarding.azurecr.io",
-    "Port": "443",
-    "Notes": "Required to pull container images when running `Install-AksHci`."
-}, {
     "URL": "v20.events.data.microsoft.com",
     "Port": "443",
     "Notes": "Used periodically to send Microsoft required diagnostic data from the Azure Stack HCI or Windows Server host."
