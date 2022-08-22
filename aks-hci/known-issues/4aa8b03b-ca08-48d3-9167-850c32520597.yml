@@ -6,7 +6,7 @@
 "Reviewer" : "sumsmith"
 "Author" : "sethm"
 "Service" : "aks-hci"
-"Area"  : "known-issues-installation"
+"Area"  : "known-issues-upgrade"
 "Tags"  : "['proof', 'concept']"
 "Source"  : "bugs"
 "Source ID"  : "1"
@@ -18,10 +18,13 @@
 "Description" : |
   When AKS-HCI fails to upgrade from the May release to the June release, the expectation is that AKS-HCI should revert to the May release and continue to function. But it leaves MOC agents in a stopped state, and manual attempts to start the agent don't activate them.
 
+  > [!NOTE]  
+  > This issue is only relevant when upgrading from the May release to the June release.
+
   ### Steps to reproduce
 
   1. Install AKS-HCI PowerShell module version 1.1.36.
-  2. Upgrade AKS-HCI. If the upgrade fails, AKS-HCI doesn't fall back to May and MOC agents are down.
+  2. Upgrade AKS-HCI. If the upgrade fails, AKS-HCI falls back to May, but MOC agents are down.
 
   ### Expected behavior
 
