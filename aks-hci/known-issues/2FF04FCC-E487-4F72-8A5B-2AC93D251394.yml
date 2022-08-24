@@ -18,4 +18,4 @@
 "Description" : |
   Older versions of PowerShell are not removed
 "Fix" : |
-  To work around this issue, you need to [run a script to uninstall older PowerShell versions](https://github.com/Azure/aks-hci/issues/130).
+  To work around this issue, you can [run this script to uninstall older PowerShell versions](https://github.com/Azure/aks-hci/issues/130).
