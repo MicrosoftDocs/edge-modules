@@ -19,5 +19,8 @@
   If you receive an incorrect upgrade notification message `Successfully installed AksHci PowerShell module version null`, the upgrade operation is successful even if the notification is misleading.
 
   ![WAC update dashboard doesn't refresh after successful updates.](media/known-issues-windows-admin-center/wac-known-issue-incorrect-notification.png)
+
+  > [!NOTE]
+  > This issue is fixed in the April 2022 release and later.
 "Fix" : |
   No action needed.
