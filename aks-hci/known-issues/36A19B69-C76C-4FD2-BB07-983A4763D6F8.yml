@@ -1,10 +1,10 @@
 "ID" : "36A19B69-C76C-4FD2-BB07-983A4763D6F8"
 "Status": "Active"
-"Create Date" : "3/26/2022"
-"Review Date" : "3/26/2022"
-"Publish Date" : "3/26/2022"
+"Create Date" : "9/15/2022"
+"Review Date" : "9/15/2022"
+"Publish Date" : "9/15/2022"
 "Reviewer" : "abha"
-"Author" : "mabrigg"
+"Author" : "sethm"
 "Service" : "aks-hci"
 "Area"  : "known-issues-installation"
 "Tags"  : "['proof', 'concept']"
@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Install-AksHci timed out with the error 'Waiting for API server'.
+  Install-AksHci timed out with the error ''.
 "Description" : |
   After running [Install-AksHci](./reference/ps/install-akshci.md), the installation stopped and displayed the following error message:
 
