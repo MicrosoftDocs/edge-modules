@@ -1,10 +1,10 @@
 "ID" : "5AE4F806-58B7-4AEC-9CE2-9254F1480531"
 "Status": "Active"
 "Create Date" : "3/26/2022"
-"Review Date" : "3/26/2022"
-"Publish Date" : "3/26/2022"
+"Review Date" : "9/30/2022"
+"Publish Date" : "9/30/2022"
 "Reviewer" : "abha"
-"Author" : "mabrigg"
+"Author" : "sethm"
 "Service" : "aks-hci"
 "Area"  : "known-issues-arc"
 "Tags"  : "['proof', 'concept']"
@@ -14,8 +14,8 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: 'Secrets "sh.helm.release.v1.azure-arc.v1" not found'.
+  Error: 'Secrets "sh.helm.release.v1.azure-arc.v1" not found'
 "Description" : |
   This error indicates that your Kubernetes API server could not be reached. 
 "Fix" : |
-  Try running the [Disable-AksHciArcConnection](./reference/ps/disable-akshciarcconnection.md) command again, and then go to the [Azure portal](https://portal.azure.com) to confirm that your `connectedCluster` resource has actually been deleted. You can also run `kubectl get ns -a` to confirm that the namespace, `azure-arc`, does not exist on your cluster.
+  Try running the [Disable-AksHciArcConnection](./reference/ps/disable-akshciarcconnection.md) command again, and then go to the [Azure portal](https://portal.azure.com) to confirm that your `connectedCluster` resource has actually been deleted. You can also run `kubectl get ns -A` to confirm that the namespace, `azure-arc`, does not exist on your cluster.
