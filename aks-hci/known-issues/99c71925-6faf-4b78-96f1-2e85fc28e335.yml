@@ -1,0 +1,28 @@
+"ID" : "99c71925-6faf-4b78-96f1-2e85fc28e335"
+"Status": "Active"
+"Create Date" : "9/30/2022"
+"Review Date" : "9/30/2022"
+"Publish Date" : "9/30/2022"
+"Reviewer" : "abha"
+"Author" : "sethm"
+"Service" : "aks-hci"
+"Area"  : "known-issues-security"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  Error 'System.Collections.Hashtable.generic_non_zero 1 [Error: Certificate has expired: Expired]'
+"Description" : |
+  The **Mocctl** certificate expires if it's not used for more than 60 days. AKS-HCI uses the `mocctl` command line tool to communicate with MocStack for performing Moc-related operations. The certificate used by the `mocclt` command to communicate with cloudagent expires in 60 days. The `mocctl` command renews the certificate automatically when it's used close to its expiry (after ~42 days). If the command is not used frequently, the certificate expires.
+
+  To reproduce the behavior, install AKS-HCI, and no operation involving the `mocctl` command is performed for 60 days.
+
+"Fix" : |
+  To fix the issue, log in again once the certificate expires. Execute the following PowerShell command to log in:
+
+  ```powershell
+  Repair-MocLogin
+  ```
