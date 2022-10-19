@@ -23,7 +23,7 @@
   or in the container where the cluster resides.
 "Fix" : |
   If you are not a domain administrator, you can ask one to 
-  [grant the CNO permissions to the OU](https://learn.microsoft.com/windows-server/failover-clustering/prestage-cluster-adds#grant-the-cno-permissions-to-the-ou)
+  [grant the CNO permissions to the OU](/windows-server/failover-clustering/prestage-cluster-adds#grant-the-cno-permissions-to-the-ou)
   or [prestage a VCO for the cloud agent generic cluster service](./prestage-cluster-service-host-create.md).
   
   If you are a domain administrator, it is still possible that your OU or container does not have the required permissions. 
