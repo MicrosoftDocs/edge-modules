@@ -30,7 +30,7 @@
     kubectl get nodes
     ```
     The removed node isn't listed in the output.
-  5. Open a PowerShell with administrative privileges and run the following command:
+  5. Open a PowerShell window with administrative privileges and run the following command:
     ```powershell
     get-vm
     ```

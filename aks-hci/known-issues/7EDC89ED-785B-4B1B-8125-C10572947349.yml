@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: unable to reconcile virtual network or Error: Install-Moc failed with error - Exception [[Moc] This machine does not appear to be configured for deployment].
+  Error: Unable to reconcile virtual network or Error: Install-Moc failed with error - Exception [[Moc] This machine does not appear to be configured for deployment].
 "Description" : |
   You can trigger these errors when you run `Install-AksHci` without running [Set-AksHciConfig](./reference/ps/set-akshciconfig.md). 
 "Fix" : |
