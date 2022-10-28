@@ -4,11 +4,11 @@
 "Reviewer": "EkeleAsonye"
 "ms.topic": "faq"
 "Schema": "doc"
-"Metatitle": "Common issues when using Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"Metadescription": "Common known issues when using Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"title": "Resolve general issues when using Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Metatitle": "Common issues when using AKS hybid"
+"Metadescription": "Common known issues when using AKS hybrid"
+"title": "Resolve general issues when using AKS hybrid"
 "Summary": |
-  This article describes some common known issues with Azure Kubernetes Service on Azure Kubernetes Service on Azure Stack HCI and Windows Server. You can also review [known issues with Windows Admin Center](/azure-stack/aks-hci/known-issues-windows-admin-center) and [installation issues and errors](/azure-stack/aks-hci/known-issues-installation).
+  This article describes some common known issues with AKS hybrid. You can also review [known issues with Windows Admin Center](/azure-stack/aks-hci/known-issues-windows-admin-center) and [installation issues and errors](/azure-stack/aks-hci/known-issues-installation).
 "Additionalcontent": |
   ## Next steps
 

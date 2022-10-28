@@ -8,7 +8,7 @@
 "Metadescription": "Known issues in Windows Admin Center for AKS hybrid"
 "title": "Fix issues in Windows Admin Center"
 "Summary": |
-  This article describes known issues with Windows Admin Center in AKS hybrid. Azure Kubernetes Service hybrid deployment options ("AKS hybrid") offer a fully supported container platform that can run cloud-native applications on the [Kubernetes container orchestration platform](https://kubernetes.io/). The architecture supports running virtualized Windows and Linux workloads. You can also review [upgrade](/azure-stack/aks-hci/known-issues) and [installation](/azure-stack/aks-hci/known-issues-installation) issues and errors.
+  This article describes known issues with Windows Admin Center in AKS hybrid. You can also review [upgrade](/azure-stack/aks-hci/known-issues) and [installation](/azure-stack/aks-hci/known-issues-installation) issues and errors.
 "Additionalcontent": |
   ## Next steps
   - [Troubleshooting overview](troubleshoot-overview.md)

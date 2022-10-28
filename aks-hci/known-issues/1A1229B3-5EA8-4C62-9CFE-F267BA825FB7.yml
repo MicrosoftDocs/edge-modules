@@ -8,9 +8,7 @@
 "Metadescription": "Known issues when upgrading AKS hybrid"
 "title": "Resolve issues when upgrading AKS hybrid"
 "Summary": |
-  This article describes known issues and errors you may encounter when upgrading AKS hybrid to the newest release. 
-  Azure Kubernetes Service hybrid deployment options ("AKS hybrid") offer a fully supported container platform that can run cloud-native applications on the [Kubernetes container orchestration platform](https://kubernetes.io/). The architecture supports running virtualized Windows and Linux workloads.
-  You can also review known issues with [Windows Admin Center](/azure-stack/aks-hci/known-issues-windows-admin-center) and when [installing AKS on Azure Stack HCI](/azure-stack/aks-hci/known-issues-installation).
+  This article describes known issues and errors you may encounter when upgrading AKS hybrid to the newest release. You can also review known issues with [Windows Admin Center](/azure-stack/aks-hci/known-issues-windows-admin-center) and when [installing AKS on Azure Stack HCI](/azure-stack/aks-hci/known-issues-installation).
 "Additionalcontent": |
   ## Next steps
   - [Troubleshooting overview](troubleshoot-overview.md)
