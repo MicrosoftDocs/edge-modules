@@ -27,7 +27,7 @@
 
   1. Install AksHci.
   2. Install target cluster.
-  3. Turn off cluster(vms) for more than 4 days.
+  3. Turn off cluster (vms) for more than 4 days.
   4. Turn the cluster on again.
 
   ### Expected behavior
@@ -37,8 +37,8 @@
   `certificate expired - Unable to connect to the server: x509: certificate has expired or is not yet valid: current time 2022-07-26T12:24:15-04:00 is after 2022-07-15T15:01:07Z`
  
 "Fix" : |
-  1. Run the following command to renew the generate certificate manually:
-     `Update-AksHciClusterCertificates  -Name my-workload-cluster -fixKubeletCredentials`
+  1. Run the following command to renew the certificates manually:
+     `Update-AksHciClusterCertificates  -Name my-workload-cluster -fixKubeltCredentials`
   2. Generate new credentials:
      `Get-AksHciCredential -name <clustername>`
   3. Wait a few minutes, then try the `kubectl` command for the cluster to be available again.

@@ -28,7 +28,7 @@
 
   ### Expected behavior
 
-  If the AksHci upgrade fails, the expectation is that AksHci reverts to the previous release and continues to function without any issues
+  If the AksHci upgrade fails, the expectation is that AksHci reverts to the previous release and continues to function without any issues.
 
   ### Symptoms
 
