@@ -16,9 +16,9 @@
 "Issue" : |
   Error 'System.Collections.Hashtable.generic_non_zero 1 [Error: Certificate has expired: Expired]'
 "Description" : |
-  The **Mocctl** certificate expires if it's not used for more than 60 days. AKS-HCI uses the `mocctl` command line tool to communicate with MocStack for performing Moc-related operations. The certificate used by the `mocclt` command to communicate with cloudagent expires in 60 days. The `mocctl` command renews the certificate automatically when it's used close to its expiry (after ~42 days). If the command is not used frequently, the certificate expires.
+  The **Mocctl** certificate expires if it's not used for more than 60 days. AKS hybrid uses the `mocctl` command line tool to communicate with MocStack for performing Moc-related operations. The certificate used by the `mocclt` command to communicate with cloudagent expires in 60 days. The `mocctl` command renews the certificate automatically when it's used close to its expiry (after ~42 days). If the command is not used frequently, the certificate expires.
 
-  To reproduce the behavior, install AKS-HCI, and no operation involving the `mocctl` command is performed for 60 days.
+  To reproduce the behavior, install AKS hybrid, and no operation involving the `mocctl` command is performed for 60 days.
 
 "Fix" : |
   To fix the issue, log in again once the certificate expires. Execute the following PowerShell command to log in:

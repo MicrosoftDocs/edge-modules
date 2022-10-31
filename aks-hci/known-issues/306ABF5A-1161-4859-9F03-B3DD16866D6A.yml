@@ -16,6 +16,6 @@
 "Issue" : |
   Insufficient privileges to complete the operation.
 "Description" : |
-  This error usually occurs when the service principal (SPN) or your Azure credentials (username and password) used to connect your AKS on Azure Stack HCI cluster don't have sufficient privileges in the Azure subscription to perform the operation.
+  This error usually occurs when the service principal (SPN) or your Azure credentials (username and password) used to connect your AKS cluster don't have sufficient privileges in the Azure subscription to perform the operation.
 "Fix" : |
-  Review the privilege requirements here - [Azure Requirements for AKS on Azure Stack HCI clusters](/azure-stack/aks-hci/system-requirements#azure-requirements).
+  Review the privilege requirements in [Azure requirements for AKS clusters in AKS hybrid](/azure/aks/hybrid/system-requirements#azure-requirements).
