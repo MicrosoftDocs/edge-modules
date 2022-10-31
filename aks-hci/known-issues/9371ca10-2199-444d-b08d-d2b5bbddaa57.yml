@@ -26,7 +26,7 @@
 "Fix" : |
   Look in the KMS pod logs for errors by running the following command:
 
-  `Kubectl logs <kmspod-name> -n kube-system`
+  `kubectl logs <kmspod-name> -n kube-system`
 
   If the logs return an error regarding an invalid token in the management cluster KMS pod, run the following command:
 

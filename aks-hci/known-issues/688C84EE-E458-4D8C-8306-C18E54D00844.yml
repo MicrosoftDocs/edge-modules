@@ -16,7 +16,7 @@
 "Issue" : |
   Windows Admin Center doesn't have an Arc offboarding experience.
 "Description" : |
-  Windows Admin Center does not currently have a process to off board a cluster from Azure Arc.
+  Windows Admin Center does not currently have a process to off-board a cluster from Azure Arc.
 "Fix" : |
   To delete Arc agents on a cluster that has been destroyed, navigate to the resource group of the cluster in the Azure portal, and manually delete the Arc content. To delete Arc agents on a cluster that is still up and running, you should run the following command:
 
@@ -25,4 +25,4 @@
   ```
 
   > [!NOTE]
-  > If you use the Azure portal to delete the Azure Arc-enabled Kubernetes resource, it removes any associated configuration resources, but does not remove the agents running on the cluster. Best practice is to delete the Azure Arc-enabled Kubernetes resource using `az connectedk8s delete` instead of Azure portal.
+  > If you use the Azure portal to delete a Kubernetes resource with Arc enabled, it removes any associated configuration resources, but does not remove the agents running on the cluster. Best practice is to delete the Kubernetes resource using `az connectedk8s delete` instead of the Azure portal.

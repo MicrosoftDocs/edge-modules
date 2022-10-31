@@ -15,6 +15,7 @@
 "Schema" : "known-issue"
 "Issue" : |
   Recovering from a failed AKS on Azure Stack HCI deployment.
+  # Can this be generalized to AKS hybrid?
 "Description" : |
   You are experiencing deployment issues or want to reset your deployment.
 "Fix" : |

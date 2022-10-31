@@ -16,6 +16,6 @@
 "Issue" : |
   A timeout error appears when trying to connect an AKS workload cluster to Azure Arc through Windows Admin Center.
 "Description" : |
-  Sometimes, due to network issues, Windows Admin Center times out an Arc connection. 
+  Sometimes, because of network issues, Windows Admin Center times out during an Arc connection. 
 "Fix" : |
   Use the PowerShell command [Enable-AksHciArcConnection](./reference/ps/enable-akshciarcconnection.md) to connect the AKS workload cluster to Azure Arc while we actively work on improving the user experience.

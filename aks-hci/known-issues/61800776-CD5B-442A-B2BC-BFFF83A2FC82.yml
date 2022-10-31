@@ -4,11 +4,11 @@
 "Reviewer": "abha"
 "ms.topic": "faq"
 "Schema": "doc"
-"Metatitle": "Troubleshoot issues when uninstalling Azure Kubernetes Service on Azure Stack HCI and Windows Server."
-"Metadescription": "Get help to troubleshoot issues and errors when uninstalling Azure Kubernetes Service on Azure Stack HCI and Windows Server."
-"title": "Fix known issues and errors when uninstalling Azure Kubernetes Service on Azure Stack HCI and Windows Server"
+"Metatitle": "Troubleshoot issues when uninstalling AKS hybrid."
+"Metadescription": "Get help to troubleshoot issues and errors when uninstalling AKS hybrid."
+"title": "Fix known issues and errors when uninstalling AKS hybrid"
 "Summary": |
-  Use this topic to help you troubleshoot and resolve issues when uninstalling Azure Kubernetes Service on Azure Stack HCI and Windows Server.
+  Use this topic to help you troubleshoot and resolve issues when uninstalling AKS hybrid.
 "Additionalcontent": |
   ## Next steps
   - [Troubleshooting overview](troubleshoot-overview.md)

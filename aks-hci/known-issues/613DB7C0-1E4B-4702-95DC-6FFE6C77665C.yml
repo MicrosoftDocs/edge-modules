@@ -16,6 +16,7 @@
 "Issue" : |
   During an upgrade, custom node taints, roles, and labels are lost.
 "Description" : |
-  When upgrading, you may lose all custom taints, roles, and labels that you added to your worker nodes. Since AKS on Azure Stack HCI is a managed service, adding custom taints, labels, and roles when performed outside the provided PowerShell cmdlets or Windows Admin Center is not supported.
+  When upgrading, you may lose all custom taints, roles, and labels that you added to your worker nodes. Since AKS is a managed service, adding custom taints, labels, and roles when performed outside the provided PowerShell cmdlets or Windows Admin Center is not supported.
+  # Verify: AKS is a managed service no matter where installed?
 "Fix" : |
   To work around this issue, run the [New-AksHciNodePool](./reference/ps/new-akshcinodepool.md) cmdlet to correctly [create a node pool with taints](./reference/ps/new-akshcinodepool.md#create-a-node-pool-with-taints) for your worker nodes.

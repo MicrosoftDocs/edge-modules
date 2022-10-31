@@ -16,7 +16,7 @@
 "Issue" : |
   Certificate renewal pod is in a crash loop state.
 "Description" : |
-  After upgrading or up-scaling the target cluster the certificate renewal pod is now in a crash loop state. It's expecting a cert tattoo `yaml` file from the path `/etc/Kubernetes/pki`. The configuration file is present in control plane node VMs but not on worker node VMs. 
+  After upgrading or up-scaling the target cluster, the certificate renewal pod is now in a crash loop state. It's expecting a cert tattoo `yaml` file from the path `/etc/Kubernetes/pki`. The configuration file is present in the control plane node VMs but not on worker node VMs. 
 "Fix" : |
   > [!NOTE]
   > This issue is fixed after the April 2022 release.
@@ -49,4 +49,4 @@
       sudo chgrp root cert-tattoo-kubelet.yaml
       ```
 
-  4. Repeat steps two and three for each of your worker nodes.
+  4. Repeat steps 2 and 3 for each of your worker nodes.
