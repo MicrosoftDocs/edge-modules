@@ -16,7 +16,7 @@
 "Issue" : |
   Delete KVA certificate if expired after 60 days.
 "Description" : |
-  KVA certificate expires after 60 day if no upgrade is performed.
+  KVA certificate expires after 60 days if no upgrade is performed.
 
   `Update-AksHci` and any command involving `kvactl` will throw the following error.
 
