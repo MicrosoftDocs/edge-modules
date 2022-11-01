@@ -9,7 +9,7 @@
 "title": "Resolve issues and errors during an AKS hybrid installation"
 "Summary": |
   **Applies to: AKS on Azure Stack HCI, AKS on Windows Server**
-  This article describes known issues and errors you may encounter when running an installation of AKS hybrid. You can also review known issues with when [upgrading](/azure-stack/aks-hci/known-issues-upgrade) and using [Windows Admin Center](/azure-stack/aks-hci/known-issues-windows-admin-center).
+  This article describes known issues and errors you may encounter when installing AKS hybrid. You can also review known issues with when [upgrading AKS hybrid](/azure-stack/aks-hci/known-issues-upgrade) and when using [Windows Admin Center](/azure-stack/aks-hci/known-issues-windows-admin-center).
 "Additionalcontent": |
   ## Next steps
   

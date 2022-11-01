@@ -24,7 +24,7 @@
   Register-PSRepository -Default
   ```
 
-  Uninstall and reinstall PowerShellGet in an administrative PowerShell window. Close all PowerShell windows afterwards.
+  Then uninstall and reinstall PowerShellGet in an administrative PowerShell window. Close all PowerShell windows afterwards.
   ```powershell
   Uninstall-Module PowerShellGet
   Install-Module PowerShellGet -Force

@@ -14,10 +14,8 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Creating virtual networks with a similar configuration cause overlap issues.
-  # Subject-verb disagreement in the issue text: S/B causes.
+  Creating virtual networks with a similar configuration causes overlap issues.
 "Description" : |
   When creating overlapping network objects using the `new-akshcinetworksetting` and `new-akshciclusternetwork` PowerShell cmdlets, issues can occur. For example, issues may happen in scenarios where two virtual network configurations are almost the same.
 "Fix" : |
   `What is the fix?`
-  # Missing fix.

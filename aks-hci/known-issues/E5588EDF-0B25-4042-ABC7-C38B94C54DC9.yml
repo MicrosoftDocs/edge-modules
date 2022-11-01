@@ -18,7 +18,7 @@
 "Description" : |
   This error appears when deploying through Windows Admin Center. The package provider requires the `PackageManagement` and `Provider` tags. You should check if the specified package has tags when attempting a deployment through Windows Admin Center. 
 
-  This error occurs from PowerShell and states that there are internet connectivity issues. PowerShell is trying to install the prerequisites package and is unable to install it. 
+  This error comes from PowerShell and states that there are internet connectivity issues. PowerShell is trying to install the prerequisites package and is unable to install it. 
 "Fix" : |
   Check to make sure the server or failover cluster has internet connectivity and then start a fresh installation.
 

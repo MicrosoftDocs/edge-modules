@@ -18,4 +18,4 @@
 "Description" : |
   Unable to connect Windows Admin Center to Azure because you can't automatically create and use an Azure App ID on the gateway.
 "Fix" : |
-  Create an Azure App ID and assign it the right permissions on the portal. Then, select **Use existing in the gateway**. For more information, visit [connecting your gateway to Azure](/windows-server/manage/windows-admin-center/azure/azure-integration).
+  Create an Azure App ID, and assign it the right permissions on the portal. Then, select **Use existing in the gateway**. For more information, visit [connecting your gateway to Azure](/windows-server/manage/windows-admin-center/azure/azure-integration).
