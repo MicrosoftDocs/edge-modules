@@ -6,9 +6,11 @@
 "Schema": "doc"
 "Metatitle": "Troubleshoot storage issues and errors in AKS hybrid"
 "Metadescription": "Get help to troubleshoot storage issues and errors in AKS hybrid."
-"title": "Fix known issues and errors when managing storage"
+"title": "Fix known issues and errors when managing storage in AKS hybrid"
 "Summary": |
+  **Applies to: AKS on Azure Stack HCI, AKS on Windows Server**
   Use this topic to help you troubleshoot and resolve storage-related issues in AKS hybrid.
+  Azure Kubernetes Service hybrid deployment options ("AKS hybrid") offer a fully supported container platform that can run cloud-native applications on the [Kubernetes container orchestration platform](https://kubernetes.io/). The architecture supports running virtualized Windows and Linux workloads.
 "Additionalcontent": |
   ## Next steps
 
