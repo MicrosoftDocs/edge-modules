@@ -16,6 +16,7 @@
 "Issue" : |
   Error: 'Azure subscription is not properly configured'.
 "Description" : |
-  You may encounter this issue if you have not configured your Azure subscription with the Arc enabled Kubernetes' resource providers. We currently check that `Microsoft.Kubernetes` and `Microsoft.KubernetesConfiguration` are configured. 
+  You may encounter this issue if you have not configured your Azure subscription with the Kubernetes resource providers. We currently check that `Microsoft.Kubernetes` and `Microsoft.KubernetesConfiguration` are configured. 
 "Fix" : |
-  For more information on enabling these resource providers, see [enabling resource providers for Arc enabled Kubernetes](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli#1-register-providers-for-azure-arc-enabled-kubernetes).
+  For more information on enabling these resource providers, see [Register providers for Arc-enabled Kubernetes](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli#1-register-providers-for-azure-arc-enabled-kubernetes).
+  # Using title from "Azure Arc-enabled Kubernetes" portal, which has not been rebranded.
