@@ -1,6 +1,6 @@
 "ID" : "06828B6D-6DAB-4789-ABC8-839D17327E2E"
 "Status": "Active"
-"Create Date" : "11/01/2022"
+"Create Date" : "3/26/2022"
 "Review Date" : "3/26/2022"
 "Publish Date" : "3/26/2022"
 "Reviewer" : "abha"
@@ -16,6 +16,6 @@
 "Issue" : |
   Only the user who set up the AKS host can create clusters.
 "Description" : |
-  When deploying Azure Kubernetes Service in Azure Stack HCI through Windows Admin Center, only the user who set up the AKS host can create Kubernetes clusters.
+  When deploying Azure Kubernetes Service on Azure Stack HCI through Windows Admin Center, only the user who set up the AKS host can create Kubernetes clusters.
 "Fix" : |
   To work around this issue, copy the _wssd_ folder from the profile of the user who set up the AKS host to the profile of the user who will be creating the new Kubernetes clusters.
