@@ -1,7 +1,7 @@
 "ID" : "07308189-9F56-46C0-AD2D-E7FB985D86DF"
 "Status": "Active"
 "Create Date" : "3/26/2022"
-"Review Date" : "3/26/2022"
+"Review Date" : "11/01/2022"
 "Publish Date" : "3/26/2022"
 "Reviewer" : "abha"
 "Author" : "mabrigg"
@@ -15,7 +15,6 @@
 "Schema" : "known-issue"
 "Issue" : |
   Recovering from a failed AKS on Azure Stack HCI deployment.
-  # Can this be generalized to AKS hybrid?
 "Description" : |
   You are experiencing deployment issues or want to reset your deployment.
 "Fix" : |
