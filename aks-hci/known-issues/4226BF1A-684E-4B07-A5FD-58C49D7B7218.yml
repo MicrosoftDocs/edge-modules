@@ -16,7 +16,7 @@
 "Issue" : |
   Nodeagent leaking ports when unable to join cloudagent due to expired token when cluster not upgraded for more than 60 days.
 "Description" : |
-  When a cluster has not been upgraded for more than 60 days, the node agent will fail to start during a node agent restart because of token expiry. This causes the agents to be in the starting phase. Continuous attempts to join the cloudagent may exhaust the supply of ports on the host. The status for the following command will be **Starting**.
+  When a cluster has not been upgraded for more than 60 days, the node agent fails to start during a node agent restart because of token expiry. This causes the agents to be in the starting phase. Continuous attempts to join the cloudagent may exhaust the supply of ports on the host. The status for the following command will be **Starting**.
 
   ```powershell
   Get-Service wssdagent | Select-Object -Property Name, Status
@@ -70,7 +70,7 @@
       Get-ClusterGroup -Name (Get-MocConfig).clusterRoleName
       ```
 
-  1. Run the following command to fix the wssdagent.
+  1. Run the following command to fix the wssdagent:
       ```powershell
       Repair-Moc
       ```

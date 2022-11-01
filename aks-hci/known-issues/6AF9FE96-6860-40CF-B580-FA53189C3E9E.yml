@@ -6,9 +6,10 @@
 "Schema": "doc"
 "Metatitle": "Resolve errors when enabling and disabling Azure Arc on AKS workload clusters"
 "Metadescription": "Find solutions to known issues and errors when enabling and disabling Azure Arc on AKS workload clusters in AKS hybrid."
-# Verify the title of link target, here and in Next steps. Can we write around branding issues with Arc-enabled Kubernetes in the link text?
-"title": "Resolve errors when enabling or disabling Azure Arc on your AKS workload clusters"
+"title": "Resolve errors when enabling or disabling Azure Arc on your AKS workload clusters in AKS hybrid"
 "Summary": |
+  **Applies to: AKS on Azure Stack HCI, AKS on Windows Server**
+
   This article describes errors you may encounter (and their workarounds) while connecting or disconnecting your AKS workload clusters to Azure Arc using the PowerShell cmdlets [Enable-AksHciArcConnection](./reference/ps/enable-akshciarcconnection.md) and [Disable-AksHciArcConnection](./reference/ps/disable-akshciarcconnection.md) in AKS hybrid. For issues that are not covered in this article, see [Troubleshooting Arc enabled Kubernetes](/azure/azure-arc/kubernetes/troubleshooting).
   
   You can also [open a support issue](./help-support.md) if none of the workarounds listed below apply to you.
@@ -16,5 +17,5 @@
 "Additionalcontent": |
   ## Next steps
 
-  - [Troubleshooting Arc enabled Kubernetes](/azure/azure-arc/kubernetes/troubleshooting)
+  - [Troubleshooting Azure Arc-enabled Kubernetes](/azure/azure-arc/kubernetes/troubleshooting) 
   - [Known issues](/azure-stack/aks-hci/known-issues)
