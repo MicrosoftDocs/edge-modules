@@ -19,10 +19,11 @@
   When _kubelet_ is under disk pressure, it collects unused container images, which may include pause images, and when this happens, ContainerD can't pull the image. 
 
   Currently, AKS on Azure Stack HCI uses Azure Container Registry (ACR) only with authentication disabled as a workaround for an ACR bug. Therefore, the same credentials shipped to customers could be used to pull the pause images on affected nodes, for example, username: 1516df5a-f1cc-4a6a-856c-03d127b02d05, password: 92684690-48b5-4dce-856d-ef4cccb54f22.
+  # Can this be generalized to AKS hybrid?
 "Fix" : |
   To resolve this issue, run the following steps:
 
-  1. Connect to the affected node using SSH and run the following command:
+  1. Connect to the affected node using SSH, and run the following command:
 
     ```
     sudo su
