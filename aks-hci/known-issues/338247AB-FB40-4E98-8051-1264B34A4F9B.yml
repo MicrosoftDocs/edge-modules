@@ -8,7 +8,6 @@
 "Metadescription": "Get help to troubleshoot Kubernetes workload cluster issues and errors in AKS hybrid."
 "title": "Troubleshoot Kubernetes management and workload cluster issues in AKS hybrid"
 "Summary": |
-  **Applies to: AKS on Azure Stack HCI, AKS on Windows Server**
   Use this article to help you troubleshoot and resolve issues on Kubernetes management and workload clusters in AKS hybrid.
 "Additionalcontent": |
   ## Next steps
