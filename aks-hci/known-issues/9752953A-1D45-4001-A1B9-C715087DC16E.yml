@@ -16,7 +16,7 @@
 "Issue" : |
   'Install-Module' was not recognized.
 "Description" : |
-  In stage 2.1: System Validation, you may get an error: `The item 'Install-Module' was not recognized as the name of a cmdlet, function, script file, or runnable program'.
+  In stage 2.1: System Validation, you may get an error: "The item 'Install-Module' was not recognized as the name of a cmdlet, function, script file, or runnable program".
 "Fix" : |
   Check the spelling of the name. If the path is included, make sure the path is correct. Then try again when you install. Complete the PowerShell commands on the node(s) that you are trying to deploy to. Run the following command to resolve the issue (ensure that your PowerShell version is at least 5.1):
   ```powershell
