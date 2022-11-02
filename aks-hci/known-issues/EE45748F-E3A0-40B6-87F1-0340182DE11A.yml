@@ -18,5 +18,4 @@
 "Description" : |
   You may encounter this issue if you have not configured your Azure subscription with the Arc-enabled Kubernetes resource providers. We currently check that `Microsoft.Kubernetes` and `Microsoft.KubernetesConfiguration` are configured. 
 "Fix" : |
-  For more information on enabling these resource providers, see [Register providers for Arc-enabled Kubernetes](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli#1-register-providers-for-azure-arc-enabled-kubernetes).
-  # Using title from "Azure Arc-enabled Kubernetes" portal, which has not been rebranded.
+  For more information about enabling these resource providers, see [Register providers for Arc-enabled Kubernetes](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli#1-register-providers-for-azure-arc-enabled-kubernetes).
