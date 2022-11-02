@@ -16,7 +16,7 @@
 "Issue" : |
   During deployment, the error "No match was found for the specified search criteria for the provider **NuGet**" appears.
 "Description" : |
-  This error appears when deploying through Windows Admin Center. The package provider requires the `PackageManagement` and `Provider` tags. You should check if the specified package has tags when attempting a deployment through Windows Admin Center. 
+  This error appears when deploying through Windows Admin Center. The package provider requires the `PackageManagement` and `Provider` tags. You should check if the specified package has a tag error when attempting a deployment through Windows Admin Center. 
 
   This error comes from PowerShell and states that there are internet connectivity issues. PowerShell is trying to install the prerequisites package and is unable to install it. 
 "Fix" : |
