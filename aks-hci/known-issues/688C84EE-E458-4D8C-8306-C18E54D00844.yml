@@ -25,4 +25,4 @@
   ```
 
   > [!NOTE]
-  > If you use the Azure portal to delete an Arc-enabled Kubernetes resource, it removes any associated configuration resources, but does not remove the agents running on the cluster. Best practice is to delete the Kubernetes resource using `az connectedk8s delete` instead of the Azure portal.
+  > If you use the Azure portal to delete the Arc-enabled Kubernetes resource, it removes any associated configuration resources, but does not remove the agents running on the cluster. Best practice is to delete the Kubernetes resource using `az connectedk8s delete` instead of the Azure portal.
