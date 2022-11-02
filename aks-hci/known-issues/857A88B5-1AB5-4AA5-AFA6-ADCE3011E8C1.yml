@@ -38,5 +38,5 @@
          Enter-PSSession -computer localhost -credential (Get-Credential)
       ``` 
 
-   For additional CredSSP troubleshooting tips, see [Troubleshoot CredSSP](../hci/manage/troubleshoot-credssp.md).
+   For additional CredSSP troubleshooting tips, see [Troubleshoot CredSSP](/azure-stack/hci/manage/troubleshoot-credssp).
    
