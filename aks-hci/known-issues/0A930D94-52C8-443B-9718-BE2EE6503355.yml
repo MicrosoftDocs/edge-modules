@@ -8,7 +8,6 @@
 "Metadescription": "Known issues in Windows Admin Center for AKS hybrid"
 "title": "Fix issues in Windows Admin Center"
 "Summary": |
-  **Applies to: AKS on Azure Stack HCI, AKS on Windows Server**
   This article describes known issues with Windows Admin Center for AKS hybrid. You can also review [upgrade](/azure-stack/aks-hci/known-issues) and [installation](/azure-stack/aks-hci/known-issues-installation) issues and errors.
 "Additionalcontent": |
   ## Next steps
