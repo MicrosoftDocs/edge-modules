@@ -18,7 +18,7 @@
 "Description" : |
   The AKS host cluster deployment fails at system checks with a WinRM service error.
 "Fix" : |
-  Try applying the solutions suggested in the [Manual troubleshooting](../hci/manage/troubleshoot-credssp.md#manual-troubleshooting). 
+  Try applying the solutions suggested in the [Manual troubleshooting](/azure-stack/hci/manage/troubleshoot-credssp#manual-troubleshooting). 
 
   ![Connecting to remote server localhost failed.](media/known-issues-windows-admin-center/wac-known-issue-description-auto-generated.png)
 
