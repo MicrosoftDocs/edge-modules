@@ -49,7 +49,7 @@
   InnerException[A matching cluster network for the specified IP address could not be found]
   ```
 "Fix" : |
-  To resolve this issue, you will need to manually clean up the cluster role. You can remove the resource from the fail-over cluster manager by running the following PowerShell cmdlet: `Remove-ClusterResource -name <resource name>`.
+  To resolve this issue, you will need to manually clean up the cluster role. You can remove the resource from the failover cluster manager by running the following PowerShell cmdlet: `Remove-ClusterResource -name <resource name>`.
 
 
 

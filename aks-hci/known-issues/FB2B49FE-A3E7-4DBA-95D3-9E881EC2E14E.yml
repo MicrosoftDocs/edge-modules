@@ -16,7 +16,7 @@
 "Issue" : |
   Restarting Azure Stack HCI nodes causes timing issue.
 "Description" : |
-  Restarting the Azure Stack HCI cluster nodes hosting the management cluster and workload clusters may cause the workload clusters to disappear from the WAC dashboard. 
+  Restarting the Azure Stack HCI cluster nodes hosting the management cluster and workload clusters may cause the workload clusters to disappear from the Windows Admin Center dashboard. 
 "Fix" : |
   To work around this issue, pause and drain the nodes before you plan to restart them. Sometimes, the workload clusters may just take longer to appear in the dashboard.
 

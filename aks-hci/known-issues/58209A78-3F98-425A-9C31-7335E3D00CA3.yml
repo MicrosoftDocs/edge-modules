@@ -18,7 +18,7 @@
 "Description" : |
   This error usually points to one of the following issues:
 
-  - The clusters were created in an Azure VM in a virtualized environment, or if you're deploying AKS on Azure Stack HCI on multiple levels of virtualization. 
-  - Due to a slow internet.
+  - The clusters were created in an Azure VM in a virtualized environment, or you were deploying AKS on Azure Stack HCI on multiple levels of virtualization. 
+  - A slow internet caused the timeout.
 "Fix" : |
-  If one of the above scenarios applies to you, run [Disable-AksHciArcConnection](./reference/ps/disable-akshciarcconnection.md) and try connecting again. If the above scenario doesn't apply to you,  [open a support issue](./help-support.md) on AKS on Azure Stack HCI.
+  If one of the above scenarios applies to you, run [Disable-AksHciArcConnection](./reference/ps/disable-akshciarcconnection.md), and try connecting again. If the above scenario doesn't apply to you, [open a support issue](./help-support.md) for AKS on Azure Stack HCI.

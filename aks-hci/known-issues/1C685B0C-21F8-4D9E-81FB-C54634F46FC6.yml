@@ -16,7 +16,7 @@
 "Issue" : |
   Error: 'System.Management.Automation.RemoteException Starting onboarding process Cluster "azure-arc-onboarding" set...'
 "Description" : |
-  The following error may occur when you use Windows Admin Center to create a workload cluster and connect it to Arc enabled Kubernetes:
+  The following error may occur when you use Windows Admin Center to create a workload cluster and connect it to Arc-enabled Kubernetes:
 
   `System.Management.Automation.RemoteException Starting onboarding process Cluster "azure-arc-onboarding" set. User "azure-arc-onboarding" set. Context "azure-arc-onboarding" created. Switched to context "azure-arc-onboarding". Azure login az login: error: argument --password/-p: expected one argument usage: az login [-h] [--verbose] [--debug] [--only-show-errors] [--output {json,jsonc,yaml,yamlc,table,tsv,none}] [--query JMESPATH] [--username USERNAME] [--password PASSWORD] [--service-principal] [--tenant TENANT] [--allow-no-subscriptions] [-i] [--use-device-code] [--use-cert-sn-issuer] : Job Failed Condition]`
 "Fix" : |

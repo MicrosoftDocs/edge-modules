@@ -21,7 +21,7 @@
   > [!NOTE]
   > This issue only happens occasionally.
 
-  To Reproduce: When you update a cluster with an existing AKS HCI deployment from HCI to HCIv2, an AKS HCI operation such as `New-AksHciCluster` may fail. The error message will state the MOC nodes are OutOfCapacity. For example:
+  To reproduce: When you update a cluster with an existing AKS deployment from HCI to HCIv2, an AKS operation such as `New-AksHciCluster` may fail. The error message will state the MOC nodes are **OutOfCapacity**. For example:
 
   ```PowerShell
   System.Collections.Hashtable.generic_non_zero1 [Error: failed to create nic test-load-balancer-whceb-nic for machinetest-load-balancer-whceb: unable to create VM network interface: failed to create network interface test-load-balancer-whceb-nic in resource group clustergroup-test: rpc error: code = Unknown desc = Location 'MocLocation' doesn't expose any nodes to create VNIC 'test-load-balancer-whceb-nic' on: OutOfCapacity]

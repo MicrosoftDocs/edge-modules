@@ -14,8 +14,8 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: ''My-Cluster' is not a valid cluster name. Names must be lower-case and match the regular expression pattern: '^[a-z0-9][a-z0-9-]*[a-z0-9]$''.
+  Error: ''My-Cluster' is not a valid cluster name. Names must be lowercase and match the regular expression pattern: '^[a-z0-9][a-z0-9-]*[a-z0-9]$''.
 "Description" : |
   This error indicates that the workload cluster does not follow the Kubernetes naming convention. 
 "Fix" : |
-  As the error suggests, make sure the cluster name is lower-case and matches the regular expression pattern: '^[a-z0-9][a-z0-9-]*[a-z0-9]$'.
+  As the error suggests, make sure the cluster name is lowercase and matches the regular expression pattern: '^[a-z0-9][a-z0-9-]*[a-z0-9]$'.

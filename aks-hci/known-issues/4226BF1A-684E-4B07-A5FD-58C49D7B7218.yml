@@ -16,15 +16,15 @@
 "Issue" : |
   Nodeagent leaking ports when unable to join cloudagent due to expired token when cluster not upgraded for more than 60 days.
 "Description" : |
-  When cluster not upgraded for more than 60 days. The node agent would fail to start due to token expiry on restart of node agent. This would cause the agents to be in starting phase. The continuous try to join the cloudagent may exhaust the ports in the host. The status for the below command would be **Starting**.
+  When a cluster has not been upgraded for more than 60 days, the node agent fails to start during a node agent restart because of token expiry. This causes the agents to be in the starting phase. Continuous attempts to join the cloudagent may exhaust the supply of ports on the host. The status for the following command will be **Starting**.
 
   ```powershell
   Get-Service wssdagent | Select-Object -Property Name, Status
   ```
 
-  Expected behavior: the node agent would be in the starting phase, which will constantly try joining the cloud agent and exhausting the ports.
+  Expected behavior: The node agent will be in the starting phase, which will constantly try joining the cloud agent, exhausting the ports.
 "Fix" : |
-  To resolve the issue, you'll need to first stop the wssdagent from running. Since the service is in starting phase, it may prevent you from stopping the service. You'll need to kill the process before attempting to stop the service.
+  To resolve the issue, you'll need to first stop the wssdagent from running. Since the service is in the starting phase, it may prevent you from stopping the service. You'll need to kill the process before attempting to stop the service.
 
   1. Confirm the wssdagent is in starting phase.
       ```powershell
@@ -42,7 +42,7 @@
       ```
     
     > [!NOTE]  
-    > Even after stopping the service the wssdagent process appears to start in few seconds for a couple of times before stopping. Before proceeding to the next step, make sure the below command returns back with an error on all the nodes.
+    > Even after stopping the service, the wssdagent process appears to start in a few seconds for a couple of times before stopping. Before proceeding to the next step, make sure the following command returns an error on all the nodes.
     
     ```powershell
     Get-Process -Name wssdagent
@@ -58,19 +58,19 @@
         + FullyQua1ifiedErrorId : NoProcess FoundForGivenName , Microsoft.PowerShell.Commands.Getprocesscommand
     ```
 
-  1. Step 1, 2, and 3 should be repeated at each node of the HCI cluster hitting this issue.
+  1. Repeat steps 1, 2, and 3 at each node of the HCI cluster that has this issue.
 
-  1. After confirming the wssdagent is not running. You need to start the cloudagent if it isn't running.
+  1. After confirming the wssdagent is not running, start the cloudagent if it isn't running.
     ```powershell
     Start-ClusterGroup -Name (Get-MocConfig).clusterRoleName
     ```
 
-  1. Once you confirm the cloudagent is up and running.
+  1. Confirm the cloudagent is up and running.
       ```powershell
       Get-ClusterGroup -Name (Get-MocConfig).clusterRoleName
       ```
 
-  1. Run the below command to fix the wssdagent.
+  1. Run the following command to fix the wssdagent:
       ```powershell
       Repair-Moc
       ```

@@ -16,18 +16,18 @@
 "Issue" : |
   Error: 'Waiting for pod 'Cloud Operator' to be ready'.
 "Description" : |
-  When attempting to deploy an AKS on Azure Stack HCI cluster on an Azure VM, the installation was stuck at `Waiting for pod 'Cloud Operator' to be ready...`, and then failed and timed out after two hours. Attempts to troubleshoot by checking the gateway and DNS server showed they were working appropriately. Checks to see if there was an IP or MAC address conflict showed none were found. When viewing the logs, it showed that the VIP pool had not reached the logs. There was a restriction on pulling the container image using `sudo docker pull ecpacr.azurecr.io/kube-vip:0.3.4` that returned a Transport Layer Security (TLS) timeout instead of _unauthorized_. 
+  When attempting to deploy an AKS cluster on an Azure VM, the installation was stuck at `Waiting for pod 'Cloud Operator' to be ready...`, and then failed and timed out after two hours. Attempts to troubleshoot by checking the gateway and DNS server showed they were working appropriately. Checks for IP or MAC address conflicts found none. The logs didn't show the VIP pool. There was a restriction on pulling the container image using `sudo docker pull ecpacr.azurecr.io/kube-vip:0.3.4` that returned a Transport Layer Security (TLS) timeout instead of _unauthorized_. 
 "Fix" : |
-  To resolve this issue, run the following steps:
+  To resolve this issue, do the following steps:
 
   1. Start to deploy your cluster.
-  2. When deployed, connect to management cluster VM through SSH as shown below:
+  2. When the cluster is deployed, connect to your management cluster VM through SSH as shown below:
 
     ```
     ssh -i (Get-MocConfig)['sshPrivateKey'] clouduser@<IP Address>
     ```
 
-  3. Change the maximum transmission unit (MTU) setting. Don't hesitate to make the change because if you make the change too late, then the deployment fails. Modifying the MTU setting helps unblock the container image pull.
+  3. Change the maximum transmission unit (MTU) setting. Don't hesitate to make the change; if you make the change too late, the deployment fails. Modifying the MTU setting helps unblock the container image pull.
 
     ```
     sudo ifconfig eth0 mtu 1300
@@ -38,4 +38,4 @@
     sudo docker ps -a
     ```
 
-  After performing these steps, the container image pull should be unblocked.
+  After you perform these steps, the container image pull should be unblocked.

@@ -16,9 +16,9 @@
 "Issue" : |
   Load balancer in Azure Kubernetes Service requires DHCP reservation
 "Description" : |
-  The load balancing solution in Azure Kubernetes Service on Azure Stack HCI uses DHCP to assign IP addresses to service endpoints. If the IP address changes for the service endpoint due to a service restart, DHCP lease expires due to a short expiration time. Therefore, the service becomes inaccessible because the IP address in the Kubernetes configuration is different from what is on the endpoint. This can lead to the Kubernetes cluster becoming unavailable. 
+  The load balancing solution in AKS hybrid uses DHCP to assign IP addresses to service endpoints. If the IP address changes for the service endpoint because of a service restart, the DHCP lease expires due to a short expiration time. Therefore, the service becomes inaccessible because the IP address in the Kubernetes configuration is different from what is on the endpoint. This can lead to the Kubernetes cluster becoming unavailable. 
 "Fix" : |
-  To get around this issue, use a MAC address pool for the load balanced service endpoints and reserve specific IP addresses for each MAC address in the pool.
+  To work around this issue, use a MAC address pool for the load-balanced service endpoints, and reserve specific IP addresses for each MAC address in the pool.
 
 
 

@@ -28,11 +28,11 @@
 
   ### Expected behavior
 
-  If the AksHci upgrade fails, the expectation is that AksHci reverts to the previous release and continues to function without any issues
+  If the Aks-Hci upgrade fails, the expectation is that AksHci reverts to the previous release and continues to function without any issues.
 
   ### Symptoms
 
-  #### Mismatch between AksHci version and MOC versions
+  #### Mismatch between Aks-Hci version and MOC version
   - `Get-AksHciVersion`: 1.0.10.10513
   - `Get-MocVersion`: 1.0.11.10707
 
@@ -40,7 +40,7 @@
   `Get-MocVersion` indicates that the June build is installed while the wssdcloudagent.exe version indicates that the May build is installed.
   
   #### MOC agent services image path has deployment ID parameter
-  Use the following command to show the image path for the cloud agent:
+  Run the following command to show the image path for the cloud agent:
 
   `reg query "HKLM\System\CurrentControlSet\Services\wssdcloudagent"`
 

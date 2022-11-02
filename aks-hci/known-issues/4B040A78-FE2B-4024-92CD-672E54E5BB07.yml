@@ -16,7 +16,7 @@
 "Issue" : |
   Attempt to increase the number of worker nodes fails.
 "Description" : |
-  When using PowerShell to create a cluster with static IP and then attempt to increase the number of worker nodes in the workload cluster, the installation got stuck at `control plane count at 2, still waiting for desired state: 3`. After a period of time, another error message appears: `Error: timed out waiting for the condition`.
+  When using PowerShell to create a cluster with static IP addresses and then attempt to increase the number of worker nodes in the workload cluster, the installation got stuck at `control plane count at 2, still waiting for desired state: 3`. After a period of time, another error message appears: `Error: timed out waiting for the condition`.
 
   When [Get-AksHciCluster](./reference/ps/get-akshcicluster.md) was run, it showed that the control plane nodes were created and provisioned and were in a _Ready_ state. However, when `kubectl get nodes` was run, it showed that the control plane nodes had been created but not provisioned and weren't in a _Ready_ state.
 "Fix" : |

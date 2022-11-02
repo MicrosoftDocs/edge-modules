@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Set-AksHciConfig fails with WinRM errors, but shows WinRM is configured correctly.
+  Set-AksHciConfig fails with WinRM errors but shows WinRM is configured correctly.
 "Description" : |
   When running [Set-AksHciConfig](./reference/ps/./set-akshciconfig.md), you might encounter the following error:
 
@@ -29,4 +29,4 @@
       + FullyQualifiedErrorId : Powershell remoting to TK5-3WP08R0733 was not successful.
   ```
 "Fix" : |
-  Most of the time, this error occurs as a result of a change in the user's security token (due to a change in group membership), a password change, or an expired password. In most cases, the issue can be remediated by logging off from the computer and logging back in. If this still fails, you can create a support ticket through the Azure portal.
+  Most of the time, this error occurs as a result of a change in the user's security token (due to a change in group membership), a password change, or an expired password. In most cases, the issue can be remediated by logging off from the computer and logging back in. If the error still occurs, you can create a support ticket through the Azure portal.

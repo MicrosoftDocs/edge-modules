@@ -16,6 +16,6 @@
 "Issue" : |
   When running 'kubectl get pods', pods were stuck in a 'Terminating' state.
 "Description" : |
-  When you deploy AKS on Azure Stack HCI, and then running `kubectl get pods`, pods in the same node are stuck in the _Terminating_ state. The machine rejects SSH connections because the node was likely experiencing high memory demand. This issue occurs because the Windows nodes are over-provisioned, and there's no reserve for core components. 
+  When you deploy AKS on Azure Stack HCI, and then run `kubectl get pods`, pods in the same node are stuck in the _Terminating_ state. The machine rejects SSH connections because the node is likely experiencing high memory demand. This issue occurs because the Windows nodes are over-provisioned, and there's no reserve for core components. 
 "Fix" : |
   To avoid this situation, add the resource limits and resource requests for CPU and memory to the pod specification to ensure that the nodes aren't over-provisioned. Windows nodes don't support eviction based on resource limits, so you should estimate how much the containers will use and then ensure the nodes have sufficient CPU and memory amounts. You can find more information in [system requirements](system-requirements.md).

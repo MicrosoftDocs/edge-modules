@@ -4,11 +4,11 @@
 "Reviewer": "abha"
 "ms.topic": "faq"
 "Schema": "doc"
-"Metatitle": "Troubleshoot networking issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server"
-"Metadescription": "Get help to troubleshoot networking issues and errors in Azure Kubernetes Service on Azure Stack HCI and Windows Server."
-"title": "Fix known issues and errors when configuring a network"
+"Metatitle": "Troubleshoot networking issues and errors in AKS hybrid"
+"Metadescription": "Get help to troubleshoot networking issues and errors in AKS hybrid."
+"title": "Fix known issues and errors when configuring a network in AKS hybrid"
 "Summary": |
-  Use this topic to help you troubleshoot and resolve networking-related issues with Azure Kubernetes Service on Azure Stack HCI and Windows Server.
+  Use this topic to help you troubleshoot and resolve networking-related issues with AKS hybrid.
 "Additionalcontent": |
   ## Next steps
   - [Troubleshooting overview](troubleshoot-overview.md)

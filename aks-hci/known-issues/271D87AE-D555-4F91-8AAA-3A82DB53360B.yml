@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: 'Failed to start the cloud agent generic cluster service in failover cluster. The cluster resource group os in the 'failed' state.'
+  Error: 'Failed to start the cloud agent generic cluster service in failover cluster. The cluster resource group is in the 'failed' state.'
 "Description" : |
   Cloud agent may fail to successfully start when using path names with spaces in them.
   

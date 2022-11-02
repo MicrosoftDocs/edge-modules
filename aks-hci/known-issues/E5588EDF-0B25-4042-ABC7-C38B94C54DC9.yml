@@ -14,18 +14,18 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  During deployment the error 'No match was found for the specified search criteria for the provider 'NuGet'' appears.
+  During deployment, the error "No match was found for the specified search criteria for the provider **NuGet**" appears.
 "Description" : |
-  This error appears when deploying through Windows Admin Center. The package provider requires the `PackageManagement` and `Provider` tags. You should check if the specified package has tags error when attempting a deployment through Windows Admin Center. 
+  This error appears when deploying through Windows Admin Center. The package provider requires the `PackageManagement` and `Provider` tags. You should check if the specified package has a tag error when attempting a deployment through Windows Admin Center. 
 
-  This is an error occurs from PowerShell and states that there are internet connectivity issues. PowerShell is trying to install the pre-requisites package and is unable to install it. 
+  This error comes from PowerShell and states that there are internet connectivity issues. PowerShell is trying to install the prerequisites package and is unable to install it. 
 "Fix" : |
   Check to make sure the server or failover cluster has internet connectivity and then start a fresh installation.
 
   In Stage 2.1: System Validation, there may be an error when you hit install: `No match was found for the specified search criteria for the provider 'NuGet'. The package provider requires 'PackageManagement' and 'Provider' tags. Please check if the specified package has the tags.`
-  For the PowerShell commands, please complete them on the node(s) that you are trying to deploy to. You will have to manually install the NuGet using the PowerShell command below: 
+  Complete the PowerShell commands on the node(s) that you are trying to deploy to. You will have to manually install the NuGet using the following PowerShell command: 
   ```powershell
   Install-PackageProvider -Name NuGet -Scope CurrentUser -Force
 
   ```
-  After running that command, please close all open PowerShell windows and try again in Windows Admin Center.
+  After running that command, close all open PowerShell windows and try again in Windows Admin Center.
