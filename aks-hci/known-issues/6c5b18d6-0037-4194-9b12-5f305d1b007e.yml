@@ -18,9 +18,7 @@
 "Description" : |
   The target cluster logs are not accessible. When you try to access pod logs in the target cluster, the following TLS error is displayed:
 
-  ```shell
-  Error from server: Get "[https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver":](https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver%22:) remote error: tls: internal error
-  ```
+  `Error from server: Get "[https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver":](https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver%22:) remote error: tls: internal error`
 
   > [!NOTE]  
   > This is a known issue in AksHci version 1.0.14.x and earlier. It is fixed as part of the 1.0.14.x release (September release and later). Target clusters updated to this version should not experience this issue.
@@ -36,12 +34,10 @@
 
   The target pod logs should not be accessible. Any `kubectl` log command run against the target cluster should return with an error message similar to the following:
 
-  ```shell
-  Error from server: Get "[https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver":](https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver%22:) remote error: tls: internal error
-  ````
-
+  `Error from server: Get "[https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver":](https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver%22:) remote error: tls: internal error`
+  
 "Fix" : |
-  Run the following command to renew the certificate manager tokens:
+  To fix the issue, run the following command to renew the certificate manager tokens:
 
   ```powershell
   Update-AksHciClusterCertificates  -Name my-workload-cluster -fixcloudcredentials
