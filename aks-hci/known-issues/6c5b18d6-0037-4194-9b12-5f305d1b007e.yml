@@ -1,0 +1,46 @@
+"ID" : "6c5b18d6-0037-4194-9b12-5f305d1b007e"
+"Status": "Active"
+"Create Date" : "11/09/2022"
+"Review Date" : "11/09/2022"
+"Publish Date" : "11/09/2022"
+"Reviewer" : "sumsmith"
+"Author" : "sethm"
+"Service" : "aks-hci"
+"Area"  : "known-issues-security"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  Target cluster pod logs are not accessible - remote error: tls: internal error
+"Description" : |
+  The target cluster logs are not accessible. When you try to access pod logs in the target cluster, the following TLS error is displayed:
+
+  ```shell
+  Error from server: Get "[https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver":](https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver%22:) remote error: tls: internal error
+  ```
+
+  > [!NOTE]  
+  > This is a known issue in AksHci version 1.0.14.x and earlier. It should be fixed as part of 1.0.14.x (September release and later). Target clusters updated to this version should not experience this issue.
+
+  ### To reproduce
+
+  1. Install AksHci.
+  2. Install the target cluster.
+  3. Don't upgrade the cluster for 60 days.
+  4. Restart the cluster.
+
+  ### Expected behavior
+
+  The target pod logs should not be accessible. Any `kubectl` log command run against the target cluster should return with an error message similar to the following:
+
+  `Error from server: Get "[https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver":](https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver%22:) remote error: tls: internal error`
+
+"Fix" : |
+  Run the following command to renew the certificate manager tokens:
+
+  ```powershell
+  Update-AksHciClusterCertificates  -Name my-workload-cluster -fixcloudcredentials
+  ```
