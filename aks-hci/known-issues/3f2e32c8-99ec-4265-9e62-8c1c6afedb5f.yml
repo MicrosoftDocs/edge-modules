@@ -3,7 +3,7 @@
 "Create Date" : "9/30/2022"
 "Review Date" : "9/30/2022"
 "Publish Date" : "9/30/2022"
-"Reviewer" : "abha"
+"Reviewer" : "sumsmith"
 "Author" : "sethm"
 "Service" : "aks-hci"
 "Area"  : "known-issues-security"
@@ -21,7 +21,7 @@
   `certificate expired - Unable to connect to the server: x509: certificate has expired or is not yet valid: current time 2022-07-26T12:24:15-04:00 is after 2022-07-15T15:01:07Z`
 
   > [!NOTE]  
-  > This issue is fixed in the September release and later.
+  > This issue is fixed in the September 2022 release and later.
 
   ### To reproduce
 
