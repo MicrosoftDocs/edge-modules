@@ -1,7 +1,7 @@
 "ID" : "6c5b18d6-0037-4194-9b12-5f305d1b007e"
 "Status": "Active"
-"Create Date" : "11/09/2022"
-"Review Date" : "11/09/2022"
+"Create Date" : "11/10/2022"
+"Review Date" : "11/10/2022"
 "Publish Date" : "11/10/2022"
 "Reviewer" : "sumsmith"
 "Author" : "sethm"
@@ -30,15 +30,23 @@
   3. Don't upgrade the cluster for 60 days.
   4. Restart the cluster.
 
-  ### Expected behavior
+  ### Symptoms and mitigation
 
   The target pod logs should not be accessible. Any `kubectl` log command run against the target cluster should return with an error message similar to the following:
 
   `Error from server: Get "[https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver":](https://10.0.0.0:10250/containerLogs/kube-system/kube-apiserver-moc-l9iv8xjn3av/kube-apiserver%22:) remote error: tls: internal error`
   
 "Fix" : |
-  To fix the issue, run the following command to renew the certificate manager tokens:
+  To fix the issue:
+  
+  1. Run the following command to renew the generated certificate manually:
 
-  ```powershell
-  Update-AksHciClusterCertificates  -Name my-workload-cluster -fixcloudcredentials
-  ```
+     ```powershell
+     Update-AksHciClusterCertificates  -Name my-workload -cluster -fixKubeletCredentials
+     ```
+  
+  2. Generate new credentials:
+
+     ```powershell
+     Get-AksHciCredential -name <clustername>
+     ```
