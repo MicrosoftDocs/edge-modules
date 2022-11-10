@@ -1,0 +1,27 @@
+"ID" : "88859b30-2b0f-45d7-8da8-444096e5b903"
+"Status": "Active"
+"Create Date" : "11/9/2022"
+"Review Date" : ""
+"Publish Date" : ""
+"Reviewer" : "sethm"
+"Author" : "mamezgeb"
+"Service" : "aks-hci"
+"Area"  : "known-issues-installation"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  Set-AksHciConfig fails with error: “GetCatalog error returned by API call: … proxyconnect tcp: tls: first record does not look like a TLS Handshake"
+"Description" : |
+  If you are using AKS with a proxy server, you may have used the wrong URL when setting the required https proxy URL value.
+"Fix" : |
+  The http proxy URL and https proxy URL values are both required when configuring AKS with a proxy server, but it is common for both values to need to share the same http-prefixed URL.
+  
+  If this might be the case in your environment, try the following.
+  
+  1. Close the PowerShell window and open a new one
+  2. Go through running New-AksHciNetworkSetting and New-AksHciProxySetting again, but when running New-AksHciProxySetting, set -https with the same http-prefixed URL value that you set for -http
+  3. Run Set-AksHciConfig and proceed
