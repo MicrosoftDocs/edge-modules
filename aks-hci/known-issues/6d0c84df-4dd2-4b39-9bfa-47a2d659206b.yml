@@ -1,7 +1,7 @@
 "ID" : "6d0c84df-4dd2-4b39-9bfa-47a2d659206b"
 "Status": "Active"
-"Create Date" : "11/09/2022"
-"Review Date" : "11/09/2022"
+"Create Date" : "11/10/2022"
+"Review Date" : "11/10/2022"
 "Publish Date" : "11/10/2022"
 "Reviewer" : "sumsmith"
 "Author" : "sethm"
@@ -30,7 +30,7 @@
   3. Turn off cluster(vms) for more than 4 days.
   4. Turn the cluster on again.
 
-  ### Expected behavior
+  ### Symptoms and mitigation
 
   The target cluster should be unreachable. Any `kubectl` command run against the target cluster should return with an error message similar to the following:
 
@@ -42,7 +42,7 @@
   1. Run the following command to renew the generated certificate manually:
 
      ```powershell
-     Update-AksHciClusterCertificates  -Name my-workload-cluster -fixKubeletCredentials
+     Update-AksHciClusterCertificates  -Name my-workload -cluster -fixKubeletCredentials
      ```
   
   2. Generate new credentials:

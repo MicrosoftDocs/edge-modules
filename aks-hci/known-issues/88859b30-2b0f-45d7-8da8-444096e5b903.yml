@@ -1,9 +1,9 @@
 "ID" : "88859b30-2b0f-45d7-8da8-444096e5b903"
 "Status": "Active"
 "Create Date" : "11/9/2022"
-"Review Date" : ""
-"Publish Date" : ""
-"Reviewer" : "sethm"
+"Review Date" : "11/9/2022"
+"Publish Date" : "11/10/2022"
+"Reviewer" : "sumsmith"
 "Author" : "mamezgeb"
 "Service" : "aks-hci"
 "Area"  : "known-issues-installation"
@@ -14,14 +14,16 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Set-AksHciConfig fails with error: “GetCatalog error returned by API call: … proxyconnect tcp: tls: first record does not look like a TLS Handshake"
+  The `Set-AksHciConfig` cmdlet fails with the error:
+  
+  `GetCatalog error returned by API call: … proxyconnect tcp: tls: first record does not look like a TLS Handshake`
 "Description" : |
-  If you are using AKS with a proxy server, you may have used the wrong URL when setting the required https proxy URL value.
+  If you are using AKS with a proxy server, you might have used the wrong URL when setting the required HTTPS proxy URL value.
 "Fix" : |
-  The http proxy URL and https proxy URL values are both required when configuring AKS with a proxy server, but it is common for both values to need to share the same http-prefixed URL.
+  The HTTP proxy URL and HTTPS proxy URL values are both required when configuring AKS with a proxy server, but it's common to need both values to share the same HTTP-prefixed URL.
   
-  If this might be the case in your environment, try the following.
-  
-  1. Close the PowerShell window and open a new one
-  2. Go through running New-AksHciNetworkSetting and New-AksHciProxySetting again, but when running New-AksHciProxySetting, set -https with the same http-prefixed URL value that you set for -http
-  3. Run Set-AksHciConfig and proceed
+  If this might be the case in your environment, try the following mitigation steps:
+
+  1. Close the PowerShell window and open a new one.
+  2. Run the `New-AksHciNetworkSetting` and `New-AksHciProxySetting` cmdlets again. When running `New-AksHciProxySetting`, set the `-https` parameter with the same HTTP-prefixed URL value that you set for `-http`.
+  3. Run `Set-AksHciConfig` and proceed.
