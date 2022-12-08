@@ -1,19 +1,25 @@
-
-"ID": "6AF9FE96-6860-40CF-B580-FA53189C3E9E"
-"Area": "known-issues-arc"
-"Reviewer": "abha"
-"ms.topic": "faq"
-"Schema": "doc"
-"Metatitle": "Resolve errors when enabling and disabling Azure Arc on AKS workload clusters"
-"Metadescription": "Find solutions to known issues and errors when enabling and disabling Azure Arc on AKS workload clusters in AKS hybrid."
-"title": "Resolve errors when enabling or disabling Azure Arc on your AKS workload clusters in AKS hybrid"
-"Summary": |
-  This article describes errors you may encounter (and their workarounds) while connecting or disconnecting your AKS workload clusters to Azure Arc using the PowerShell cmdlets [Enable-AksHciArcConnection](./reference/ps/enable-akshciarcconnection.md) and [Disable-AksHciArcConnection](./reference/ps/disable-akshciarcconnection.md) in AKS hybrid. For issues that are not covered in this article, see [Troubleshooting Arc enabled Kubernetes](/azure/azure-arc/kubernetes/troubleshooting).
-  
+"ID" : "6AF9FE96-6860-40CF-B580-FA53189C3E9E"
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "sethm"
+"Service" : "aks-hci"
+"Area"  : "known-issues-arc"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue": |
+  This article describes errors you may encounter (and their workarounds) while connecting or disconnecting your AKS workload clusters to Azure Arc using the PowerShell cmdlets [Enable-AksHciArcConnection](./reference/ps/enable-akshciarcconnection.md) and [Disable-AksHciArcConnection](./reference/ps/disable-akshciarcconnection.md) in AKS hybrid. For issues that are not covered in this article, see [Troubleshooting Arc enabled Kubernetes](/azure/azure-arc/kubernetes/troubleshooting).  
+"Description": |
   You can also [open a support issue](./help-support.md) if none of the workarounds listed below apply to you.
-  
-"Additionalcontent": |
   ## Next steps
 
   - [Troubleshooting Azure Arc-enabled Kubernetes](/azure/azure-arc/kubernetes/troubleshooting) 
   - [Known issues](/azure-stack/aks-hci/known-issues)
+"Fix" : |  
+  If you continue to run into problems when you're using AKS hybrid, you can file bugs through [GitHub](https://aka.ms/aks-hci-issues).
