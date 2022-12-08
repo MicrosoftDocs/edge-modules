@@ -1,16 +1,24 @@
-
 "ID": "66C452A5-D552-4645-B02A-E055F6DF7B85"
-"Area": "known-issues-networking"
-"Reviewer": "abha"
-"ms.topic": "faq"
-"Schema": "doc"
-"Metatitle": "Troubleshoot networking issues and errors in AKS hybrid"
-"Metadescription": "Get help to troubleshoot networking issues and errors in AKS hybrid."
-"title": "Fix known issues and errors when configuring a network in AKS hybrid"
-"Summary": |
+"Status": "Active"
+"Create Date" : "3/26/2022"
+"Review Date" : "3/26/2022"
+"Publish Date" : "3/26/2022"
+"Reviewer" : "abha"
+"Author" : "sethm"
+"Service" : "aks-hci"
+"Area"  : "known-issues-networking"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue": |
   Use this topic to help you troubleshoot and resolve networking-related issues with AKS hybrid.
-"Additionalcontent": |
+"Description": |
   ## Next steps
   - [Troubleshooting overview](troubleshoot-overview.md)
   - [Installation issues and errors](/azure-stack/aks-hci/known-issues-installation)
   - [Storage known issues](/azure-stack/aks-hci/known-issues-storage)
+"Fix" : |  
+  If you continue to run into problems when you're using AKS hybrid, you can file bugs through [GitHub](https://aka.ms/aks-hci-issues).
