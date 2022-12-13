@@ -11,7 +11,6 @@
 "Metasubservice" : "aks-hci"
 "title": "Fix security and identity known issues and errors in AKS hybrid"
 "Summary": |
-  **Applies to: AKS on Azure Stack HCI, AKS on Windows Server**
   Use this topic to help you troubleshoot and resolve security and identity-related issues in AKS hybrid.
 "Additionalcontent": |
   ## Next steps

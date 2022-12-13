@@ -14,8 +14,8 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  The Setup or Cluster Create wizard displays an error about a wrong configuration.
+  The Setup or Cluster Create wizard displays an error about a wrong configuration
 "Description" : |
   You may receive an error in either wizard about a wrong configuration.
 "Fix" : |
-  Perform cluster cleanup operations. These operations might involve removing the `C:\Program Files\AksHci\mocctl.exe` file.
+  Perform cluster cleanup operations. These operations might involve removing the **C:\Program Files\AksHci\mocctl.exe** file.

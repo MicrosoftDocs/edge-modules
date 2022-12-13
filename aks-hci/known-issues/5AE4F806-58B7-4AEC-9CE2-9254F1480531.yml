@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: 'Secrets "sh.helm.release.v1.azure-arc.v1" not found'
+  Error: "Secrets "sh.helm.release.v1.azure-arc.v1" not found"
 "Description" : |
   This error indicates that your Kubernetes API server could not be reached. 
 "Fix" : |

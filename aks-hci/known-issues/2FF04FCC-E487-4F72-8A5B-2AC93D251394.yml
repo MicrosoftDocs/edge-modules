@@ -14,8 +14,8 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  After a successful upgrade, older versions of PowerShell are not removed.
+  After a successful upgrade, older versions of PowerShell are not removed
 "Description" : |
-  Older versions of PowerShell are not removed
+  Older versions of PowerShell are not removed.
 "Fix" : |
   To work around this issue, you can [run this script to uninstall older PowerShell versions](https://github.com/Azure/aks-hci/issues/130).

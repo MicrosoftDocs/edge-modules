@@ -16,7 +16,7 @@
 "Issue" : |
   Cluster auto-scaling fails
 "Description" : |
-  Cluster auto-scaling can fail when you use the following Azure policy on your AKS host management cluster: "Kubernetes clusters should not use the default namespace". This happens because the policy, when implemented on the AKS host management cluster, blocks the creation of autoscaler profiles in the default namespace. To fix this issue, choose one of the following options:
+  Cluster auto-scaling can fail when you use the following Azure policy on your AKS host management cluster: "Kubernetes clusters should not use the default namespace." This happens because the policy, when implemented on the AKS host management cluster, blocks the creation of autoscaler profiles in the default namespace. To fix this issue, choose one of the following options:
 "Fix" : |
   - Uninstall the Azure Policy extension on the AKS host management cluster. Learn more about [uninstalling Azure Policy extensions here](/azure/governance/policy/concepts/policy-for-kubernetes?toc=%2Fazure%2Fazure-arc%2Fkubernetes%2Ftoc.json&bc=%2Fazure%2Fazure-arc%2Fkubernetes%2Fbreadcrumb%2Ftoc.json#delete-azure-policy-extension).
   - Change the scope of the Azure policy to exclude AKS host management clusters. Learn more about [Azure Policy scopes here](/azure/governance/policy/concepts/scope).

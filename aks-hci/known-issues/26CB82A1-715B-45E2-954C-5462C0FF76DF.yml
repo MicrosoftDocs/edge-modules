@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  PowerShell deployment doesn't check for available memory before creating a new workload cluster.
+  PowerShell deployment doesn't check for available memory before creating a new workload cluster
 "Description" : |
   The **Aks-Hci** PowerShell commands don't validate the available memory on the host server before creating Kubernetes nodes. This issue can lead to memory exhaustion and virtual machines that don't start. 
 "Fix" : |

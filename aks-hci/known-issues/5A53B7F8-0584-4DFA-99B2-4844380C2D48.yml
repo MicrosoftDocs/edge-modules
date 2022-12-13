@@ -14,26 +14,31 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When using kubectl to delete a node, the associated VM might not be deleted.
+  When using kubectl to delete a node, the associated VM might not be deleted
 "Description" : |
   You'll see this issue if you follow these steps:
 
   1. Create a Kubernetes cluster.
   2. Scale the cluster to more than two nodes.
-  3. Delete a node by running the following command: 
+  3. Delete a node by running the following command:
+
     ```powershell
     kubectl delete node <node-name>
     ```
 
   4. Return a list of the nodes by running the following command:
+
     ```powershell
     kubectl get nodes
     ```
+
     The removed node isn't listed in the output.
   5. Open a PowerShell window with administrative privileges, and run the following command:
+
     ```powershell
     get-vm
     ```
+    
   The removed node is still listed.
 "Fix" : |
   This failure causes the system not to recognize that the node is missing, and therefore, a new node won't spin up. 

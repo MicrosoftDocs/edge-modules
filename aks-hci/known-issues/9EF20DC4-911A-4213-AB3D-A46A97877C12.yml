@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/azure-stack/aks-hci/known-issues-upgrade"
 "Schema" : "known-issue"
 "Issue" : |
-  Upgrade of target cluster gets stuck with one or more nodes in an old Kubernetes version.
+  Upgrade of target cluster gets stuck with one or more nodes in an old Kubernetes version
 "Description" : |
   After running Update-AksHciCluster, the upgrade process stalls.
 "Fix" : |

@@ -14,13 +14,13 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Running the Remove-ClusterNode command evicts the node from the failover cluster, but the node still exists.
+  Running the Remove-ClusterNode command evicts the node from the failover cluster, but the node still exists
 "Description" : |
   When running the [Remove-ClusterNode](/powershell/module/failoverclusters/remove-clusternode?view=windowsserver2019-ps&preserve-view=true) command, the node is evicted from the failover cluster, but if [Remove-AksHciNode](./reference/ps/remove-akshcinode.md) isn't run afterwards, the node will still exist in CloudAgent.
 
-  Since the node was removed from the cluster, but not from CloudAgent, if you use the VHD to create a new node, a _File not found_ error appears. This issue occurs because the VHD is in shared storage, and the evicted node doesn't have access to it.
+  Since the node was removed from the cluster, but not from CloudAgent, if you use the VHD to create a new node, a "File not found" error appears. This issue occurs because the VHD is in shared storage, and the removed node doesn't have access to it.
 "Fix" : |
-  To resolve this issue, remove a physical node from the cluster and then follow the steps below:
+  To resolve this issue, remove a physical node from the cluster and then follow these steps:
 
   1. Run `Remove-AksHciNode` to de-register the node from CloudAgent.
   2. Perform routine maintenance, such as re-imaging the machine.

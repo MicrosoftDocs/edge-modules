@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Moving virtual machines between Azure Stack HCI cluster nodes quickly leads to VM startup failures.
+  Moving virtual machines between Azure Stack HCI cluster nodes quickly leads to VM startup failures
 "Description" : |
   When using the cluster administration tool to move a VM from one node (Node A) to another node (Node B) in the Azure Stack HCI cluster, the VM may fail to start on the new node. After moving the VM back to the original node, it will fail to start there as well.
 

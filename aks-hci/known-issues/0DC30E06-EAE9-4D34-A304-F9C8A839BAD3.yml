@@ -14,11 +14,11 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When using large clusters, the Get-AksHciLogs command may fail with an exception.
+  When using large clusters, the Get-AksHciLogs command fails with an exception
 "Description" : |
   With large clusters, the `Get-AksHciLogs` command may throw an exception, fail to enumerate nodes, or won't generate the c:\wssd\wssdlogs.zip output file.
 "Fix" : |
-  This is because the PowerShell command to zip a file, Compress-Archive, has an output file size limit of 2 GB. 
+  This is because the PowerShell command to zip a file, 'Compress-Archive', has an output file size limit of 2 GB. 
 
 
 

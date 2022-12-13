@@ -14,12 +14,8 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: unable to reconcile virtual network or Error: Install-Moc failed with error - Exception [[Moc] This machine does not appear to be configured for deployment].
+  Error: "unable to reconcile virtual network" or "Error: Install-Moc failed with error - Exception [[Moc] This machine does not appear to be configured for deployment]"
 "Description" : |
-  You can trigger these errors when you run `Install-AksHci` without running [Set-AksHciConfig](./reference/ps/set-akshciconfig.md). 
+  You can trigger these errors when you run `Install-AksHci` without running [Set-AksHciConfig](./reference/ps/set-akshciconfig.md) first.
 "Fix" : |
   To resolve the error, run `uninstall-akshci` and close all PowerShell windows. Open a new PowerShell session, and restart your AKS-HCI installation process by following [installing AKS-HCI using PowerShell](/azure-stack/aks-hci/kubernetes-walkthrough-powershell).
-
-
-
-
