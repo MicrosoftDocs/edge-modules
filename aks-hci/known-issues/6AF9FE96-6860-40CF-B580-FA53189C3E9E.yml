@@ -15,9 +15,9 @@
   This article describes errors you may encounter (and their workarounds) while connecting or disconnecting your AKS workload clusters to Azure Arc using the PowerShell cmdlets [Enable-AksHciArcConnection](./reference/ps/enable-akshciarcconnection.md) and [Disable-AksHciArcConnection](./reference/ps/disable-akshciarcconnection.md) in AKS hybrid. For issues that are not covered in this article, see [Troubleshooting Arc enabled Kubernetes](/azure/azure-arc/kubernetes/troubleshooting).
   
   You can also [open a support issue](./help-support.md) if none of the workarounds listed below apply to you.
-  
-"Additionalcontent": |
   ## Next steps
 
   - [Troubleshooting Azure Arc-enabled Kubernetes](/azure/azure-arc/kubernetes/troubleshooting) 
   - [Known issues](/azure-stack/aks-hci/known-issues)
+"Fix" : |  
+  If you continue to run into problems when you're using AKS hybrid, you can file bugs through [GitHub](https://aka.ms/aks-hci-issues).
