@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: 'The process cannot access the file 'mocstack.cab' because it is being used by another process'.
+  Error: "The process cannot access the file 'mocstack.cab' because it is being used by another process"
 "Description" : |
   `Install-AksHci` failed with this error because another process is accessing `mocstack.cab`. 
 "Fix" : |

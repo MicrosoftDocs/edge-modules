@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Install-AksHci failed with the error 'Failed to wait for addon arc-onboarding'.
+  Error "Failed to wait for addon arc-onboarding."
 "Description" : |
   This error message appears after running [Install-AksHci](./reference/ps/install-akshci.md).
 "Fix" : |
@@ -25,3 +25,4 @@
   3. Check for any connected cluster resources that appear in a _Disconnected_ state and include a name shown as a randomly generated GUID. 
   4. Delete these cluster resources.
   5. Close the PowerShell session and open new session before running `Install-AksHci` again.
+  

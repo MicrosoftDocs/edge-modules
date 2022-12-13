@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  After deploying AKS on Azure Stack HCI 21H2, rebooting the nodes showed a failed status for billing.
+  After deploying AKS on Azure Stack HCI 21H2, rebooting the nodes showed a failed status for billing
 "Description" : |
   After deployment, when rebooting the Azure Stack HCI nodes, the AKS report showed a failed status for billing.
 "Fix" : |

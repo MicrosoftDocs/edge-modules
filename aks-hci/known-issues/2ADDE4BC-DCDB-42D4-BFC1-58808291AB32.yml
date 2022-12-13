@@ -14,9 +14,9 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Incorrect upgrade notification in Windows Admin Center.
+  Incorrect upgrade notification in Windows Admin Center
 "Description" : |
-  If you receive an incorrect upgrade notification message `Successfully installed AksHci PowerShell module version null`, the upgrade operation is successful even if the notification is misleading.
+  If you receive an incorrect upgrade notification message "Successfully installed AksHci PowerShell module version null," the upgrade operation is successful even if the notification is misleading.
 
   ![WAC update dashboard doesn't refresh after successful updates.](media/known-issues-windows-admin-center/wac-known-issue-incorrect-notification.png)
 "Fix" : |

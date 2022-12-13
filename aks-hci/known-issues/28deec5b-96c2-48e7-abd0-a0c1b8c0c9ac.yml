@@ -14,10 +14,11 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: Install-AksHci fails with 'GetRelease error returned by API call: File download error: Hash mismatch.'
+  Error: "GetRelease error returned by API call: File download error: Hash mismatch"
 "Description" : |
-  The `Install-AksHci` cmdlet fails with 'GetRelease error returned by API call: File download error: Hash mismatch.'
+  The `Install-AksHci` cmdlet fails with "GetRelease error returned by API call: File download error: Hash mismatch."
 "Fix" : |
   1. Open PowerShell and run `Uninstall-AksHci`.
   2. Retry an installation.
   3. If the issue persists, use the `-concurrentDownloads` parameter with [Set-AksHciConfig](./reference/ps/set-akshciconfig.md) and set it to a number lower than the default 10 before retrying an installation. Reducing the number of concurrent downloads may help sensitive networks complete large file downloads successfully. This parameter is a preview feature.
+  

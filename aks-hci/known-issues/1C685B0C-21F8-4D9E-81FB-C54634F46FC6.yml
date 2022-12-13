@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: 'System.Management.Automation.RemoteException Starting onboarding process Cluster "azure-arc-onboarding" set...'
+  Error: "System.Management.Automation.RemoteException Starting onboarding process Cluster "azure-arc-onboarding" set..."
 "Description" : |
   The following error may occur when you use Windows Admin Center to create a workload cluster and connect it to Arc-enabled Kubernetes:
 

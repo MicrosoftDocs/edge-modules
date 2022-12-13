@@ -14,8 +14,8 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When running Get-AksHciCluster, a `release version not found` error occurs
+  When running Get-AksHciCluster, a "release version not found" error occurs
 "Description" : |
-  When running [Get-AksHciCluster](./reference/ps/get-akshcicluster.md) to verify the status of an AKS on Azure Stack HCI installation in Windows Admin Center, the output shows an error: `A release with version 1.0.3.10818 was NOT FOUND`. However, when running [Get-AksHciVersion](./reference/ps/get-akshciversion.md), it showed the same version was installed.  This error indicates that the build is expired. 
+  When running [Get-AksHciCluster](./reference/ps/get-akshcicluster.md) to verify the status of an AKS hybrid installation in Windows Admin Center, the output shows an error: "A release with version 1.0.3.10818 was NOT FOUND." However, when running [Get-AksHciVersion](./reference/ps/get-akshciversion.md), it showed the same version was installed. This error indicates that the build has expired. 
 "Fix" : |
-  To resolve this issue, run `Uninstall-AksHci`, and then run a new AKS on Azure Stack HCI build.
+  To resolve this issue, run `Uninstall-AksHci`, and then run a new AKS hybrid build.

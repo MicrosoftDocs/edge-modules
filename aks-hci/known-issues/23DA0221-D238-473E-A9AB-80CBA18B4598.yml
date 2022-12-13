@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  On Windows Admin Center, the message 'error occurred while creating service principal' appears while installing an AKS host on Azure Stack HCI.
+  On Windows Admin Center, the message "error occurred while creating service principal" appears while installing an AKS host on Azure Stack HCI
 "Description" : |
   You will get this error if you have disabled pop-ups. Google Chrome blocks pop-ups by default, and therefore, the Azure sign-in pop-up is blocked and causes the service principal error.
 "Fix" : |
