@@ -6,6 +6,10 @@
 "Schema": "doc"
 "Metatitle": "Troubleshoot security and identity issues and errors in AKS hybrid"
 "Metadescription": "Get help to troubleshoot security and identity issues and errors in AKS hybrid."
+"Metaauthor" : "sethmanheim"
+"Metamsauthor" : "sethm"
+"Metaservice" : "azure-stack"
+"Metasubservice" : "aks-hci"
 "title": "Fix security and identity known issues and errors in AKS hybrid"
 "Summary": |
   Use this topic to help you troubleshoot and resolve security and identity-related issues in AKS hybrid.

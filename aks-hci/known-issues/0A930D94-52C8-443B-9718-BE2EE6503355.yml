@@ -6,6 +6,10 @@
 "Schema": "doc"
 "Metatitle": "Known issues in Windows Admin Center for AKS hybrid"
 "Metadescription": "Known issues in Windows Admin Center for AKS hybrid"
+"Metaauthor" : "sethmanheim"
+"Metamsauthor" : "sethm"
+"Metaservice" : "azure-stack"
+"Metasubservice" : "aks-hci"
 "title": "Fix issues in Windows Admin Center"
 "Summary": |
   This article describes known issues with Windows Admin Center for AKS hybrid. You can also review [upgrade](/azure-stack/aks-hci/known-issues) and [installation](/azure-stack/aks-hci/known-issues-installation) issues and errors.

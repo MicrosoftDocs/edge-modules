@@ -6,6 +6,10 @@
 "Schema": "doc"
 "Metatitle": "Troubleshoot Kubernetes management and workload cluster issues in AKS hybrid"
 "Metadescription": "Get help to troubleshoot Kubernetes workload cluster issues and errors in AKS hybrid."
+"Metaauthor" : "sethmanheim"
+"Metamsauthor" : "sethm"
+"Metaservice" : "azure-stack"
+"Metasubservice" : "aks-hci"
 "title": "Troubleshoot Kubernetes management and workload cluster issues in AKS hybrid"
 "Summary": |
   Use this article to help you troubleshoot and resolve issues on Kubernetes management and workload clusters in AKS hybrid.

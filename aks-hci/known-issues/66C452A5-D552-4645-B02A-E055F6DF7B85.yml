@@ -6,6 +6,10 @@
 "Schema": "doc"
 "Metatitle": "Troubleshoot networking issues and errors in AKS hybrid"
 "Metadescription": "Get help to troubleshoot networking issues and errors in AKS hybrid."
+"Metaauthor" : "sethmanheim"
+"Metamsauthor" : "sethm"
+"Metaservice" : "azure-stack"
+"Metasubservice" : "aks-hci"
 "title": "Fix known issues and errors when configuring a network in AKS hybrid"
 "Summary": |
   Use this topic to help you troubleshoot and resolve networking-related issues with AKS hybrid.
