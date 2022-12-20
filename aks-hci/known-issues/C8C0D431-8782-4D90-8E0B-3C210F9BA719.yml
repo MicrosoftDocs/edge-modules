@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When running Update-AksHci, the update process was stuck at 'Waiting for deployment 'AksHci Billing Operator' to be ready'.
+  When running Update-AksHci, the update process was stuck at 'Waiting for deployment 'AksHci Billing Operator' to be ready'
 "Description" : |
   This status message appears when running the [Update-AksHci](./reference/ps/update-akshci.md) PowerShell cmdlet.
 "Fix" : |

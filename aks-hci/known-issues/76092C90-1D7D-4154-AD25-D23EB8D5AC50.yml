@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  After a failed installation, running Install-AksHci does not work.
+  After a failed installation, running Install-AksHci does not work
 "Description" : |
   This issue happens because a failed installation may result in leaked resources that have to be cleaned up before you can install again.
 "Fix" : |

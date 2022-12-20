@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: 'Timed out waiting for the condition'.
+  Error: 'Timed out waiting for the condition'
 "Description" : |
   This error usually points to one of the following issues:
 

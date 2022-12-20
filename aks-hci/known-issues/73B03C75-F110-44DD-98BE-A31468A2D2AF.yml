@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: 'Connection to Azure failed. Please run 'Set-AksHciRegistration' and try again'.
+  Error: 'Connection to Azure failed. Please run 'Set-AksHciRegistration' and try again'
 "Description" : |
   This error means that your login credentials to Azure have expired. 
 "Fix" : |

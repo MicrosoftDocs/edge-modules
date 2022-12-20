@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: 'Azure subscription is not properly configured'.
+  Error: 'Azure subscription is not properly configured'
 "Description" : |
   You may encounter this issue if you have not configured your Azure subscription with the Arc-enabled Kubernetes resource providers. We currently check that `Microsoft.Kubernetes` and `Microsoft.KubernetesConfiguration` are configured. 
 "Fix" : |

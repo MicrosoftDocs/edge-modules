@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Get-AksHCIClusterNetwork does not show the current allocation of IP addresses.
+  Get-AksHCIClusterNetwork does not show the current allocation of IP addresses
 "Description" : |
   Running the [Get-AksHciClusterNetwork](./reference/ps/get-akshciclusternetwork.md) command provides a list of all virtual network configurations. However, the command does not show the current allocation of the IP addresses. 
 "Fix" : |

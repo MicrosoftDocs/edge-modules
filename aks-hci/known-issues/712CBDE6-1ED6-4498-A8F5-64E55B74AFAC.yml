@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: 'Error while updating agents for enabling features'.
+  Error: 'Error while updating agents for enabling features'
 "Description" : |
   If you enable the *custom location* and *cluster connect* features on an AKS cluster that is connected to Azure Arc, you may see the following error: 
 

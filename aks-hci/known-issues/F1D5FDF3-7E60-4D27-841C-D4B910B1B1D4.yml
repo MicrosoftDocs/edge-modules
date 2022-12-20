@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: 'Waiting for pod 'Cloud Operator' to be ready'.
+  Error: 'Waiting for pod 'Cloud Operator' to be ready'
 "Description" : |
   When attempting to deploy an AKS cluster on an Azure VM, the installation was stuck at `Waiting for pod 'Cloud Operator' to be ready...`, and then failed and timed out after two hours. Attempts to troubleshoot by checking the gateway and DNS server showed they were working appropriately. Checks for IP or MAC address conflicts found none. The logs didn't show the VIP pool. There was a restriction on pulling the container image using `sudo docker pull ecpacr.azurecr.io/kube-vip:0.3.4` that returned a Transport Layer Security (TLS) timeout instead of _unauthorized_. 
 "Fix" : |

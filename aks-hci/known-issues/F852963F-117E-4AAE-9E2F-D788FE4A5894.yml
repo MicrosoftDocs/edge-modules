@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error: 'Install-Moc failed with error - Exception [Could not create the failover cluster generic role.]'.
+  Error: 'Install-Moc failed with error - Exception [Could not create the failover cluster generic role.]'
 "Description" : |
   This error indicates that the cloud service's IP address is not a part of the cluster network and doesn't match any of the cluster networks that have the `client and cluster communication` role enabled.
 "Fix" : |

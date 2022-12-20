@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  New-AksHciCluster times out when creating an AKS cluster with 200 nodes.
+  New-AksHciCluster times out when creating an AKS cluster with 200 nodes
 "Description" : |
   The deployment of a large cluster may time out after two hours. However, this is a static time-out.
 "Fix" : |

@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When creating a persistent volume, an attempt to mount the volume fails.
+  When creating a persistent volume, an attempt to mount the volume fails
 "Description" : |
   After deleting a persistent volume or a persistent volume claim in an AKS hybrid environment, a new persistent volume is created to map to the same share. However, when attempting to mount the volume, the mount fails, and the pod times out with the error, `NewSmbGlobalMapping failed`.
 "Fix" : |

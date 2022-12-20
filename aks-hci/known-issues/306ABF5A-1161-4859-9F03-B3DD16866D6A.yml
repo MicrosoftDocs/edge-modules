@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Insufficient privileges to complete the operation.
+  Insufficient privileges to complete the operation
 "Description" : |
   This error usually occurs when the service principal (SPN) or your Azure credentials (username and password) used to connect your AKS cluster don't have sufficient privileges in the Azure subscription to perform the operation.
 "Fix" : |

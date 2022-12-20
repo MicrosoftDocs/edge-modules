@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Special Active Directory permissions are needed for domain joined Azure Stack HCI nodes. 
+  Special Active Directory permissions are needed for domain joined Azure Stack HCI nodes
 "Description" : |
   Users deploying and configuring Azure Kubernetes Service on Azure Stack HCI need to have **Full Control** permission to create AD objects in the Active Directory container the server and service objects are created in. 
 "Fix" : |

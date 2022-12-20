@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  The error 'Cannot index into a null array' appears when creating an Arc-enabled workload cluster.
+  The error 'Cannot index into a null array' appears when creating an Arc-enabled workload cluster
 "Description" : |
   This error appears when moving from PowerShell to Windows Admin Center to create an Arc-enabled workload cluster. 
 "Fix" : |

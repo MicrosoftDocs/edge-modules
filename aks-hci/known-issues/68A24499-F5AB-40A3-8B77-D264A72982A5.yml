@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Install-AksHci hangs in the 'Waiting for azure-arc-onboarding to complete' stage before timing out.
+  Install-AksHci hangs in the 'Waiting for azure-arc-onboarding to complete' stage before timing out
 "Description" : |
   > [!NOTE]
   > This issue is fixed in the May 2022 release and later.
