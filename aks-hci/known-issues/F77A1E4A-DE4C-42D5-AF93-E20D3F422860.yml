@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  ContainerD is unable to pull the pause image as 'kubelet' mistakenly collects the image.
+  ContainerD is unable to pull the pause image as 'kubelet' mistakenly collects the image
 "Description" : |
   When _kubelet_ is under disk pressure, it collects unused container images, which may include pause images, and when this happens, ContainerD can't pull the image. 
 

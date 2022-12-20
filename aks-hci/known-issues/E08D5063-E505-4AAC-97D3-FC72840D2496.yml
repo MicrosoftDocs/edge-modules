@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When multiple versions of PowerShell modules are installed, Windows Admin Center does not pick the latest version.
+  When multiple versions of PowerShell modules are installed, Windows Admin Center does not choose the latest version
 "Description" : |
   If you have multiple versions of the PowerShell modules installed (for example, 0.2.26, 0.2.27, and 0.2.28), Windows Admin Center may not use the latest version (or the one it requires).
 "Fix" : |

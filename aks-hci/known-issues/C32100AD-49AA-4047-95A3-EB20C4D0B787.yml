@@ -14,13 +14,13 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When you deploy AKS on Azure Stack HCI with a misconfigured network, deployment timed out at various points.
+  When you deploy AKS on Azure Stack HCI with a misconfigured network, deployment timed out at various points
 "Description" : |
   When you deploy AKS on Azure Stack HCI, the deployment may time out at different points of the process depending on where the misconfiguration occurred. You should review the error message to determine the cause and where it occurred.
 
   For example, in the following error, the point at which the misconfiguration occurred is in `Get-DownloadSdkRelease -Name "mocstack-stable"`: 
 
-  ```
+  ```shell
   $vnet = New-AksHciNetworkSettingSet-AksHciConfig -vnet $vnetInstall-AksHciVERBOSE: 
   Initializing environmentVERBOSE: [AksHci] Importing ConfigurationVERBOSE: 
   [AksHci] Importing Configuration Completedpowershell : 

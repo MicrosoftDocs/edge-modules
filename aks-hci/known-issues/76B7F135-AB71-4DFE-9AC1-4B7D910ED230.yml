@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  When upgrading a deployment, some pods might be stuck at 'waiting for static pods to have a ready condition'.
+  When upgrading a deployment, some pods might be stuck at 'waiting for static pods to have a ready condition'
 "Description" : |
   Pods stuck at _waiting for static pods to have a ready condition_.
 "Fix" : |

@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/en-us/azure-stack/aks-hci/known-issues-upgrade?#when-upgrading-aks-on-azure-stack-hci-from-the-february-2022-update-to-april-2022-update--the-csi-deployments-disappears-and-causes-the-upgrade-to-stall-"
 "Schema" : "known-issue"
 "Issue" : |
-  When upgrading AKS on Azure Stack HCI from the February 2022 Update to April 2022 Update, the CSI deployment disappears and causes the upgrade to stall.
+  When upgrading AKS on Azure Stack HCI from the February 2022 Update to April 2022 Update, the CSI deployment disappears and causes the upgrade to stall
 "Description" : |
   When you upgrade clusters from the AKS on Azure Stack HCI February 2022 Update to the April 2022 Update, the update may be stuck upgrading for an indefinite period of time. There may be be pods stuck in either the `Terminating` or `CrashLoopBackoff` state.
 

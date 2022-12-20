@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Unable to find repository 'PSGallery'.
+  Unable to find repository 'PSGallery'
 "Description" : |
   In stage 2.1: System Validation, you may encounter this error: `Unable to find repository 'PSGallery'.
 "Fix" : |

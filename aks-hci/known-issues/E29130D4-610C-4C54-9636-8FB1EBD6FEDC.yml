@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Attempt to create new workload clusters failed because the AKS host was turned off for several days.
+  Attempt to create new workload clusters failed because the AKS host was turned off for several days
 "Description" : |
   An AKS cluster deployed in an Azure VM was previously working fine, but after the AKS host was turned off for several days, the `Kubectl` command didn't work. After running either the `Kubectl get nodes` or `Kubectl get services` command, this error message appeared: `Error from server (InternalError): an error on the server ("") has prevented the request from succeeding`.
 "Fix" : |

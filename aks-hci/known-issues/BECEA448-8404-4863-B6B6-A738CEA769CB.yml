@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Create Windows Admin Center logs.
+  Create Windows Admin Center logs
 "Description" : |
   When you report problems with Windows Admin Center, it's a good idea to attach logs to help the development team diagnose your problem. Errors in Windows Admin Center generally come in one of two forms: 
   - Events that appear in the event viewer on the machine running Windows Admin Center 

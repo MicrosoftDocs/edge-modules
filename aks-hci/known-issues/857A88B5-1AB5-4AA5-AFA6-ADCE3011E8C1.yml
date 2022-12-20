@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Troubleshoot CredSSP issues.
+  Troubleshoot CredSSP issues
 "Description" : |
   When you deploy AKS hybrid using Windows Admin Center, and the deployment hangs for an extended period, you might be having Credential Security Support Provider (CredSSP) or connectivity problems. 
 "Fix" : |

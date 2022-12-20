@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Running Remove-AksHciCluster results in the error: 'A workload cluster with the name 'my-workload-cluster' was not found'.
+  Running Remove-AksHciCluster results in the error: 'A workload cluster with the name 'my-workload-cluster' was not found'
 "Description" : |
   You may encounter this error when running [Remove-AksHciCluster](./reference/ps/remove-akshcicluster.md).
 "Fix" : |

@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Error occurs when attempting to use Windows Admin Center.
+  Error occurs when attempting to use Windows Admin Center
 "Description" : |
   If you install Windows Admin Center with one account and try to use it with another, you'll get errors.
 "Fix" : |

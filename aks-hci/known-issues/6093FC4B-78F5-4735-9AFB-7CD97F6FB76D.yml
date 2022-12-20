@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Install-AksHci failed on a multi-node installation with the error 'Nodes have not reached active state'.
+  Install-AksHci failed on a multi-node installation with the error 'Nodes have not reached active state'
 "Description" : |
   When running [Install-AksHci](./reference/ps/install-akshci.md) on a single-node setup, the installation worked, but when setting up the failover cluster, the installation fails with the error message. However, pinging the cloud agent showed the CloudAgent was reachable.
 "Fix" : |

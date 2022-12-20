@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Container storage interface pod stuck in a 'ContainerCreating' state.
+  Container storage interface pod stuck in a 'ContainerCreating' state
 "Description" : |
   A new Kubernetes workload cluster was created with Kubernetes version 1.16.10 and then updated to 1.16.15. After the update, the `csi-msk8scsi-node-9x47m` pod was stuck in the _ContainerCreating_ state, and the `kube-proxy-qqnkr` pod was stuck in the _Terminating_ state as shown in the output below:
 

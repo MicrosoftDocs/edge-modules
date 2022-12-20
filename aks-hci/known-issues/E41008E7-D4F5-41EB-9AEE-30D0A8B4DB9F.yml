@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Uninstall-AksHciAdAuth fails with the error '[Error from server (NotFound): secrets "keytab-akshci-scale-reliability" not found]'.
+  Uninstall-AksHciAdAuth fails with the error '[Error from server (NotFound): secrets "keytab-akshci-scale-reliability" not found]'
 "Description" : |
   If [Uninstall-AksHciAdAuth](./reference/ps/./uninstall-akshciadauth.md) displays this error, you should ignore it for now as this issue will be fixed.
 "Fix" : |

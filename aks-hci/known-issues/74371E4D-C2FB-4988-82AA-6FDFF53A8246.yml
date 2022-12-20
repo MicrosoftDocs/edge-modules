@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  During installation, this error appears: 'unable to create appliance VM: cannot create virtual machine: rpc error = unknown desc = Exception occurred. (Generic failure)]'.
+  During installation, this error appears: 'unable to create appliance VM: cannot create virtual machine: rpc error = unknown desc = Exception occurred. (Generic failure)]'
 "Description" : |
   This error occurs when Azure Stack HCI is out of policy. The connection status on the cluster may show it's connected, but the event log shows the warning message that `Azure Stack HCI's subscription is expired, run Sync-AzureStackHCI to renew the subscription`.
 "Fix" : |

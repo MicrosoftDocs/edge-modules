@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Only the user who set up the AKS host can create clusters.
+  Only the user who set up the AKS host can create clusters
 "Description" : |
   When deploying Azure Kubernetes Service on Azure Stack HCI through Windows Admin Center, only the user who set up the AKS host can create Kubernetes clusters.
 "Fix" : |

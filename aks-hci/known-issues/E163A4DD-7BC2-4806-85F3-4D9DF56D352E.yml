@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  In a workload cluster with static IP addresses, all pods in a node are stuck in a 'ContainerCreating' state.
+  In a workload cluster with static IP addresses, all pods in a node are stuck in a 'ContainerCreating' state
 "Description" : |
   In a workload cluster with static IP addresses and Windows nodes, all of the pods in a node (including the `daemonset` pods) are stuck in a _ContainerCreating_ state. When attempting to connect to that node using SSH, the connection fails with a `Connection timed out` error.
 "Fix" : |

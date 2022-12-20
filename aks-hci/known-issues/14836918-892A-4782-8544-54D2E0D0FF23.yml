@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  The certificate renewal pod is in a crash loop state.
+  The certificate renewal pod is in a crash loop state
 "Description" : |
   After upgrading or scaling up the workload cluster, the certificate renewal pod is now in a crash loop state because the pod is expecting the certificate tattoo YAML file from the file location `/etc/Kubernetes/pki`.
 

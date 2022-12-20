@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  Cloud agent may fail to successfully start when using path names with spaces in them.
+  Cloud agent may fail to successfully start when using path names with spaces in them
 "Description" : |
   When using [Set-AksHciConfig](./reference/ps/set-akshciconfig.md) to specify `-imageDir`, `-workingDir`, `-cloudConfigLocation`, or `-nodeConfigLocation` parameters with a path name that contains a space character, such as `D:\Cloud Share\AKS HCI`, the cloud agent cluster service will fail to start with the following (or similar) error message:
 

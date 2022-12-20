@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  A WinRM error is displayed when creating a new workload cluster.
+  A WinRM error is displayed when creating a new workload cluster
 "Description" : |
   When switching from DHCP to static IP, Windows Admin Center displayed an error that said the WinRM client cannot process the request. This error also occurred outside of Windows Admin Center. WinRM broke when static IP addresses were used, and the servers were not registering a Service Principal Name (SPN) when moving to static IP addresses. 
 "Fix" : |

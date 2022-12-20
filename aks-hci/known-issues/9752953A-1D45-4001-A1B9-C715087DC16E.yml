@@ -14,7 +14,7 @@
 "Target URL"  : "https://docs.microsoft.com/page"
 "Schema" : "known-issue"
 "Issue" : |
-  'Install-Module' was not recognized.
+  'Install-Module' was not recognized
 "Description" : |
   In stage 2.1: System Validation, you may get an error: "The item 'Install-Module' was not recognized as the name of a cmdlet, function, script file, or runnable program".
 "Fix" : |
