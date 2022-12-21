@@ -1,0 +1,47 @@
+"ID" : "ee476fef-3d86-4a54-9864-9464521d32bf"
+"Status": "Active"
+"Create Date" : "12/21/2022"
+"Review Date" : "12/21/2022"
+"Publish Date" : "12/21/2022"
+"Reviewer" : "sumsmith"
+"Author" : "sethm"
+"Service" : "aks-hci"
+"Area"  : "known-issues-security"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  kubectl logs return "error: You must be logged in to the server (the server has asked for the client to provide credentials)" 
+"Description" : |
+  There is an issue with AKS hybrid in which a cluster can stop returning logs. When this happens, running `kubectl logs <pod_name>` returns "error: You must be logged in to the server (the server has asked for the client to provide credentials)". AKS hybrid rotates core Kubernetes certificates every 4 days, but sometimes the Kubernetes API server doesn't immediately reload its client certificate for communication with kubelet when the certificates update.
+"Fix" : |
+  To mitigate the issue, there are several options:
+
+  1. Rerun `kubectl` logs.
+  1. Run the following PowerShell command:
+  
+     ```powershell
+     while (1) {kubectl logs <POD_NAME>; sleep 1}
+     ```
+    
+  1. Restart the `kube-apiserver` container on each of the control planes for a cluster. Restarting the API server does not impact running workloads. To restart the API server, follow these steps:
+     1. Get the IP addresses for each control plane in your cluster:
+        
+        ```powershell
+        kubectl get nodes -o wide
+        ```
+
+     1. Run the following command:
+     
+        ```powershell
+        ssh -i (get-akshciconfig).Moc.sshPrivateKey clouduser@<CONTROL_PLANE_IP> 'sudo crictl stop $(sudo crictl ps --name kube-apiserver -o json | jq -r .containers[0].id)'
+        ```
+
+  1. Optionally, but not recommended for production workloads, you can ask `kube-apiserver` not to verify the server certificate of the kubelet using the following command:
+
+     ```powershell
+     kubectl logs <POD_NAME> --insecure-skip-tls-verify-backend=true
+     ``` 
