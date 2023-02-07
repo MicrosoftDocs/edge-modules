@@ -55,7 +55,7 @@
     "Port": "443",
     "Notes": "Used periodically to send Microsoft required diagnostic data from the Azure Stack HCI or Windows Server host."
 }, {
-    "URL": "adhs.events.data.microsoft.com",
+    "URL": "gcs.prod.monitoring.core.windows.net",
     "Port": "443",
     "Notes": "Used periodically to send Microsoft required diagnostic data from control plane nodes."
 }]
