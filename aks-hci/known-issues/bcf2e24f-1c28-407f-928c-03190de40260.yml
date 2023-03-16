@@ -1,0 +1,40 @@
+"ID" : "bcf2e24f-1c28-407f-928c-03190de40260"
+"Status": "Active"
+"Create Date" : "3/16/2023"
+"Review Date" : "3/16/2023"
+"Publish Date" : "3/16/2023"
+"Reviewer" : "sumsmith"
+"Author" : "sethm"
+"Service" : "aks-hci"
+"Area"  : "known-issues-networking"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  "Cluster IP Address x.x.x.x" fails
+"Description" : |
+  A cluster IP address shows as "Failed" during precheck. This precheck tests that all IPv4 addresses and DNS network names are online and reachable. For example, a failed IPv4 or network name can cause this test to fail.
+"Fix" : |
+  To resolve this, perform the following steps:
+
+  1. Run the following command:
+
+     ```powershell
+     Get-ClusterGroup -name "Cluster Group" | Get-ClusterResource
+     ```
+
+  1. Ensure that all network names and IP addresses are in an online state.
+  1. Run the following two commands:
+  
+     ```powershell
+     Stop-ClusterResource -name "Cluster IP Address x.x.x.x"
+     ```
+
+     and then
+     
+     ```powershell
+     Start-ClusterResource -name "Cluster IP Address x.x.x.x"
+     ```
