@@ -28,7 +28,7 @@
   
   1. Navigate to **Active Directory Users and Computers**.
   2. Right-click on the OU or container where the cluster resides.
-  3. Select **Delegate Control…** to open the **Delegation of Control Wizard**.
+  3. Select **Delegate Control...** to open the **Delegation of Control Wizard**.
   4. Click **Next** > Click **Add...** to open the **Select Users, Computers, or Groups** window.
   5. Select your choice of group or users to whom you want to delegate control > Click **OK**.
   6. Select **Create a custom task to delegate** > Click **Next** to move on to the **Active Directory Object Type** page.
