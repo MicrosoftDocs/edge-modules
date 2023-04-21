@@ -1,0 +1,45 @@
+"ID" : "75bfcf2b-63bf-408c-a260-63d6681ca56e"
+"Status": "Active"
+"Create Date" : "4/21/2023"
+"Review Date" : "4/21/2023"
+"Publish Date" : "4/21/2023"
+"Reviewer" : "sumsmith"
+"Author" : "sethmanheim"
+"Service" : "aks-hci"
+"Area"  : "known-issues-networking"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  AKS hybrid cluster stuck in "ScalingControlPlane" provisioning state
+"Description" : |
+  This issue causes an AKS hybrid cluster to remain in the **ScalingControlPlane** state for an extended period of time.
+
+  ### To reproduce
+
+  ```powershell
+  Get-AksHciCluster -Name <cluster name> | select *
+  ```
+
+  ```output
+  Status                : {ProvisioningState, Details}
+  ProvisioningState     : ScalingControlPlane
+  KubernetesVersion     : v1.22.6
+  PackageVersion        : v1.22.6-kvapkg.0
+  NodePools             : {nodepoolA, nodepoolB}
+  WindowsNodeCount      : 0
+  LinuxNodeCount        : 1
+  ControlPlaneNodeCount : 1
+  ControlPlaneVmSize    : Standard_D4s_v3
+  AutoScalerEnabled     : False
+  AutoScalerProfile     :
+  Name                  : <cluster name>
+  ```
+
+"Fix" : |
+  This issue has been fixed in recent AKS hybrid versions. We recommend updating your AKS hybrid clusters to the latest release.
+
+  To mitigate this issue, contact support to manually patch the status of the control plane nodes to remove the condition **MachineOwnerRemediatedCondition** from the machine status via kubectl.
