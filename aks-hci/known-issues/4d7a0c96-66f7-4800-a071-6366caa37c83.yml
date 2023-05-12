@@ -31,7 +31,7 @@
   $expiryDate
   ```
 
-  If this script displays a date that is before the current date, then the **kubeconfig** file has expired.
+  If this script displays a date that is earlier than the current date, then the **kubeconfig** file has expired.
 
 "Fix" : |
   To mitigate the issue, copy the **admin.conf** file, which is inside the management control plane VM, to the HCI host:
