@@ -55,5 +55,3 @@
     ```shell
     sudo find /var/lib/systemd/coredump/ -type f -mmin +1 -exec rm -f {} \;
     ```
-
-    
