@@ -1,0 +1,76 @@
+"ID" : "4d7a0c96-66f7-4800-a071-6366caa37c83"
+"Status": "Active"
+"Create Date" : "5/12/2023"
+"Review Date" : "5/12/2023"
+"Publish Date" : "5/12/2023"
+"Reviewer" : "sumsmith"
+"Author" : "sethmanheim"
+"Service" : "aks-hci"
+"Area"  : "known-issues-workload-clusters"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  Error: You must be logged in to the server (Unauthorized)
+"Description" : |
+  Commands such as `Update-AksHci`, `Update-AksHciCertificates`, `Update-AksHciClusterCertificates`, and all interactions with the management cluster, can return "Error: You must be logged in to the server (Unauthorized)."
+
+  This error can occur when the **kubeconfig** file is expired. To check if it's expired, run the following script:
+
+  ```powershell
+  $kubeconfig= $(get-kvaconfig).kubeconfig
+  $certDataRegex = '(?ms).*client-certificate-data:\s*(?<CertData>[^\n\r]+)'
+  $certDataMatch = Select-String -Path $kubeconfig -Pattern $certDataRegex
+  $certData = $certDataMatch.Matches[0].Groups['CertData'].Value
+  $certObject = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+  $certObject.Import([System.Convert]::FromBase64String($certData))
+  $expiryDate = $certObject.GetExpirationDateString()
+  $expiryDate
+  ```
+
+  If this script displays a date that is earlier than the current date, then the **kubeconfig** file has expired.
+
+"Fix" : |
+  To mitigate the issue, copy the **admin.conf** file, which is inside the management control plane VM, to the HCI host:
+
+  - SSH to the management control plane VM:
+    - Get the management control plane VM IP:
+
+      ```powershell
+      get-clusternode | % {Get-vm -computerName $_ } | get-vmnetworkadapter | select Name, IPAddresses
+      ```
+
+    - SSH into it:
+  
+      ```powershell
+      ssh -o StrictHostKeyChecking=no -i (Get-MocConfig).sshPrivateKey clouduser@<mgmt-control-plane-ip>
+      ```
+
+  - Copy the file to the **clouduser** location:
+  
+    ```powershell
+    cp /etc/kubernetes/admin.conf /home/clouduser/admin.conf
+    ```
+
+  - Give access to **clouduser**:
+  
+    ```powershell
+    sudo chown clouduser:clouduser admin.conf
+    ```
+
+  - [Optional] Create a backup of the **kubeconfig** file:
+  
+    ```powershell
+    mv $(Get-KvaConfig).kubeconfig "$((Get-KvaConfig).kubeconfig).backup"
+    ```
+
+  - Copy the file:
+  
+    ```powershell
+    scp -i (get-mocconfig).sshPrivateKey clouduser@10.64.92.14:~/admin.conf $(Get-KvaConfig).kubeconfig
+    ```
+
+
