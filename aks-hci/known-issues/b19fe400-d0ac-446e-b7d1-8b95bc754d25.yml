@@ -50,7 +50,7 @@
     sudo systemctl disable -now mdsd
     ```
 
-  2. Delete accumulated files with the following shell command:
+  2. Delete accumulated files with the following command:
     
     ```shell
     sudo find /var/lib/systemd/coredump/ -type f -mmin +1 -exec rm -f {} \;
