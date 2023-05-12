@@ -16,7 +16,7 @@
 "Issue" : |
   Error: You must be logged in to the server (Unauthorized)
 "Description" : |
-  Commands such as `Update-AksHci`, `Update-AksHciCertificates`, `Update-AksHciClusterCertificates`, or all interactions with the management cluster, return "Error: You must be logged in to the server (Unauthorized)."
+  Commands such as `Update-AksHci`, `Update-AksHciCertificates`, `Update-AksHciClusterCertificates`, and all interactions with the management cluster, can return "Error: You must be logged in to the server (Unauthorized)."
 
   This error can occur when the **kubeconfig** file is expired. To check if it's expired, run the following script:
 
