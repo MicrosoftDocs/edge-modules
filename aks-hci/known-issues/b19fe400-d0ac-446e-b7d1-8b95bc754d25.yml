@@ -1,10 +1,10 @@
 "ID" : "b19fe400-d0ac-446e-b7d1-8b95bc754d25"
 "Status": "Active"
 "Create Date" : "5/12/2023"
-"Review Date" : "6/02/2023"
-"Publish Date" : "5/12/2023"
+"Review Date" : "6/26/2023"
+"Publish Date" : "6/26/2023"
 "Reviewer" : "sumsmith"
-"Author" : "sethmanheim"
+"Author" : "sethm"
 "Service" : "aks-hci"
 "Area"  : "known-issues-storage"
 "Tags"  : "['proof', 'concept']"
@@ -48,7 +48,6 @@
   1. Turn off the Geneva agent with the following shell commands:
 
       ```shell
-      sudo systemctl stop mdsd
       sudo systemctl disable --now mdsd
       ```
 
@@ -62,4 +61,12 @@
     
       ```shell
       sudo find /var/lib/systemd/coredump/ -type f -mmin +1 -exec rm -f {} \;
+      sudo find /run/systemd/propagate -name 'systemd-coredump@*' -delete
+      sudo journalctl --rotate && sudo journalctl --vacuum-size=500M
+      ```
+
+  4. Reboot the node:
+
+      ```shell
+      sudo reboot
       ```
