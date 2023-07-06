@@ -1,10 +1,10 @@
 "ID" : "F77A1E4A-DE4C-42D5-AF93-E20D3F422860"
 "Status": "Active"
 "Create Date" : "3/26/2022"
-"Review Date" : "3/26/2022"
-"Publish Date" : "3/26/2022"
-"Reviewer" : "abha"
-"Author" : "mabrigg"
+"Review Date" : "7/6/2023"
+"Publish Date" : "7/6/2023"
+"Reviewer" : "sumsmith"
+"Author" : "sethm"
 "Service" : "aks-hci"
 "Area"  : "known-issues-workload-clusters"
 "Tags"  : "['proof', 'concept']"
@@ -17,8 +17,6 @@
   ContainerD is unable to pull the pause image as 'kubelet' mistakenly collects the image
 "Description" : |
   When _kubelet_ is under disk pressure, it collects unused container images, which may include pause images, and when this happens, ContainerD can't pull the image. 
-
-  Currently, AKS hybrid uses Azure Container Registry (ACR) only with authentication disabled as a workaround for an ACR bug. Therefore, the same credentials shipped to customers could be used to pull the pause images on affected nodes - for example, username: 1516df5a-f1cc-4a6a-856c-03d127b02d05, password: 92684690-48b5-4dce-856d-ef4cccb54f22.
 "Fix" : |
   To resolve this issue, run the following steps:
 
@@ -31,5 +29,5 @@
   2. To pull the image, run the following command:
 
     ```powershell
-    crictl pull --creds aaa:bbb ecpacr.azurecr.io/pause:3.2
+    crictl pull ecpacr.azurecr.io/kube-proxy:<Kubernetes version>
     ```

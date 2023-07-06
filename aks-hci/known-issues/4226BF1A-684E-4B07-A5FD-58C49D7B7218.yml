@@ -16,15 +16,15 @@
 "Issue" : |
   Nodeagent leaking ports when unable to join cloudagent due to expired token when cluster not upgraded for more than 60 days
 "Description" : |
-  When a cluster has not been upgraded for more than 60 days, the node agent fails to start during a node agent restart because of token expiry. This causes the agents to be in the starting phase. Continuous attempts to join the cloudagent may exhaust the supply of ports on the host. The status for the following command will be **Starting**.
+  When a cluster has not been upgraded for more than 60 days, the node agent fails to start during a node agent restart because of token expiry. This failure causes the agents to be in the starting phase. Continuous attempts to join the cloudagent may exhaust the supply of ports on the host. The status for the following command is **Starting**.
 
   ```powershell
   Get-Service wssdagent | Select-Object -Property Name, Status
   ```
 
-  Expected behavior: The node agent will be in the starting phase, which will constantly try joining the cloud agent, exhausting the ports.
+  Expected behavior: The node agent should be in the starting phase, which constantly tries to join the cloud agent, exhausting the ports.
 "Fix" : |
-  To resolve the issue, you'll need to first stop the wssdagent from running. Since the service is in the starting phase, it may prevent you from stopping the service. You'll need to kill the process before attempting to stop the service.
+  To resolve the issue, stop the wssdagent from running. Since the service is in the starting phase, it may prevent you from stopping the service. If so, kill the process before attempting to stop the service.
 
   1. Confirm the wssdagent is in starting phase.
       ```powershell

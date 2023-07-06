@@ -16,9 +16,9 @@
 "Issue" : |
   Update of host OS HCI to HCIv2 breaks AKS on Azure Stack HCI installation: Cannot reach management cluster
 "Description" : |
-  Running an OS update on a host with an AKS on Azure Stack HCI deployment can cause the deployment to enter a bad state, rendering the management cluster's API server unreachable and to fail day two operations. The `kube-vip` pod will not be able to apply VIP configuration to the interface, and as a result the VIP will be unreachable.
+  Running an OS update on a host with an AKS on Azure Stack HCI deployment can cause the deployment to enter a bad state, which renders the management cluster's API server unreachable and fails day two operations. The `kube-vip` pod cannot apply the VIP configuration to the interface, and as a result the VIP is unreachable.
 
-  To reproduce: Update a cluster with an existing AKS HCI deployment from HCI to HCIv2. Then try running commands that attempt to reach the management cluster such as `Get-AksHciCluster`. Any operations that attempt to reach the management cluster will fail with errors such as:
+  To reproduce: Update a cluster with an existing AKS HCI deployment from HCI to HCIv2. Then try running commands that attempt to reach the management cluster such as `Get-AksHciCluster`. Any operations that attempt to reach the management cluster fails with errors such as:
 
   ```powershell
   PS C:\Users\wolfpack> Get-AksHciCluster

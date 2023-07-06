@@ -30,7 +30,7 @@
       sudo cp /etc/kubernetes/pki/cert-tattoo-kubelet.yaml ~/
       sudo chown clouduser cert-tattoo-kubelet.yaml
       sudo chgrp clouduser cert-tattoo-kubelet.yaml
-      (change file permissions here so that scp will work)
+      (change file permissions here so that scp works)
       scp -i (get-mocconfig).sshprivatekey clouduser@<comtrol-plane-vm-ip>:~/cert*.yaml .\
       ```
 

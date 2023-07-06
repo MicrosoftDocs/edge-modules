@@ -26,11 +26,11 @@
 
   If there is a machine with `PHASE` Deleting and `VERSION` matching the previous Kubernetes version, proceed with the following steps.
 
-  To address this problem, you will need the following pieces of information:
+  To address this problem, you need the following pieces of information:
   1.  Kubernetes version to which you're upgrading your workload cluster.
-  2. IP address of the node which is stuck.
+  2. IP address of the node that is stuck.
 
-  To find this information, run the following cmdlet and command. Note that by default the cmdlet, `Get-AksHciCredential`, writes the kubeconfig to `~/.kube/config`. If you specify a different location for your workload cluster kubeconfig when calling `Get-AksHciCredential`, you will need to provide that location to kubectl as an additional argument. For example, `kubectl get nodes -o wide --kubeconfig <path to workload cluster kubeconfig>`.
+  To find this information, run the following cmdlet and command. By default, the cmdlet `Get-AksHciCredential` writes the kubeconfig to `~/.kube/config`. If you specify a different location for your workload cluster kubeconfig when calling `Get-AksHciCredential`, you will need to provide that location to kubectl as another argument. For example, `kubectl get nodes -o wide --kubeconfig <path to workload cluster kubeconfig>`.
 
   ```powershell
   Get-AksHciCredential -name <workload cluster name>
@@ -40,7 +40,7 @@
   The node that needs to be fixed should show `STATUS` `Ready,SchedulingDisabled`. If you see a node with this status, use the `INTERNAL-IP` of this node as the IP address value in the following command below. Use the Kubernetes version you are upgrading to as the version value; this should match the `VERSION` value from the node with `ROLES` `control-plane,master`. Be sure to include the full value for the Kubernetes version, including the `v`, for example `v1.22.6`.
 
   ```
-  ssh -i (Get-MocConfig).sshPrivateKey -o StrictHostKeyChecking=no  clouduser@<IP address> sudo crictl pull --creds 1516df5a-f1cc-4a6a-856c-03d127b02d05:92684690-48b5-4dce-856d-ef4cccb54f22 ecpacr.azurecr.io/kube-proxy:<Kubernetes version>
+  ssh -i (Get-MocConfig).sshPrivateKey -o StrictHostKeyChecking=no  clouduser@<IP address> sudo crictl pull ecpacr.azurecr.io/kube-proxy:<Kubernetes version>
   ```
 
   After running this ssh command, the remaining nodes with the old Kubernetes version should be deleted and the upgrade will proceed.
