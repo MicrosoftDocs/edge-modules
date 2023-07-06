@@ -21,10 +21,10 @@
   Review the following root causes to resolve the issue:
 
   * **Reason one**:
-    During the update of the _AksHci Billing Operator_, the _Operator_ incorrectly marked itself as out of policy. To resolve this issue, open a new PowerShell window and run [Sync-AksHciBilling](./reference/ps/sync-akshcibilling.md). You should see the billing operation continue within the next 20-30 minutes. 
+    During the update of the **AksHci Billing Operator**, the operator incorrectly marked itself as out of policy. To resolve this issue, open a new PowerShell window and run [Sync-AksHciBilling](./reference/ps/sync-akshcibilling.md). You should see the billing operation continue within the next 20-30 minutes. 
 
   * **Reason two**:
-    The management cluster VM may be out of memory, which causes the API server to be unreachable and, consequently, makes all commands from [Get-AksHciCluster](./reference/ps/get-akshcicluster.md), billing, and update time out. As a workaround, set the management cluster VM to 32 GB in Hyper-V, and reboot it. 
+    The management cluster VM may be out of memory, which causes the API server to be unreachable and makes all commands from [Get-AksHciCluster](./reference/ps/get-akshcicluster.md), billing, and update, time out. As a workaround, set the management cluster VM to 32 GB in Hyper-V, and reboot it. 
 
   * **Reason three**:
     The _AksHci Billing Operator_ may be out of storage space, which is due to a bug in the Microsoft SQL configuration settings. The lack of storage space may be causing the upgrade to stop responding. To work around this issue, manually resize the billing pod `pvc` using the following steps. 
