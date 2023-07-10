@@ -2,7 +2,7 @@
 "Status": "Active"
 "Create Date" : "5/12/2023"
 "Review Date" : "6/26/2023"
-"Publish Date" : "6/26/2023"
+"Publish Date" : "7/10/2023"
 "Reviewer" : "sumsmith"
 "Author" : "sethm"
 "Service" : "aks-hci"
@@ -27,7 +27,7 @@
   This issue can impact any operation that involves allocating disk space or writing new files, so any "insufficient disk space/resources" error is a good hint. To check if this issue is present on a given node, run the following shell command:
 
   ```shell
-  clouduser@moc-lwm2oudnskl $ sudo du -h /var/lib/systemd/coredump/ 715M /var/lib/systemd/coredump/
+  clouduser@moc-lwm2oudnskl $ sudo du -h /var/lib/systemd/coredump/
   ```
 
   This command reports the storage space consumed by the diagnostic files.
