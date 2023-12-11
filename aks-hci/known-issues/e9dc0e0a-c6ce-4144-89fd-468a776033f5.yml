@@ -1,0 +1,33 @@
+"ID" : "e9dc0e0a-c6ce-4144-89fd-468a776033f5"
+"Status": "Active"
+"Create Date" : "12/11/2023"
+"Review Date" : "12/11/2023"
+"Publish Date" : "12/11/2023"
+"Reviewer" : "sumsmith"
+"Author" : "sethmanheim"
+"Service" : "aks-hci"
+"Area"  : "known-issues-troubleshooting"
+"Tags"  : "['proof', 'concept']"
+"Source"  : "bugs"
+"Source ID"  : "1"
+"Source URL"  : "https://wwww.bugtool.com/1"
+"Target URL"  : "https://docs.microsoft.com/page"
+"Schema" : "known-issue"
+"Issue" : |
+  AKS on HCI install fails while waiting for Arc onboarding
+"Description" : |
+  The `Install-AksHci` cmdlet returns the following error:
+
+  ```output
+  Exception [  returned a non zero exit code 1 [Error: Failed to wait for addon arc-onboarding: Job azure-arc-onboarding terminated with Failed to run CLI command: ERROR: Error while updating agents. Please run 'kubectl get pods -n azure-arc' to check the pods in case of timeout error. Error: Error: UPGRADE FAILED: timed out waiting for the condition System.Management.Automation.RemoteException System.Management.Automation.RemoteException
+  : Job Failed Condition
+  ```
+
+  The error blocks the installation of AKS on HCI.
+
+  ### Root cause
+
+  This error might be caused by having Private Link enabled on the setup.
+
+"Fix" : |
+  Currently, there is no workaround. AKS on HCI does not work with Private Link.
