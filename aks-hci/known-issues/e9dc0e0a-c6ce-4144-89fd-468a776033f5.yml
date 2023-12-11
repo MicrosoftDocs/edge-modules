@@ -19,7 +19,10 @@
   The `Install-AksHci` cmdlet returns the following error:
 
   ```output
-  Exception [  returned a non zero exit code 1 [Error: Failed to wait for addon arc-onboarding: Job azure-arc-onboarding terminated with Failed to run CLI command: ERROR: Error while updating agents. Please run 'kubectl get pods -n azure-arc' to check the pods in case of timeout error. Error: Error: UPGRADE FAILED: timed out waiting for the condition System.Management.Automation.RemoteException System.Management.Automation.RemoteException
+  Exception [  returned a non zero exit code 1 [Error: Failed to wait for addon arc-onboarding: Job azure-arc-onboarding terminated with Failed 
+  to run CLI command: ERROR: Error while updating agents. Please run 'kubectl get pods -n azure-arc' to check the pods in case of timeout 
+  error. Error: Error: UPGRADE FAILED: timed out waiting for the condition System.Management.Automation.RemoteException 
+  System.Management.Automation.RemoteException
   : Job Failed Condition
   ```
 
