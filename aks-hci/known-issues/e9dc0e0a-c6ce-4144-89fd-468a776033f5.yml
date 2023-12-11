@@ -30,4 +30,5 @@
   This error might be caused by having Private Link enabled on the setup.
 
 "Fix" : |
+  ### Mitigation
   Currently, there is no workaround. AKS on HCI does not work with Private Link.
